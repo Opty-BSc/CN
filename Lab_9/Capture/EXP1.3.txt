@@ -1,0 +1,71 @@
+7.
+Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+The algorithms in the chosen cipher suite are RSA, RC4, MD5.
+
+8.
+Yes.
+Random: 0000000042dbed248b8831d04cc98c26e5badc4e267c3919…
+Bytes: 32
+The purpose of the client and server nonces in SSL is avoid replay attacks.
+
+9.
+Yes.
+Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+The purpose of the session ID is to allow the client to resume an old session.
+
+10.
+This record does not contains a certificate.
+The certificate is included in a separate record.
+Yes, the certificate fit into a single Ethernet frame.
+
+| Packets: |
+
+No.     Time           Source                Destination           Protocol Length Info
+    108 21.830201      216.75.194.220        128.238.38.162        SSLv3    1434   Server Hello
+
+Frame 108: 1434 bytes on wire (11472 bits), 1434 bytes captured (11472 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 1, Ack: 79, Len: 1380
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed248b8831d04cc98c26e5badc4e267c3919…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+
+No.     Time           Source                Destination           Protocol Length Info
+    111 21.853520      216.75.194.220        128.238.38.162        SSLv3    790    Certificate, Server Hello Done
+
+Frame 111: 790 bytes on wire (6320 bits), 790 bytes captured (6320 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 2049, Ack: 79, Len: 736
+[3 Reassembled TCP Segments (2696 bytes): #108(1301), #109(668), #111(727)]
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Certificate
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 2691
+        Handshake Protocol: Certificate
+            Handshake Type: Certificate (11)
+            Length: 2687
+            Certificates Length: 2684
+            Certificates (2684 bytes)
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello Done
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 4
+        Handshake Protocol: Server Hello Done
+            Handshake Type: Server Hello Done (14)
+            Length: 0
+

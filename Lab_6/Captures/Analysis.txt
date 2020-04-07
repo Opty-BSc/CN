@@ -1,0 +1,556 @@
+ _______________________
+|			|
+|	Questions:	|
+|_______________________|
+
+
+1.
+- Host IP Adress (PC16): 198.18.12.27
+- Destination IP Adress (SERVER12): 198.18.1.5
+
+Others:
+- Host IP Adress (PC56): 198.18.18.27
+- Destination IP Adress (ROUTER8): 198.18.5.1
+
+2.
+Protocol: ICMP (1)
+- Decimal: 1
+- Hexadecimal: 0x1
+
+3.
+- Header Length: 20 Bytes
+- Total Length: 36 Bytes
+- IP Datagram Payload: 36 - 20 = 16 Bytes
+
+4.
+...0 0000 0000 0000 = Fragment offset: 0
+- The packet has not been fragmented because "Fragment offset" is 0.
+
+5.
+- Identification: Identification of the Datagram IP Packets must differ;
+- Time to live: Traceroute sets ttl += 1;
+- Header checksum: The Header differs from packet to packet.
+
+6.
+Fields that stay constant:
+- Version: IPv4 for all packets;
+- Header Length: Because packets are ICMP packets;
+- Differentiated Services: Because packets are ICMP packets the Service class is the same;
+- Upper Layer Protocol (ICMP);
+- Source IP: The Host is the same;
+- Destination IP: The destination is the same.
+
+Fields that MUST stay constant:
+- Version: IPv4 for all packets;
+- Header Length: Because packets are ICMP packets;
+- Differentiated Services: Because packets are ICMP packets the Service class is the same;
+- Upper Layer Protocol (ICMP).
+
+Fields that MUST change:
+- Identification: Identification of the Datagram IP Packets must differ;
+- Time to live: Traceroute sets ttl += 1;
+- Header checksum: The Header differs from packet to packet.
+
+7.
+- Identifier += 1, packet to packet.
+
+8.
+1º Packet:
+- Identification: 0xd605 (54789);
+- Time to live: 64.
+2º Packet:
+- Identification: 0x44dc (17628);
+- Time to live: 63.
+3º Packet:
+- Identification: 0xa70b (42763);
+- Time to live: 62.
+4º Packet:
+- Identification: 0x73a8 (29608);
+- Time to live: 61.
+
+9.
+The Identification field must differ from all of the packets.
+If two replies have the same Identification they must be fragments of the same packet.
+The TTL field stays constant because the router wants the packet to return, therefore router gives the highest limit it can.
+
+ _______________________
+|			|
+|	Packets used:	|
+|_______________________|
+
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.002078356    198.18.12.27          198.18.1.5            ICMP     50     Echo (ping) request  id=0x4400, seq=256/1, ttl=1 (no response found!)
+
+Frame 3: 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Destination: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Source: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.1.5
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 36
+    Identification: 0xe12a (57642)
+    Flags: 0x4000, Don't fragment
+        0... .... .... .... = Reserved bit: Not set
+        .1.. .... .... .... = Don't fragment: Set
+        ..0. .... .... .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 1
+    Protocol: ICMP (1)
+    Header checksum: 0xff69 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.1.5
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0x7800 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 17408 (0x4400)
+    Identifier (LE): 68 (0x0044)
+    Sequence number (BE): 256 (0x0100)
+    Sequence number (LE): 1 (0x0001)
+    [No response seen]
+    Data (8 bytes)
+
+0000  48 9a a3 b0 77 72 d7 41                           H...wr.A
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.004132222    198.18.12.1           198.18.12.27          ICMP     78     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 4: 78 bytes on wire (624 bits), 78 bytes captured (624 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Destination: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Source: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 198.18.12.1, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 64
+    Identification: 0xd605 (54789)
+    Flags: 0x0000
+        0... .... .... .... = Reserved bit: Not set
+        .0.. .... .... .... = Don't fragment: Not set
+        ..0. .... .... .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 64
+    Protocol: ICMP (1)
+    Header checksum: 0xffb6 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.1
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xf4ff [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.1.5
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 36
+        Identification: 0xe12a (57642)
+        Flags: 0x4000, Don't fragment
+            0... .... .... .... = Reserved bit: Not set
+            .1.. .... .... .... = Don't fragment: Set
+            ..0. .... .... .... = More fragments: Not set
+            ...0 0000 0000 0000 = Fragment offset: 0
+        Time to live: 1
+        Protocol: ICMP (1)
+        Header checksum: 0xff69 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.1.5
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0x7800 [unverified] [in ICMP error packet]
+        [Checksum Status: Unverified]
+        Identifier (BE): 17408 (0x4400)
+        Identifier (LE): 68 (0x0044)
+        Sequence number (BE): 256 (0x0100)
+        Sequence number (LE): 1 (0x0001)
+        Data (8 bytes)
+
+0000  48 9a a3 b0 77 72 d7 41                           H...wr.A
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.004860239    198.18.12.27          198.18.1.5            ICMP     50     Echo (ping) request  id=0x4400, seq=256/1, ttl=2 (no response found!)
+
+Frame 5: 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Destination: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Source: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.1.5
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 36
+    Identification: 0xe12b (57643)
+    Flags: 0x4000, Don't fragment
+        0... .... .... .... = Reserved bit: Not set
+        .1.. .... .... .... = Don't fragment: Set
+        ..0. .... .... .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 2
+    Protocol: ICMP (1)
+    Header checksum: 0xfe68 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.1.5
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xa6b0 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 17408 (0x4400)
+    Identifier (LE): 68 (0x0044)
+    Sequence number (BE): 256 (0x0100)
+    Sequence number (LE): 1 (0x0001)
+    [No response seen]
+    Data (8 bytes)
+
+0000  19 ea a3 b0 77 72 d7 41                           ....wr.A
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.007161397    198.18.10.1           198.18.12.27          ICMP     78     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 6: 78 bytes on wire (624 bits), 78 bytes captured (624 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Destination: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Source: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 198.18.10.1, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 64
+    Identification: 0x44dc (17628)
+    Flags: 0x0000
+        0... .... .... .... = Reserved bit: Not set
+        .0.. .... .... .... = Don't fragment: Not set
+        ..0. .... .... .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 63
+    Protocol: ICMP (1)
+    Header checksum: 0x93e0 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.10.1
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xf4ff [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.1.5
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 36
+        Identification: 0xe12b (57643)
+        Flags: 0x4000, Don't fragment
+            0... .... .... .... = Reserved bit: Not set
+            .1.. .... .... .... = Don't fragment: Set
+            ..0. .... .... .... = More fragments: Not set
+            ...0 0000 0000 0000 = Fragment offset: 0
+        Time to live: 1
+        Protocol: ICMP (1)
+        Header checksum: 0xff68 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.1.5
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xa6b0 [unverified] [in ICMP error packet]
+        [Checksum Status: Unverified]
+        Identifier (BE): 17408 (0x4400)
+        Identifier (LE): 68 (0x0044)
+        Sequence number (BE): 256 (0x0100)
+        Sequence number (LE): 1 (0x0001)
+        Data (8 bytes)
+
+0000  19 ea a3 b0 77 72 d7 41                           ....wr.A
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.007768276    198.18.12.27          198.18.1.5            ICMP     50     Echo (ping) request  id=0x4400, seq=256/1, ttl=3 (no response found!)
+
+Frame 7: 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Destination: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Source: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.1.5
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 36
+    Identification: 0xe12c (57644)
+    Flags: 0x4000, Don't fragment
+        0... .... .... .... = Reserved bit: Not set
+        .1.. .... .... .... = Don't fragment: Set
+        ..0. .... .... .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 3
+    Protocol: ICMP (1)
+    Header checksum: 0xfd67 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.1.5
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xfa80 [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 17408 (0x4400)
+    Identifier (LE): 68 (0x0044)
+    Sequence number (BE): 256 (0x0100)
+    Sequence number (LE): 1 (0x0001)
+    [No response seen]
+    Data (8 bytes)
+
+0000  c5 19 a4 b0 77 72 d7 41                           ....wr.A
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.011132376    198.18.3.2            198.18.12.27          ICMP     78     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 8: 78 bytes on wire (624 bits), 78 bytes captured (624 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Destination: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Source: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 198.18.3.2, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 64
+    Identification: 0xa70b (42763)
+    Flags: 0x0000
+        0... .... .... .... = Reserved bit: Not set
+        .0.. .... .... .... = Don't fragment: Not set
+        ..0. .... .... .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 62
+    Protocol: ICMP (1)
+    Header checksum: 0x39b0 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.3.2
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xf4ff [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.1.5
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 36
+        Identification: 0xe12c (57644)
+        Flags: 0x4000, Don't fragment
+            0... .... .... .... = Reserved bit: Not set
+            .1.. .... .... .... = Don't fragment: Set
+            ..0. .... .... .... = More fragments: Not set
+            ...0 0000 0000 0000 = Fragment offset: 0
+        Time to live: 1
+        Protocol: ICMP (1)
+        Header checksum: 0xff67 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.1.5
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfa80 [unverified] [in ICMP error packet]
+        [Checksum Status: Unverified]
+        Identifier (BE): 17408 (0x4400)
+        Identifier (LE): 68 (0x0044)
+        Sequence number (BE): 256 (0x0100)
+        Sequence number (LE): 1 (0x0001)
+        Data (8 bytes)
+
+0000  c5 19 a4 b0 77 72 d7 41                           ....wr.A
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.011745507    198.18.12.27          198.18.1.5            ICMP     50     Echo (ping) request  id=0x4400, seq=256/1, ttl=4 (no response found!)
+
+Frame 9: 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Destination: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Source: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.1.5
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 36
+    Identification: 0xe12d (57645)
+    Flags: 0x4000, Don't fragment
+        0... .... .... .... = Reserved bit: Not set
+        .1.. .... .... .... = Don't fragment: Set
+        ..0. .... .... .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 4
+    Protocol: ICMP (1)
+    Header checksum: 0xfc66 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.1.5
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xd13f [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 17408 (0x4400)
+    Identifier (LE): 68 (0x0044)
+    Sequence number (BE): 256 (0x0100)
+    Sequence number (LE): 1 (0x0001)
+    [No response seen]
+    Data (8 bytes)
+
+0000  ee 5a a4 b0 77 72 d7 41                           .Z..wr.A
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.015362291    198.18.9.2            198.18.12.27          ICMP     78     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 10: 78 bytes on wire (624 bits), 78 bytes captured (624 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Destination: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Source: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 198.18.9.2, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 64
+    Identification: 0x73a8 (29608)
+    Flags: 0x0000
+        0... .... .... .... = Reserved bit: Not set
+        .0.. .... .... .... = Don't fragment: Not set
+        ..0. .... .... .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 61
+    Protocol: ICMP (1)
+    Header checksum: 0x6813 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.9.2
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xf4ff [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.1.5
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 36
+        Identification: 0xe12d (57645)
+        Flags: 0x4000, Don't fragment
+            0... .... .... .... = Reserved bit: Not set
+            .1.. .... .... .... = Don't fragment: Set
+            ..0. .... .... .... = More fragments: Not set
+            ...0 0000 0000 0000 = Fragment offset: 0
+        Time to live: 1
+        Protocol: ICMP (1)
+        Header checksum: 0xff66 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.1.5
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xd13f [unverified] [in ICMP error packet]
+        [Checksum Status: Unverified]
+        Identifier (BE): 17408 (0x4400)
+        Identifier (LE): 68 (0x0044)
+        Sequence number (BE): 256 (0x0100)
+        Sequence number (LE): 1 (0x0001)
+        Data (8 bytes)
+
+0000  ee 5a a4 b0 77 72 d7 41                           .Z..wr.A
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 0.016002664    198.18.12.27          198.18.1.5            ICMP     50     Echo (ping) request  id=0x4400, seq=256/1, ttl=5 (reply in 12)
+
+Frame 11: 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Destination: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Source: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.1.5
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 36
+    Identification: 0xe12e (57646)
+    Flags: 0x4000, Don't fragment
+        0... .... .... .... = Reserved bit: Not set
+        .1.. .... .... .... = Don't fragment: Set
+        ..0. .... .... .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 5
+    Protocol: ICMP (1)
+    Header checksum: 0xfb65 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.1.5
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0x0ffa [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 17408 (0x4400)
+    Identifier (LE): 68 (0x0044)
+    Sequence number (BE): 256 (0x0100)
+    Sequence number (LE): 1 (0x0001)
+    [Response frame: 12]
+    Data (8 bytes)
+
+0000  af a0 a4 b0 77 72 d7 41                           ....wr.A
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 0.044034513    198.18.1.5            198.18.12.27          ICMP     50     Echo (ping) reply    id=0x4400, seq=256/1, ttl=60 (request in 11)
+
+Frame 12: 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Destination: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+    Source: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 198.18.1.5, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 36
+    Identification: 0x3eb3 (16051)
+    Flags: 0x0000
+        0... .... .... .... = Reserved bit: Not set
+        .0.. .... .... .... = Don't fragment: Not set
+        ..0. .... .... .... = More fragments: Not set
+        ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 60
+    Protocol: ICMP (1)
+    Header checksum: 0xa6e1 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.1.5
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0x17fa [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 17408 (0x4400)
+    Identifier (LE): 68 (0x0044)
+    Sequence number (BE): 256 (0x0100)
+    Sequence number (LE): 1 (0x0001)
+    [Request frame: 11]
+    [Response time: 28.032 ms]
+    Data (8 bytes)
+
+0000  af a0 a4 b0 77 72 d7 41                           ....wr.A
+

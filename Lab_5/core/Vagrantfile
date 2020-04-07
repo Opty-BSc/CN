@@ -1,0 +1,49 @@
+## -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# CORE emulator VM
+
+Vagrant.configure("2") do |config|
+
+  config.ssh.insert_key = false
+  config.ssh.forward_agent = true
+  config.ssh.forward_x11 = true
+  config.vbguest.auto_update = true
+  config.vm.box_check_update = false
+
+
+  # create CORE node
+  config.vm.define "core" do |core_config|
+      core_config.vm.box = "ubuntu/trusty64"
+      core_config.vm.hostname = "core"
+      core_config.vm.network "private_network", ip: "192.168.56.200"
+      #core_config.vm.network "public_network", type: "dhcp"
+      if Vagrant::Util::Platform.windows? then
+        core_config.vm.synced_folder "data/output", "/home/vagrant/output",
+          id: "vagrant-root", owner: "vagrant", group: "vagrant",
+          mount_options: ["dmode=775,fmode=664"]
+        core_config.vm.synced_folder "data/apps", "/home/vagrant/apps",
+          id: "vagrant-root", owner: "vagrant", group: "vagrant",
+          mount_options: ["dmode=775,fmode=664"]
+        core_config.vm.synced_folder "data/core/configs", "/home/vagrant/.core/configs",
+          id: "vagrant-root", owner: "vagrant", group: "vagrant",
+          mount_options: ["dmode=775,fmode=664"]
+        core_config.vm.synced_folder "data/core/myservices", "/home/vagrant/.core/myservices",
+          id: "vagrant-root", owner: "vagrant", group: "vagrant",
+          mount_options: ["dmode=775,fmode=664"]
+      else
+        core_config.vm.synced_folder "data/output", "/home/vagrant/output"
+        core_config.vm.synced_folder "data/apps", "/home/vagrant/apps"
+        core_config.vm.synced_folder "data/core/configs", "/home/vagrant/.core/configs"
+        core_config.vm.synced_folder "data/core/myservices", "/home/vagrant/.core/myservices"
+      end
+      core_config.vm.provider "virtualbox" do |vb|
+        vb.name = "core"
+        opts = ["modifyvm", :id, "--natdnshostresolver1", "on"]
+        vb.customize opts
+        vb.memory = "2048"
+      end
+      core_config.vm.provision "shell", path: "bootstrap-core.sh"
+  end
+# acede-se directamente ao GUI com: vagrant ssh -c core-gui -- -X
+end

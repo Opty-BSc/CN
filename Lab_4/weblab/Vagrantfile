@@ -1,0 +1,81 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+# Always use Vagrant's default insecure key
+  config.ssh.insert_key = false
+# Always use X11 Forwarding with r+this machine
+  config.ssh.forward_x11 = true
+# To avoid/allow install and uninstall of VBoxGuessAdditions.
+  config.vbguest.auto_update = true
+# Disable/enable automatic box update checking.
+  config.vm.box_check_update = false
+
+
+  # Create an instance
+  # Assign a friendly name for vagrant STATUS
+  config.vm.define "webserver" do |webserver_config|
+  # Every Vagrant development environment requires a box.
+    webserver_config.vm.box = "ubuntu/trusty64"
+  # Assign a friendly name to this host VM
+    webserver_config.vm.hostname = "webserver"
+  # Create a private network, which allows host-only access to the machine
+    webserver_config.vm.network "private_network", ip: "192.168.56.21"
+  # Configure the Forward port to access the server from the host
+    webserver_config.vm.network "forwarded_port", guest: 80, host: 8080
+  # Configurev the shared folders between the host and the VM
+    if Vagrant::Util::Platform.windows? then
+    # Configuration SPECIFIC for Windows 10 hosts
+      webserver_config.vm.synced_folder "html", "/home/vagrant/html",
+        id: "vagrant-root", ouner: "vagrant", group: "vagrant",
+        mount_options: ["dmode=775,fmode=664"]
+      else
+    # Configuration for Unix/Linux hosts
+      webserver_config.vm.synced_folder "html", "/home/vagrant/html"
+    end
+  # Provider-specific configuration so you can fine-tune various
+    webserver_config.vm.provider "virtualbox" do |vb|
+    # Change the VM name/ID in the Hypervisor
+      vb.name = "webserver"
+      opts = ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      vb.customize opts
+      vb.memory = "256"
+    end # of vb
+  # provision from the VM shell
+
+  end # of  webserver_config
+
+
+  # Create an instance
+  # Assign a friendly name for vagrant STATUS
+  config.vm.define "client" do |client_config|
+  # Every Vagrant development environment requires a box.
+    client_config.vm.box = "ubuntu/trusty64"
+  # Assign a friendly name to this host VM
+    client_config.vm.hostname = "client"
+  # Create a private network, which allows host-only access to the machine
+    client_config.vm.network "private_network", ip: "192.168.56.51"
+  # Configurev the shared folders between the host and the VM
+    if Vagrant::Util::Platform.windows? then
+    # Configuration SPECIFIC for Windows 10 hosts
+      client_config.vm.synced_folder "client", "/home/vagrant/client",
+        id: "vagrant-root", ouner: "vagrant", group: "vagrant",
+        mount_options: ["dmode=775,fmode=664"]
+      else
+    # Configuration for Unix/Linux hosts
+      client_config.vm.synced_folder "client", "/home/vagrant/client"
+    end
+  # Provider-specific configuration so you can fine-tune various
+    client_config.vm.provider "virtualbox" do |vb|
+    # Change the VM name/ID in the Hypervisor
+      vb.name = "client"
+      opts = ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      vb.customize opts
+      vb.memory = "256"
+    end # of vb
+  # provision from the VM shell
+    client_config.vm.provision "shell", path: "bootstrap_client.sh"
+  end # of  client_config
+
+end # of  config

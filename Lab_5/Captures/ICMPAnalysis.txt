@@ -1,0 +1,88 @@
+13.
+IP address of the PC host where the ICMP Pinger was running:
+198.18.12.27
+IP address of the destination host:
+198.18.0.27
+
+14.
+The ICMP packet does not have source and destination port numbers because
+it was designed to communicate network-layer information between hosts and
+routers, not between application layer processes. Each ICMP packet has a
+"Type" and a "Code". The Type/Code combination identifies the specific
+message being received. Since the network software itself interprets all ICMP
+messages, no port numbers are needed to direct the ICMP message to an
+application layer process.
+
+15.
+ICMP type = 8;
+ICMP code = 0.
+The other fields that ICMP has are:
+Checksum;
+Identifier;
+Sequence number.
+Number of bytes:
+Checksum = 2 bytes;
+Identifier = 2 bytes;
+Sequence number = 2 bytes.
+
+16.
+ICMP type = 0;
+ICMP code = 0.
+The other fields that ICMP has are:
+Checksum;
+Identifier;
+Sequence number.
+Number of bytes:
+Checksum = 2 bytes;
+Identifier = 2 bytes;
+Sequence number = 2 bytes.
+ _______________________
+|			|
+|	Packets used:	|
+|_______________________|
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.002072078    198.18.12.27          198.18.0.27           ICMP     50     Echo (ping) request  id=0x2700, seq=256/1, ttl=64 (reply in 4)
+
+Frame 3: 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.0.27
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0x3d6f [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 9984 (0x2700)
+    Identifier (LE): 39 (0x0027)
+    Sequence number (BE): 256 (0x0100)
+    Sequence number (LE): 1 (0x0001)
+    [Response frame: 4]
+    Data (8 bytes)
+
+0000  ec 4b b1 97 1d 6b d7 41                           .K...k.A
+        Data: ec4bb1971d6bd741
+        [Length: 8]
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.006197796    198.18.0.27           198.18.12.27          ICMP     50     Echo (ping) reply    id=0x2700, seq=256/1, ttl=63 (request in 3)
+
+Frame 4: 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.0.27, Dst: 198.18.12.27
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0x456f [correct]
+    [Checksum Status: Good]
+    Identifier (BE): 9984 (0x2700)
+    Identifier (LE): 39 (0x0027)
+    Sequence number (BE): 256 (0x0100)
+    Sequence number (LE): 1 (0x0001)
+    [Request frame: 3]
+    [Response time: 4.126 ms]
+    Data (8 bytes)
+
+0000  ec 4b b1 97 1d 6b d7 41                           .K...k.A
+        Data: ec4bb1971d6bd741
+        [Length: 8]
+

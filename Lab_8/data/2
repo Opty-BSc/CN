@@ -1,0 +1,25 @@
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.001018       LinksysG_da:af:73     AmbitMic_a9:3d:68     ARP      60     192.168.1.1 is at 00:06:25:da:af:73
+
+Frame 2: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+Ethernet II, Src: LinksysG_da:af:73 (00:06:25:da:af:73), Dst: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+    Destination: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+        Address: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: LinksysG_da:af:73 (00:06:25:da:af:73)
+        Address: LinksysG_da:af:73 (00:06:25:da:af:73)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+    Padding: 000000000000000000000000000000000000
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (2)
+    Sender MAC address: LinksysG_da:af:73 (00:06:25:da:af:73)
+    Sender IP address: 192.168.1.1
+    Target MAC address: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+    Target IP address: 192.168.1.105

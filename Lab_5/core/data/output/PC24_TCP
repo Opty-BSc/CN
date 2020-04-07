@@ -1,0 +1,85 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    198.18.0.27           198.18.20.12          TCP      74     52233 → 6789 [SYN] Seq=0 Win=29200 Len=0 MSS=1460 SACK_PERM=1 TSval=58533 TSecr=0 WS=128
+
+Frame 1: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.0.27, Dst: 198.18.20.12
+Transmission Control Protocol, Src Port: 52233, Dst Port: 6789, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.012113923    198.18.20.12          198.18.0.27           TCP      74     6789 → 52233 [SYN, ACK] Seq=0 Ack=1 Win=28960 Len=0 MSS=1460 SACK_PERM=1 TSval=58537 TSecr=58533 WS=128
+
+Frame 2: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.0.27
+Transmission Control Protocol, Src Port: 6789, Dst Port: 52233, Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.015888133    198.18.0.27           198.18.20.12          TCP      66     52233 → 6789 [ACK] Seq=1 Ack=1 Win=29312 Len=0 TSval=58537 TSecr=58537
+
+Frame 3: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.0.27, Dst: 198.18.20.12
+Transmission Control Protocol, Src Port: 52233, Dst Port: 6789, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.015922081    198.18.0.27           198.18.20.12          TCP      90     52233 → 6789 [PSH, ACK] Seq=1 Ack=1 Win=29312 Len=24 TSval=58537 TSecr=58537
+
+Frame 4: 90 bytes on wire (720 bits), 90 bytes captured (720 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.0.27, Dst: 198.18.20.12
+Transmission Control Protocol, Src Port: 52233, Dst Port: 6789, Seq: 1, Ack: 1, Len: 24
+Data (24 bytes)
+
+0000  47 45 54 20 2f 69 6e 64 65 78 2e 68 74 6d 6c 20   GET /index.html 
+0010  48 54 54 50 2f 31 2e 31                           HTTP/1.1
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.029189663    198.18.20.12          198.18.0.27           TCP      66     6789 → 52233 [ACK] Seq=1 Ack=25 Win=29056 Len=0 TSval=58541 TSecr=58537
+
+Frame 5: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.0.27
+Transmission Control Protocol, Src Port: 6789, Dst Port: 52233, Seq: 1, Ack: 25, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.029189786    198.18.20.12          198.18.0.27           TCP      83     6789 → 52233 [PSH, ACK] Seq=1 Ack=25 Win=29056 Len=17 TSval=58541 TSecr=58537 [TCP segment of a reassembled PDU]
+
+Frame 6: 83 bytes on wire (664 bits), 83 bytes captured (664 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.0.27
+Transmission Control Protocol, Src Port: 6789, Dst Port: 52233, Seq: 1, Ack: 25, Len: 17
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.032970723    198.18.20.12          198.18.0.27           HTTP     488    HTTP/1.1 200 OK 
+
+Frame 7: 488 bytes on wire (3904 bits), 488 bytes captured (3904 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.0.27
+Transmission Control Protocol, Src Port: 6789, Dst Port: 52233, Seq: 18, Ack: 25, Len: 422
+[2 Reassembled TCP Segments (439 bytes): #6(17), #7(422)]
+Hypertext Transfer Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.035488863    198.18.0.27           198.18.20.12          TCP      66     52233 → 6789 [ACK] Seq=25 Ack=18 Win=29312 Len=0 TSval=58542 TSecr=58541
+
+Frame 8: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.0.27, Dst: 198.18.20.12
+Transmission Control Protocol, Src Port: 52233, Dst Port: 6789, Seq: 25, Ack: 18, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.047462647    198.18.0.27           198.18.20.12          TCP      66     52233 → 6789 [FIN, ACK] Seq=25 Ack=441 Win=30336 Len=0 TSval=58545 TSecr=58542
+
+Frame 9: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.0.27, Dst: 198.18.20.12
+Transmission Control Protocol, Src Port: 52233, Dst Port: 6789, Seq: 25, Ack: 441, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.063498632    198.18.20.12          198.18.0.27           TCP      66     6789 → 52233 [ACK] Seq=441 Ack=26 Win=29056 Len=0 TSval=58548 TSecr=58545
+
+Frame 10: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.0.27
+Transmission Control Protocol, Src Port: 6789, Dst Port: 52233, Seq: 441, Ack: 26, Len: 0

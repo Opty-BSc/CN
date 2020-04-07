@@ -1,0 +1,54 @@
+No.     Time           Source                Destination           Protocol Length Info
+     88 6.117078       64.233.169.104        71.192.34.104         TCP      1484   80 → 4335 [ACK] Seq=1 Ack=636 Win=7040 Len=1430 [TCP segment of a reassembled PDU]
+
+Frame 88: 1484 bytes on wire (11872 bits), 1484 bytes captured (11872 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep 20, 2009 20:43:07.848142000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1253479387.848142000 seconds
+    [Time delta from previous captured frame: 0.017441000 seconds]
+    [Time delta from previous displayed frame: 0.017441000 seconds]
+    [Time since reference or first frame: 6.117078000 seconds]
+    Frame Number: 88
+    Frame Length: 1484 bytes (11872 bits)
+    Capture Length: 1484 bytes (11872 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: Cisco_bf:6c:01 (00:0e:d6:bf:6c:01), Dst: Dell_4f:36:23 (00:08:74:4f:36:23)
+Internet Protocol Version 4, Src: 64.233.169.104, Dst: 71.192.34.104
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+    Total Length: 1470
+    Identification: 0xf61c (63004)
+    Flags: 0x0000
+    Time to live: 51
+    Protocol: TCP (6)
+    Header checksum: 0x3784 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 64.233.169.104
+    Destination: 71.192.34.104
+Transmission Control Protocol, Src Port: 80, Dst Port: 4335, Seq: 1, Ack: 636, Len: 1430
+    Source Port: 80
+    Destination Port: 4335
+    [Stream index: 2]
+    [TCP Segment Len: 1430]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1431    (relative sequence number)]
+    Acknowledgment number: 636    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 110
+    [Calculated window size: 7040]
+    [Window size scaling factor: 64]
+    Checksum: 0x2ce2 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (1430 bytes)
+    [Reassembled PDU in frame: 90]
+    TCP segment data (1430 bytes)

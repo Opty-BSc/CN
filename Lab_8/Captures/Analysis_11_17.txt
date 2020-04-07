@@ -1,0 +1,100 @@
+11.
+_gateway (194.210.223.254) em 50:9a:4c:9d:eb:d6 [ether] em wlp2s0
+? (194.210.223.251) em 50:9a:4c:9d:eb:d6 [ether] em wlp2s0
+? (194.210.223.250) em 00:1a:64:ca:84:5c [ether] em wlp2s0
+
+Internet Adress: IP Adress;
+Physical Adress: MAC Adress;
+wlp2s0 is the Interface.
+
+12.
+Destination Adress: Address: ff:ff:ff:ff:ff:ff
+Source Address: 00:d0:59:a9:3d:68
+
+13.
+Type: ARP (0x0806).
+
+14 (a).
+20 Bytes.
+
+14 (b).
+Opcode = 1.
+
+14 (c).
+Yes.
+
+14 (d).
+Target MAC address is set to 00:00:00:00:00:00
+
+15 (a).
+20 Bytes.
+
+15 (b).
+Opcode = 2.
+
+15 (c).
+Sender MAC address (00:06:25:da:af:73)
+
+16.
+Destination Address: 00:d0:59:a9:3d:68
+Source Address: 00:06:25:da:af:73
+
+17.
+The Broadcast is not from the host and it also does not ask for the host's adress.
+Therefore the computer running the capture is not the one that needs to reply or receive the answer.
+ __________
+|
+| Packets:
+|__________
+
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       AmbitMic_a9:3d:68     Broadcast             ARP      42     Who has 192.168.1.1? Tell 192.168.1.105
+
+Frame 1: 42 bytes on wire (336 bits), 42 bytes captured (336 bits)
+Ethernet II, Src: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination: Broadcast (ff:ff:ff:ff:ff:ff)
+        Address: Broadcast (ff:ff:ff:ff:ff:ff)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)
+    Source: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+        Address: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (1)
+    Sender MAC address: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+    Sender IP address: 192.168.1.105
+    Target MAC address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Target IP address: 192.168.1.1
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.001018       LinksysG_da:af:73     AmbitMic_a9:3d:68     ARP      60     192.168.1.1 is at 00:06:25:da:af:73
+
+Frame 2: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+Ethernet II, Src: LinksysG_da:af:73 (00:06:25:da:af:73), Dst: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+    Destination: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+        Address: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: LinksysG_da:af:73 (00:06:25:da:af:73)
+        Address: LinksysG_da:af:73 (00:06:25:da:af:73)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: ARP (0x0806)
+    Padding: 000000000000000000000000000000000000
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (2)
+    Sender MAC address: LinksysG_da:af:73 (00:06:25:da:af:73)
+    Sender IP address: 192.168.1.1
+    Target MAC address: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+    Target IP address: 192.168.1.105
+

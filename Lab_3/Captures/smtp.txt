@@ -1,0 +1,35 @@
+Trying 52.1.235.193...
+Connected to smtp.mailtrap.io.
+Escape character is '^]'.
+220 mailtrap.io ESMTP ready
+EHLO smtp.mailtrap.io
+250-mailtrap.io
+250-SIZE 5242880
+250-PIPELINING
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 STARTTLS
+AUTH LOGIN
+334 VXNlcm5hbWU6
+ZTM5OTNkZDg1ZWVhNDU=
+334 UGFzc3dvcmQ6
+MDU1ODgxNTAxOTQ4YWY=
+235 2.0.0 OK
+MAIL FROM: <from@smtp.mailtrap.io> 
+250 2.1.0 Ok
+RCPT TO: <to@smtp.mailtrap.io>
+250 2.1.0 Ok
+DATA
+354 Go ahead
+To: to@smtp.mailtrap.io
+From: from@smtp.mailtrap.io
+Subject: Hello world!
+This is the test message...
+.
+250 2.0.0 Ok: queued
+quit
+221 2.0.0 Bye
+Connection closed by foreign host.
+

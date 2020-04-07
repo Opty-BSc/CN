@@ -1,0 +1,55 @@
+PING 198.18.11.10 (198.18.11.10) 56(84) bytes of data.
+[1571565527.183058] 64 bytes from 198.18.11.10: icmp_seq=1 ttl=63 time=16.1 ms
+[1571565528.175960] 64 bytes from 198.18.11.10: icmp_seq=2 ttl=63 time=5.50 ms
+[1571565529.183710] 64 bytes from 198.18.11.10: icmp_seq=3 ttl=63 time=3.04 ms
+[1571565530.184013] 64 bytes from 198.18.11.10: icmp_seq=4 ttl=63 time=2.74 ms
+[1571565531.185346] 64 bytes from 198.18.11.10: icmp_seq=5 ttl=63 time=2.95 ms
+[1571565532.210538] 64 bytes from 198.18.11.10: icmp_seq=6 ttl=63 time=20.0 ms
+[1571565533.210524] 64 bytes from 198.18.11.10: icmp_seq=7 ttl=63 time=19.3 ms
+[1571565534.211051] 64 bytes from 198.18.11.10: icmp_seq=8 ttl=63 time=11.0 ms
+[1571565535.210467] 64 bytes from 198.18.11.10: icmp_seq=9 ttl=63 time=9.61 ms
+[1571565536.206500] 64 bytes from 198.18.11.10: icmp_seq=10 ttl=63 time=3.65 ms
+[1571565537.206846] 64 bytes from 198.18.11.10: icmp_seq=11 ttl=63 time=2.83 ms
+[1571565538.210119] 64 bytes from 198.18.11.10: icmp_seq=12 ttl=63 time=4.69 ms
+[1571565539.223726] 64 bytes from 198.18.11.10: icmp_seq=13 ttl=63 time=13.8 ms
+[1571565540.213392] 64 bytes from 198.18.11.10: icmp_seq=14 ttl=63 time=2.49 ms
+[1571565541.219710] 64 bytes from 198.18.11.10: icmp_seq=15 ttl=63 time=3.62 ms
+[1571565542.219824] 64 bytes from 198.18.11.10: icmp_seq=16 ttl=63 time=3.09 ms
+[1571565543.223595] 64 bytes from 198.18.11.10: icmp_seq=17 ttl=63 time=3.23 ms
+[1571565544.224183] 64 bytes from 198.18.11.10: icmp_seq=18 ttl=63 time=2.35 ms
+[1571565545.225958] 64 bytes from 198.18.11.10: icmp_seq=19 ttl=63 time=2.36 ms
+[1571565546.227684] 64 bytes from 198.18.11.10: icmp_seq=20 ttl=63 time=2.39 ms
+[1571565547.229324] 64 bytes from 198.18.11.10: icmp_seq=21 ttl=63 time=2.34 ms
+[1571565548.232409] 64 bytes from 198.18.11.10: icmp_seq=22 ttl=63 time=2.40 ms
+[1571565549.236920] 64 bytes from 198.18.11.10: icmp_seq=23 ttl=63 time=5.23 ms
+[1571565550.235506] 64 bytes from 198.18.11.10: icmp_seq=24 ttl=63 time=2.34 ms
+[1571565551.236909] 64 bytes from 198.18.11.10: icmp_seq=25 ttl=63 time=2.34 ms
+[1571565552.238534] 64 bytes from 198.18.11.10: icmp_seq=26 ttl=63 time=2.39 ms
+[1571565553.248590] 64 bytes from 198.18.11.10: icmp_seq=27 ttl=63 time=9.01 ms
+[1571565554.244070] 64 bytes from 198.18.11.10: icmp_seq=28 ttl=63 time=3.09 ms
+[1571565555.246637] 64 bytes from 198.18.11.10: icmp_seq=29 ttl=63 time=4.08 ms
+[1571565556.247401] 64 bytes from 198.18.11.10: icmp_seq=30 ttl=63 time=3.40 ms
+[1571565557.247043] 64 bytes from 198.18.11.10: icmp_seq=31 ttl=63 time=2.33 ms
+[1571565558.249501] 64 bytes from 198.18.11.10: icmp_seq=32 ttl=63 time=3.20 ms
+[1571565559.250259] 64 bytes from 198.18.11.10: icmp_seq=33 ttl=63 time=2.38 ms
+[1571565560.251955] 64 bytes from 198.18.11.10: icmp_seq=34 ttl=63 time=2.36 ms
+[1571565561.253316] 64 bytes from 198.18.11.10: icmp_seq=35 ttl=63 time=2.38 ms
+[1571565562.259140] 64 bytes from 198.18.11.10: icmp_seq=36 ttl=63 time=2.45 ms
+[1571565563.260462] 64 bytes from 198.18.11.10: icmp_seq=37 ttl=63 time=2.34 ms
+[1571565564.261249] 64 bytes from 198.18.11.10: icmp_seq=38 ttl=63 time=2.34 ms
+[1571565565.262924] 64 bytes from 198.18.11.10: icmp_seq=39 ttl=63 time=2.41 ms
+[1571565566.264559] 64 bytes from 198.18.11.10: icmp_seq=40 ttl=63 time=2.36 ms
+[1571565567.266392] 64 bytes from 198.18.11.10: icmp_seq=41 ttl=63 time=2.43 ms
+[1571565568.267481] 64 bytes from 198.18.11.10: icmp_seq=42 ttl=63 time=2.33 ms
+[1571565569.269206] 64 bytes from 198.18.11.10: icmp_seq=43 ttl=63 time=2.42 ms
+[1571565570.274496] 64 bytes from 198.18.11.10: icmp_seq=44 ttl=63 time=2.44 ms
+[1571565571.276194] 64 bytes from 198.18.11.10: icmp_seq=45 ttl=63 time=2.34 ms
+[1571565572.278013] 64 bytes from 198.18.11.10: icmp_seq=46 ttl=63 time=2.45 ms
+[1571565573.279731] 64 bytes from 198.18.11.10: icmp_seq=47 ttl=63 time=2.40 ms
+[1571565574.281485] 64 bytes from 198.18.11.10: icmp_seq=48 ttl=63 time=2.35 ms
+[1571565575.283214] 64 bytes from 198.18.11.10: icmp_seq=49 ttl=63 time=2.39 ms
+[1571565576.285063] 64 bytes from 198.18.11.10: icmp_seq=50 ttl=63 time=2.42 ms
+
+--- 198.18.11.10 ping statistics ---
+50 packets transmitted, 50 received, 0% packet loss, time 49115ms
+rtt min/avg/max/mdev = 2.335/4.408/20.042/4.296 ms

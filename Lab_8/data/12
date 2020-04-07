@@ -1,0 +1,110 @@
+No.     Time           Source                Destination           Protocol Length Info
+     12 17.498935      LinksysG_da:af:73     AmbitMic_a9:3d:68     0x0800   1514   IPv4
+
+Frame 12: 1514 bytes on wire (12112 bits), 1514 bytes captured (12112 bits)
+Ethernet II, Src: LinksysG_da:af:73 (00:06:25:da:af:73), Dst: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+    Destination: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+        Address: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: LinksysG_da:af:73 (00:06:25:da:af:73)
+        Address: LinksysG_da:af:73 (00:06:25:da:af:73)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Data (1500 bytes)
+
+0000  45 60 05 dc 8f 2f 40 00 37 06 76 f7 80 77 f5 0c   E`.../@.7.v..w..
+0010  c0 a8 01 69 00 50 04 22 ac a5 3f b4 65 14 9c 1f   ...i.P."..?.e...
+0020  50 10 1b 28 5e d0 00 00 48 54 54 50 2f 31 2e 31   P..(^...HTTP/1.1
+0030  20 32 30 30 20 4f 4b 0d 0a 44 61 74 65 3a 20 53    200 OK..Date: S
+0040  61 74 2c 20 32 38 20 41 75 67 20 32 30 30 34 20   at, 28 Aug 2004 
+0050  31 37 3a 31 39 3a 33 37 20 47 4d 54 0d 0a 53 65   17:19:37 GMT..Se
+0060  72 76 65 72 3a 20 41 70 61 63 68 65 2f 32 2e 30   rver: Apache/2.0
+0070  2e 34 30 20 28 52 65 64 20 48 61 74 20 4c 69 6e   .40 (Red Hat Lin
+0080  75 78 29 0d 0a 4c 61 73 74 2d 4d 6f 64 69 66 69   ux)..Last-Modifi
+0090  65 64 3a 20 53 61 74 2c 20 32 38 20 41 75 67 20   ed: Sat, 28 Aug 
+00a0  32 30 30 34 20 31 37 3a 31 38 3a 35 33 20 47 4d   2004 17:18:53 GM
+00b0  54 0d 0a 45 54 61 67 3a 20 22 31 62 61 35 63 2d   T..ETag: "1ba5c-
+00c0  31 31 39 34 2d 36 39 65 64 39 34 30 22 0d 0a 41   1194-69ed940"..A
+00d0  63 63 65 70 74 2d 52 61 6e 67 65 73 3a 20 62 79   ccept-Ranges: by
+00e0  74 65 73 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65 6e   tes..Content-Len
+00f0  67 74 68 3a 20 34 35 30 30 0d 0a 4b 65 65 70 2d   gth: 4500..Keep-
+0100  41 6c 69 76 65 3a 20 74 69 6d 65 6f 75 74 3d 31   Alive: timeout=1
+0110  30 2c 20 6d 61 78 3d 31 30 30 0d 0a 43 6f 6e 6e   0, max=100..Conn
+0120  65 63 74 69 6f 6e 3a 20 4b 65 65 70 2d 41 6c 69   ection: Keep-Ali
+0130  76 65 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65   ve..Content-Type
+0140  3a 20 74 65 78 74 2f 68 74 6d 6c 3b 20 63 68 61   : text/html; cha
+0150  72 73 65 74 3d 49 53 4f 2d 38 38 35 39 2d 31 0d   rset=ISO-8859-1.
+0160  0a 0d 0a 3c 68 74 6d 6c 3e 3c 68 65 61 64 3e 20   ...<html><head> 
+0170  0a 3c 74 69 74 6c 65 3e 48 69 73 74 6f 72 69 63   .<title>Historic
+0180  61 6c 20 44 6f 63 75 6d 65 6e 74 73 3a 54 48 45   al Documents:THE
+0190  20 42 49 4c 4c 20 4f 46 20 52 49 47 48 54 53 3c    BILL OF RIGHTS<
+01a0  2f 74 69 74 6c 65 3e 3c 2f 68 65 61 64 3e 0a 0a   /title></head>..
+01b0  0a 3c 62 6f 64 79 20 62 67 63 6f 6c 6f 72 3d 22   .<body bgcolor="
+01c0  23 66 66 66 66 66 66 22 20 6c 69 6e 6b 3d 22 23   #ffffff" link="#
+01d0  33 33 30 30 30 30 22 20 76 6c 69 6e 6b 3d 22 23   330000" vlink="#
+01e0  36 36 36 36 33 33 22 3e 0a 3c 70 3e 3c 62 72 3e   666633">.<p><br>
+01f0  0a 3c 2f 70 3e 0a 3c 70 3e 3c 2f 70 3e 3c 63 65   .</p>.<p></p><ce
+0200  6e 74 65 72 3e 3c 62 3e 54 48 45 20 42 49 4c 4c   nter><b>THE BILL
+0210  20 4f 46 20 52 49 47 48 54 53 3c 2f 62 3e 3c 62    OF RIGHTS</b><b
+0220  72 3e 0a 20 20 3c 65 6d 3e 41 6d 65 6e 64 6d 65   r>.  <em>Amendme
+0230  6e 74 73 20 31 2d 31 30 20 6f 66 20 74 68 65 20   nts 1-10 of the 
+0240  43 6f 6e 73 74 69 74 75 74 69 6f 6e 3c 2f 65 6d   Constitution</em
+0250  3e 0a 3c 2f 63 65 6e 74 65 72 3e 0a 0a 3c 70 3e   >.</center>..<p>
+0260  54 68 65 20 43 6f 6e 76 65 6e 74 69 6f 6e 73 20   The Conventions 
+0270  6f 66 20 61 20 6e 75 6d 62 65 72 20 6f 66 20 74   of a number of t
+0280  68 65 20 53 74 61 74 65 73 20 68 61 76 69 6e 67   he States having
+0290  2c 20 61 74 20 74 68 65 20 74 69 6d 65 20 6f 66   , at the time of
+02a0  20 61 64 6f 70 74 69 6e 67 0a 74 68 65 20 43 6f    adopting.the Co
+02b0  6e 73 74 69 74 75 74 69 6f 6e 2c 20 65 78 70 72   nstitution, expr
+02c0  65 73 73 65 64 20 61 20 64 65 73 69 72 65 2c 20   essed a desire, 
+02d0  69 6e 20 6f 72 64 65 72 20 74 6f 20 70 72 65 76   in order to prev
+02e0  65 6e 74 20 6d 69 73 63 6f 6e 73 74 72 75 63 74   ent misconstruct
+02f0  69 6f 6e 0a 6f 72 20 61 62 75 73 65 20 6f 66 20   ion.or abuse of 
+0300  69 74 73 20 70 6f 77 65 72 73 2c 20 74 68 61 74   its powers, that
+0310  20 66 75 72 74 68 65 72 20 64 65 63 6c 61 72 61    further declara
+0320  74 6f 72 79 20 61 6e 64 20 72 65 73 74 72 69 63   tory and restric
+0330  74 69 76 65 20 63 6c 61 75 73 65 73 0a 73 68 6f   tive clauses.sho
+0340  75 6c 64 20 62 65 20 61 64 64 65 64 2c 20 61 6e   uld be added, an
+0350  64 20 61 73 20 65 78 74 65 6e 64 69 6e 67 20 74   d as extending t
+0360  68 65 20 67 72 6f 75 6e 64 20 6f 66 20 70 75 62   he ground of pub
+0370  6c 69 63 20 63 6f 6e 66 69 64 65 6e 63 65 20 69   lic confidence i
+0380  6e 20 74 68 65 0a 47 6f 76 65 72 6e 6d 65 6e 74   n the.Government
+0390  20 77 69 6c 6c 20 62 65 73 74 20 69 6e 73 75 72    will best insur
+03a0  65 20 74 68 65 20 62 65 6e 65 66 69 63 65 6e 74   e the beneficent
+03b0  20 65 6e 64 73 20 6f 66 20 69 74 73 20 69 6e 73    ends of its ins
+03c0  74 69 74 75 74 69 6f 6e 3b 20 3c 2f 70 3e 3c 70   titution; </p><p
+03d0  3e 20 20 52 65 73 6f 6c 76 65 64 2c 20 62 79 20   >  Resolved, by 
+03e0  74 68 65 20 53 65 6e 61 74 65 20 61 6e 64 20 48   the Senate and H
+03f0  6f 75 73 65 20 6f 66 20 52 65 70 72 65 73 65 6e   ouse of Represen
+0400  74 61 74 69 76 65 73 20 6f 66 20 74 68 65 20 55   tatives of the U
+0410  6e 69 74 65 64 0a 53 74 61 74 65 73 20 6f 66 20   nited.States of 
+0420  41 6d 65 72 69 63 61 2c 20 69 6e 20 43 6f 6e 67   America, in Cong
+0430  72 65 73 73 20 61 73 73 65 6d 62 6c 65 64 2c 20   ress assembled, 
+0440  74 77 6f 2d 74 68 69 72 64 73 20 6f 66 20 62 6f   two-thirds of bo
+0450  74 68 20 48 6f 75 73 65 73 20 63 6f 6e 63 75 72   th Houses concur
+0460  72 69 6e 67 2c 0a 74 68 61 74 20 74 68 65 20 66   ring,.that the f
+0470  6f 6c 6c 6f 77 69 6e 67 20 61 72 74 69 63 6c 65   ollowing article
+0480  73 20 62 65 20 70 72 6f 70 6f 73 65 64 20 74 6f   s be proposed to
+0490  20 74 68 65 20 4c 65 67 69 73 6c 61 74 75 72 65    the Legislature
+04a0  73 20 6f 66 20 74 68 65 20 73 65 76 65 72 61 6c   s of the several
+04b0  0a 53 74 61 74 65 73 2c 20 61 73 20 61 6d 65 6e   .States, as amen
+04c0  64 6d 65 6e 74 73 20 74 6f 20 74 68 65 20 43 6f   dments to the Co
+04d0  6e 73 74 69 74 75 74 69 6f 6e 20 6f 66 20 74 68   nstitution of th
+04e0  65 20 55 6e 69 74 65 64 20 53 74 61 74 65 73 3b   e United States;
+04f0  20 61 6c 6c 20 6f 72 20 61 6e 79 0a 6f 66 20 77    all or any.of w
+0500  68 69 63 68 20 61 72 74 69 63 6c 65 73 2c 20 77   hich articles, w
+0510  68 65 6e 20 72 61 74 69 66 69 65 64 20 62 79 20   hen ratified by 
+0520  74 68 72 65 65 2d 66 6f 75 72 74 68 73 20 6f 66   three-fourths of
+0530  20 74 68 65 20 73 61 69 64 20 4c 65 67 69 73 6c    the said Legisl
+0540  61 74 75 72 65 73 2c 0a 74 6f 20 62 65 20 76 61   atures,.to be va
+0550  6c 69 64 20 74 6f 20 61 6c 6c 20 69 6e 74 65 6e   lid to all inten
+0560  74 73 20 61 6e 64 20 70 75 72 70 6f 73 65 73 20   ts and purposes 
+0570  61 73 20 70 61 72 74 20 6f 66 20 74 68 65 20 73   as part of the s
+0580  61 69 64 20 43 6f 6e 73 74 69 74 75 74 69 6f 6e   aid Constitution
+0590  2c 0a 6e 61 6d 65 6c 79 3a 20 20 20 20 3c 2f 70   ,.namely:    </p
+05a0  3e 3c 70 3e 3c 61 20 6e 61 6d 65 3d 22 31 22 3e   ><p><a name="1">
+05b0  3c 73 74 72 6f 6e 67 3e 3c 68 33 3e 41 6d 65 6e   <strong><h3>Amen
+05c0  64 6d 65 6e 74 20 49 3c 2f 68 33 3e 3c 2f 73 74   dment I</h3></st
+05d0  72 6f 6e 67 3e 3c 2f 61 3e 0a 0a 3c               rong></a>..<

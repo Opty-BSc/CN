@@ -1,0 +1,1249 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    198.18.12.27          198.18.19.27          UDP      74     55365 → 33434 Len=32
+
+Frame 1: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c4e (3150)
+    Flags: 0x0000
+    Time to live: 1
+    Protocol: UDP (17)
+    Header checksum: 0x0209 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 55365, Dst Port: 33434
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.000000297    198.18.12.27          198.18.19.27          UDP      74     58580 → 33435 Len=32
+
+Frame 2: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c4f (3151)
+    Flags: 0x0000
+    Time to live: 1
+    Protocol: UDP (17)
+    Header checksum: 0x0208 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 58580, Dst Port: 33435
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.000000544    198.18.12.27          198.18.19.27          UDP      74     47511 → 33436 Len=32
+
+Frame 3: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c50 (3152)
+    Flags: 0x0000
+    Time to live: 1
+    Protocol: UDP (17)
+    Header checksum: 0x0207 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 47511, Dst Port: 33436
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.000000791    198.18.12.27          198.18.19.27          UDP      74     37518 → 33437 Len=32
+
+Frame 4: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c51 (3153)
+    Flags: 0x0000
+    Time to live: 2
+    Protocol: UDP (17)
+    Header checksum: 0x0106 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 37518, Dst Port: 33437
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.000001038    198.18.12.27          198.18.19.27          UDP      74     54464 → 33438 Len=32
+
+Frame 5: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c52 (3154)
+    Flags: 0x0000
+    Time to live: 2
+    Protocol: UDP (17)
+    Header checksum: 0x0105 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 54464, Dst Port: 33438
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.000001285    198.18.12.27          198.18.19.27          UDP      74     55416 → 33439 Len=32
+
+Frame 6: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c53 (3155)
+    Flags: 0x0000
+    Time to live: 2
+    Protocol: UDP (17)
+    Header checksum: 0x0104 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 55416, Dst Port: 33439
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.000001532    198.18.12.27          198.18.19.27          UDP      74     38482 → 33440 Len=32
+
+Frame 7: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c54 (3156)
+    Flags: 0x0000
+    Time to live: 3
+    Protocol: UDP (17)
+    Header checksum: 0x0003 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 38482, Dst Port: 33440
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.000001779    198.18.12.27          198.18.19.27          UDP      74     46756 → 33441 Len=32
+
+Frame 8: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c55 (3157)
+    Flags: 0x0000
+    Time to live: 3
+    Protocol: UDP (17)
+    Header checksum: 0x0002 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 46756, Dst Port: 33441
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.000002026    198.18.12.27          198.18.19.27          UDP      74     56918 → 33442 Len=32
+
+Frame 9: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c56 (3158)
+    Flags: 0x0000
+    Time to live: 3
+    Protocol: UDP (17)
+    Header checksum: 0x0001 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 56918, Dst Port: 33442
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.000002273    198.18.12.27          198.18.19.27          UDP      74     44732 → 33443 Len=32
+
+Frame 10: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c57 (3159)
+    Flags: 0x0000
+    Time to live: 4
+    Protocol: UDP (17)
+    Header checksum: 0xfeff [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 44732, Dst Port: 33443
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 0.000002520    198.18.12.27          198.18.19.27          UDP      74     53607 → 33444 Len=32
+
+Frame 11: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c58 (3160)
+    Flags: 0x0000
+    Time to live: 4
+    Protocol: UDP (17)
+    Header checksum: 0xfefe [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 53607, Dst Port: 33444
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 0.000002792    198.18.12.27          198.18.19.27          UDP      74     46582 → 33445 Len=32
+
+Frame 12: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c59 (3161)
+    Flags: 0x0000
+    Time to live: 4
+    Protocol: UDP (17)
+    Header checksum: 0xfefd [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 46582, Dst Port: 33445
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 0.000141307    198.18.12.27          198.18.19.27          UDP      74     60420 → 33446 Len=32
+
+Frame 13: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c5a (3162)
+    Flags: 0x0000
+    Time to live: 5
+    Protocol: UDP (17)
+    Header checksum: 0xfdfc [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 60420, Dst Port: 33446
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 0.000159353    198.18.12.27          198.18.19.27          UDP      74     50081 → 33447 Len=32
+
+Frame 14: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c5b (3163)
+    Flags: 0x0000
+    Time to live: 5
+    Protocol: UDP (17)
+    Header checksum: 0xfdfb [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 50081, Dst Port: 33447
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 0.000175347    198.18.12.27          198.18.19.27          UDP      74     40697 → 33448 Len=32
+
+Frame 15: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c5c (3164)
+    Flags: 0x0000
+    Time to live: 5
+    Protocol: UDP (17)
+    Header checksum: 0xfdfa [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 40697, Dst Port: 33448
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 0.000191684    198.18.12.27          198.18.19.27          UDP      74     59588 → 33449 Len=32
+
+Frame 16: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c5d (3165)
+    Flags: 0x0000
+    Time to live: 6
+    Protocol: UDP (17)
+    Header checksum: 0xfcf9 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 59588, Dst Port: 33449
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 0.004815496    198.18.12.1           198.18.12.27          ICMP     102    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 17: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.12.1, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0xc1ce (49614)
+    Flags: 0x0000
+    Time to live: 64
+    Protocol: ICMP (1)
+    Header checksum: 0x13d6 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.1
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xf95d [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c4e (3150)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x0209 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 55365, Dst Port: 33434
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 0.004817652    198.18.12.1           198.18.12.27          ICMP     102    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 18: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.12.1, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0xc1cf (49615)
+    Flags: 0x0000
+    Time to live: 64
+    Protocol: ICMP (1)
+    Header checksum: 0x13d5 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.1
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xeccd [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c4f (3151)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x0208 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 58580, Dst Port: 33435
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 0.004818854    198.18.12.1           198.18.12.27          ICMP     102    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 19: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.12.1, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0xc1d0 (49616)
+    Flags: 0x0000
+    Time to live: 64
+    Protocol: ICMP (1)
+    Header checksum: 0x13d4 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.1
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x180a [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c50 (3152)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x0207 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 47511, Dst Port: 33436
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 0.005413514    198.18.12.27          198.18.19.27          UDP      74     43050 → 33450 Len=32
+
+Frame 20: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c5f (3167)
+    Flags: 0x0000
+    Time to live: 6
+    Protocol: UDP (17)
+    Header checksum: 0xfcf7 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 43050, Dst Port: 33450
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 0.005427959    198.18.12.27          198.18.19.27          UDP      74     56546 → 33451 Len=32
+
+Frame 21: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c60 (3168)
+    Flags: 0x0000
+    Time to live: 6
+    Protocol: UDP (17)
+    Header checksum: 0xfcf6 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 56546, Dst Port: 33451
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 0.005437528    198.18.12.27          198.18.19.27          UDP      74     44742 → 33452 Len=32
+
+Frame 22: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c61 (3169)
+    Flags: 0x0000
+    Time to live: 7
+    Protocol: UDP (17)
+    Header checksum: 0xfbf5 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 44742, Dst Port: 33452
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 0.006118242    198.18.2.2            198.18.12.27          ICMP     102    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 23: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.2.2, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0x73ec (29676)
+    Flags: 0x0000
+    Time to live: 63
+    Protocol: ICMP (1)
+    Header checksum: 0x6cb7 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.2.2
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x3f12 [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c51 (3153)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x0206 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 37518, Dst Port: 33437
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 0.006278815    198.18.12.27          198.18.19.27          UDP      74     38554 → 33453 Len=32
+
+Frame 24: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c62 (3170)
+    Flags: 0x0000
+    Time to live: 7
+    Protocol: UDP (17)
+    Header checksum: 0xfbf4 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 38554, Dst Port: 33453
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 0.006411597    198.18.2.2            198.18.12.27          ICMP     102    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 25: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.2.2, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0x73ed (29677)
+    Flags: 0x0000
+    Time to live: 63
+    Protocol: ICMP (1)
+    Header checksum: 0x6cb6 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.2.2
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xfcde [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c52 (3154)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x0205 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 54464, Dst Port: 33438
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 0.006411671    198.18.2.2            198.18.12.27          ICMP     102    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 26: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.2.2, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0x73ee (29678)
+    Flags: 0x0000
+    Time to live: 63
+    Protocol: ICMP (1)
+    Header checksum: 0x6cb5 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.2.2
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xf925 [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c53 (3155)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x0204 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 55416, Dst Port: 33439
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 0.006417280    198.18.12.27          198.18.19.27          UDP      74     40066 → 33454 Len=32
+
+Frame 27: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c63 (3171)
+    Flags: 0x0000
+    Time to live: 7
+    Protocol: UDP (17)
+    Header checksum: 0xfbf3 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 40066, Dst Port: 33454
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 0.006432999    198.18.12.27          198.18.19.27          UDP      74     34927 → 33455 Len=32
+
+Frame 28: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c64 (3172)
+    Flags: 0x0000
+    Time to live: 8
+    Protocol: UDP (17)
+    Header checksum: 0xfaf2 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 34927, Dst Port: 33455
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 0.006625621    198.18.4.2            198.18.12.27          ICMP     102    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 29: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.4.2, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0x9f87 (40839)
+    Flags: 0x0000
+    Time to live: 62
+    Protocol: ICMP (1)
+    Header checksum: 0x401c [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.4.2
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x3b4b [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c54 (3156)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x0203 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 38482, Dst Port: 33440
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 0.006629637    198.18.4.2            198.18.12.27          ICMP     102    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 30: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.4.2, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0x9f88 (40840)
+    Flags: 0x0000
+    Time to live: 62
+    Protocol: ICMP (1)
+    Header checksum: 0x401b [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.4.2
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x1af8 [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c55 (3157)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x0202 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 46756, Dst Port: 33441
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 0.006630882    198.18.4.2            198.18.12.27          ICMP     102    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 31: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.4.2, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0x9f89 (40841)
+    Flags: 0x0000
+    Time to live: 62
+    Protocol: ICMP (1)
+    Header checksum: 0x401a [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.4.2
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xf344 [correct]
+    [Checksum Status: Good]
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c56 (3158)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x0201 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 56918, Dst Port: 33442
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 0.006780709    198.18.12.27          198.18.19.27          UDP      74     57833 → 33456 Len=32
+
+Frame 32: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c65 (3173)
+    Flags: 0x0000
+    Time to live: 8
+    Protocol: UDP (17)
+    Header checksum: 0xfaf1 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 57833, Dst Port: 33456
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 0.006793228    198.18.12.27          198.18.19.27          UDP      74     41228 → 33457 Len=32
+
+Frame 33: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c66 (3174)
+    Flags: 0x0000
+    Time to live: 8
+    Protocol: UDP (17)
+    Header checksum: 0xfaf0 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 41228, Dst Port: 33457
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 0.006802474    198.18.12.27          198.18.19.27          UDP      74     45117 → 33458 Len=32
+
+Frame 34: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 60
+    Identification: 0x0c67 (3175)
+    Flags: 0x0000
+    Time to live: 9
+    Protocol: UDP (17)
+    Header checksum: 0xf9ef [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.12.27
+    Destination: 198.18.19.27
+User Datagram Protocol, Src Port: 45117, Dst Port: 33458
+Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 0.008712235    198.18.19.27          198.18.12.27          ICMP     102    Destination unreachable (Port unreachable)
+
+Frame 35: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0xf84d (63565)
+    Flags: 0x0000
+    Time to live: 61
+    Protocol: ICMP (1)
+    Header checksum: 0xd93c [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.19.27
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 3 (Destination unreachable)
+    Code: 3 (Port unreachable)
+    Checksum: 0x2adb [correct]
+    [Checksum Status: Good]
+    Unused: 00000000
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c57 (3159)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x0200 [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 44732, Dst Port: 33443
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 0.008716326    198.18.19.27          198.18.12.27          ICMP     102    Destination unreachable (Port unreachable)
+
+Frame 36: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0xf84e (63566)
+    Flags: 0x0000
+    Time to live: 61
+    Protocol: ICMP (1)
+    Header checksum: 0xd93b [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.19.27
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 3 (Destination unreachable)
+    Code: 3 (Port unreachable)
+    Checksum: 0x082f [correct]
+    [Checksum Status: Good]
+    Unused: 00000000
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c58 (3160)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x01ff [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 53607, Dst Port: 33444
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 0.008717585    198.18.19.27          198.18.12.27          ICMP     102    Destination unreachable (Port unreachable)
+
+Frame 37: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0xf84f (63567)
+    Flags: 0x0000
+    Time to live: 61
+    Protocol: ICMP (1)
+    Header checksum: 0xd93a [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.19.27
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 3 (Destination unreachable)
+    Code: 3 (Port unreachable)
+    Checksum: 0x239f [correct]
+    [Checksum Status: Good]
+    Unused: 00000000
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c59 (3161)
+        Flags: 0x0000
+        Time to live: 1
+        Protocol: UDP (17)
+        Header checksum: 0x01fe [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 46582, Dst Port: 33445
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 0.008718790    198.18.19.27          198.18.12.27          ICMP     102    Destination unreachable (Port unreachable)
+
+Frame 38: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0xf850 (63568)
+    Flags: 0x0000
+    Time to live: 61
+    Protocol: ICMP (1)
+    Header checksum: 0xd939 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.19.27
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 3 (Destination unreachable)
+    Code: 3 (Port unreachable)
+    Checksum: 0xed8f [correct]
+    [Checksum Status: Good]
+    Unused: 00000000
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c5a (3162)
+        Flags: 0x0000
+        Time to live: 2
+        Protocol: UDP (17)
+        Header checksum: 0x00fd [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 60420, Dst Port: 33446
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 0.008719956    198.18.19.27          198.18.12.27          ICMP     102    Destination unreachable (Port unreachable)
+
+Frame 39: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0xf851 (63569)
+    Flags: 0x0000
+    Time to live: 61
+    Protocol: ICMP (1)
+    Header checksum: 0xd938 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.19.27
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 3 (Destination unreachable)
+    Code: 3 (Port unreachable)
+    Checksum: 0x15f2 [correct]
+    [Checksum Status: Good]
+    Unused: 00000000
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c5b (3163)
+        Flags: 0x0000
+        Time to live: 2
+        Protocol: UDP (17)
+        Header checksum: 0x00fc [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 50081, Dst Port: 33447
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 0.008721109    198.18.19.27          198.18.12.27          ICMP     102    Destination unreachable (Port unreachable)
+
+Frame 40: 102 bytes on wire (816 bits), 102 bytes captured (816 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.12.27
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
+    Total Length: 88
+    Identification: 0xf852 (63570)
+    Flags: 0x0000
+    Time to live: 61
+    Protocol: ICMP (1)
+    Header checksum: 0xd937 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.19.27
+    Destination: 198.18.12.27
+Internet Control Message Protocol
+    Type: 3 (Destination unreachable)
+    Code: 3 (Port unreachable)
+    Checksum: 0x3a99 [correct]
+    [Checksum Status: Good]
+    Unused: 00000000
+    Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.19.27
+        0100 .... = Version: 4
+        .... 0101 = Header Length: 20 bytes (5)
+        Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        Total Length: 60
+        Identification: 0x0c5c (3164)
+        Flags: 0x0000
+        Time to live: 2
+        Protocol: UDP (17)
+        Header checksum: 0x00fb [validation disabled]
+        [Header checksum status: Unverified]
+        Source: 198.18.12.27
+        Destination: 198.18.19.27
+    User Datagram Protocol, Src Port: 40697, Dst Port: 33448
+    Data (32 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 5.000235164    00:00:00_aa:00:2f     00:00:00_aa:00:1f     ARP      42     Who has 198.18.12.1? Tell 198.18.12.27
+
+Frame 41: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 5.002429028    00:00:00_aa:00:1f     00:00:00_aa:00:2f     ARP      42     198.18.12.1 is at 00:00:00:aa:00:1f
+
+Frame 42: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Address Resolution Protocol (reply)

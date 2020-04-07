@@ -1,0 +1,3023 @@
+node n1 {
+    type router
+    model router
+    network-config {
+	hostname router1
+	!
+	interface eth5
+	 ip address 198.18.22.1/24
+	!
+	interface eth4
+	 ip address 198.18.21.1/24
+	!
+	interface eth2
+	 ip address 198.18.1.1/24
+	!
+	interface eth3
+	 ip address 198.18.20.1/24
+	!
+	interface eth1
+	 ip address 198.18.9.2/24
+	!
+	interface eth0
+	 ip address 198.18.8.2/24
+	!
+    }
+    canvas c0
+    iconcoords {372.0 214.0}
+    labelcoords {349.0 243.0}
+    interface-peer {eth0 n3}
+    interface-peer {eth1 n2}
+    interface-peer {eth3 n48}
+    services {zebra BGP vtysh IPForward}
+    custom-config {
+	custom-config-id service:zebra
+	custom-command zebra
+	config {
+	files=('/usr/local/etc/quagga/Quagga.conf', 'quaggaboot.sh', )
+	cmdval=
+	}
+    }
+    custom-config {
+	custom-config-id service:zebra:/usr/local/etc/quagga/Quagga.conf
+	custom-command /usr/local/etc/quagga/Quagga.conf
+	config {
+	interface eth0
+	  ip address 198.18.8.2/24
+	!
+	interface eth1
+	  ip address 198.18.9.2/24
+	!
+	router bgp 64496
+	 bgp router-id 198.18.9.2
+	 redistribute connected
+	 neighbor 198.18.8.1 remote-as 64496
+	 neighbor 198.18.8.1 next-hop-self
+	 neighbor 198.18.9.1 remote-as 64496
+	 neighbor 198.18.9.2 next-hop-self
+	 network 198.18.20.0 mask 255.255.255.0
+	 network 198.18.21.0 mask 255.255.255.0
+	 network 198.18.22.0 mask 255.255.255.0
+	 network 198.18.1.0 mask 255.255.255.0
+	!
+	}
+    }
+    interface-peer {eth2 n43}
+    interface-peer {eth4 n99}
+    interface-peer {eth5 n100}
+}
+
+node n2 {
+    type router
+    model router
+    network-config {
+	hostname router2
+	!
+	interface eth2
+	 ip address 198.18.9.1/24
+	!
+	interface eth1
+	 ip address 198.18.7.2/24
+	!
+	interface eth0
+	 ip address 198.18.3.2/24
+	!
+    }
+    canvas c0
+    iconcoords {458.0 316.0}
+    labelcoords {407.0 326.0}
+    interface-peer {eth0 n4}
+    interface-peer {eth1 n3}
+    interface-peer {eth2 n1}
+    services {zebra BGP vtysh IPForward}
+    custom-config {
+	custom-config-id service:zebra
+	custom-command zebra
+	config {
+	('/usr/local/etc/quagga', '/var/run/quagga', )
+	('/usr/local/etc/quagga/Quagga.conf', 'quaggaboot.sh', )
+	35
+	('sh quaggaboot.sh zebra', )
+	('killall zebra', )
+
+
+	}
+    }
+    custom-config {
+	custom-config-id service:zebra:/usr/local/etc/quagga/Quagga.conf
+	custom-command /usr/local/etc/quagga/Quagga.conf
+	config {
+	interface eth0
+	  ip address 198.18.3.2/24
+	!
+	interface eth1
+	  ip address 198.18.7.2/24
+	!
+	interface eth2
+	  ip address 198.18.9.1/24
+	!
+	router bgp 64496
+	 bgp router-id 198.18.9.1
+	 redistribute connected
+	 neighbor 198.18.7.1 remote-as 64496
+	 neighbor 198.18.7.1 next-hop-self
+	 neighbor 198.18.9.2 remote-as 64496
+	 neighbor 198.18.9.2 next-hop-self
+	 neighbor 198.18.3.1 remote-as 64500
+	 neighbor 198.18.3.1 next-hop-self
+	!
+	}
+    }
+}
+
+node n3 {
+    type router
+    model router
+    network-config {
+	hostname router3
+	!
+	interface eth2
+	 ip address 198.18.8.1/24
+	!
+	interface eth1
+	 ip address 198.18.7.1/24
+	!
+	interface eth0
+	 ip address 198.18.6.1/24
+	!
+    }
+    canvas c0
+    iconcoords {584.0 238.0}
+    labelcoords {588.0 269.0}
+    interface-peer {eth0 n8}
+    interface-peer {eth1 n2}
+    interface-peer {eth2 n1}
+    services {zebra BGP vtysh IPForward}
+    custom-config {
+	custom-config-id service:zebra
+	custom-command zebra
+	config {
+	('/usr/local/etc/quagga', '/var/run/quagga', )
+	('/usr/local/etc/quagga/Quagga.conf', 'quaggaboot.sh', )
+	35
+	('sh quaggaboot.sh zebra', )
+	('killall zebra', )
+
+
+	}
+    }
+    custom-config {
+	custom-config-id service:zebra:/usr/local/etc/quagga/Quagga.conf
+	custom-command /usr/local/etc/quagga/Quagga.conf
+	config {
+	interface eth0
+	  ip address 198.18.6.1/24
+	!
+	interface eth1
+	  ip address 198.18.7.1/24
+	!
+	interface eth2
+	  ip address 198.18.8.1/24
+	!
+	router bgp 64496
+	 bgp router-id 198.18.8.1
+	 redistribute connected
+	 neighbor 198.18.7.2 remote-as 64496
+	 neighbor 198.18.7.2 next-hop-self
+	 neighbor 198.18.8.2 remote-as 64496
+	 neighbor 198.18.8.2 next-hop-self
+	 neighbor 198.18.6.2 remote-as 64501
+	 neighbor 198.18.6.2 next-hop-self
+	!
+	}
+    }
+}
+
+node n4 {
+    type router
+    model router
+    network-config {
+	hostname router4
+	!
+	interface eth1
+	 ip address 198.18.10.1/24
+	!
+	interface eth0
+	 ip address 198.18.3.1/24
+	!
+    }
+    canvas c0
+    iconcoords {458.0 403.0}
+    labelcoords {507.0 412.0}
+    interface-peer {eth0 n2}
+    interface-peer {eth1 n5}
+    services {zebra BGP vtysh IPForward}
+    custom-config {
+	custom-config-id service:zebra
+	custom-command zebra
+	config {
+	('/usr/local/etc/quagga', '/var/run/quagga', )
+	('/usr/local/etc/quagga/Quagga.conf', 'quaggaboot.sh', )
+	35
+	('sh quaggaboot.sh zebra', )
+	('killall zebra', )
+
+
+	}
+    }
+    custom-config {
+	custom-config-id service:zebra:/usr/local/etc/quagga/Quagga.conf
+	custom-command /usr/local/etc/quagga/Quagga.conf
+	config {
+	interface eth0
+	  ip address 198.18.3.1/24
+	!
+	interface eth1
+	  ip address 198.18.10.1/24
+	!
+	router bgp 64500
+	 bgp router-id 198.18.10.1
+	 redistribute connected
+	 neighbor 198.18.10.2 remote-as 64500
+	 neighbor 198.18.10.2 next-hop-self
+	 neighbor 198.18.3.2 remote-as 64496
+	 neighbor 198.18.3.2 next-hop-self
+	!
+	}
+    }
+}
+
+node n5 {
+    type router
+    model router
+    network-config {
+	hostname router5
+	!
+	interface eth5
+	 ip address 198.18.0.1/24
+	!
+	interface eth4
+	 ip address 198.18.12.1/24
+	!
+	interface eth3
+	 ip address 198.18.13.1/24
+	!
+	interface eth2
+	 ip address 198.18.11.1/24
+	!
+	interface eth1
+	 ip address 198.18.10.2/24
+	!
+	interface eth0
+	 ip address 198.18.2.1/24
+	!
+    }
+    canvas c0
+    iconcoords {416.0 464.0}
+    labelcoords {370.0 457.0}
+    interface-peer {eth0 n6}
+    interface-peer {eth1 n4}
+    interface-peer {eth2 n9}
+    interface-peer {eth3 n17}
+    interface-peer {eth4 n22}
+    services {zebra BGP vtysh IPForward}
+    custom-config {
+	custom-config-id service:zebra
+	custom-command zebra
+	config {
+	files=('/usr/local/etc/quagga/Quagga.conf', 'quaggaboot.sh', )
+	}
+    }
+    custom-config {
+	custom-config-id service:zebra:/usr/local/etc/quagga/Quagga.conf
+	custom-command /usr/local/etc/quagga/Quagga.conf
+	config {
+	interface eth0
+	  ip address 198.18.2.1/24
+	!
+	interface eth1
+	  ip address 198.18.10.2/24
+	!
+	interface eth2
+	  ip address 198.18.11.1/24
+	!
+	router bgp 64500
+	  bgp router-id 198.18.11.1
+	  redistribute connected
+	  neighbor 198.18.2.2 remote-as 64501
+	  neighbor 198.18.2.2 next-hop-self
+	  neighbor 198.18.10.1 remote-as 64500
+	  neighbor 198.18.10.1 next-hop-self
+	  network 198.18.11.0 mask 255.255.255.0
+	  network 198.18.12.0 mask 255.255.255.0
+	  network 198.18.13.0 mask 255.255.255.0
+	  network 198.18.0.0 mask 255.255.255.0
+	!
+	}
+    }
+    interface-peer {eth5 n52}
+}
+
+node n6 {
+    type router
+    model router
+    network-config {
+	hostname router6
+	!
+	interface eth2
+	 ip address 198.18.14.1/24
+	!
+	interface eth1
+	 ip address 198.18.4.1/24
+	!
+	interface eth0
+	 ip address 198.18.2.2/24
+	!
+    }
+    canvas c0
+    iconcoords {659.0 415.0}
+    labelcoords {630.0 401.0}
+    interface-peer {eth0 n5}
+    interface-peer {eth1 n7}
+    interface-peer {eth2 n51}
+    services {zebra BGP vtysh IPForward}
+    custom-config {
+	custom-config-id service:zebra
+	custom-command zebra
+	config {
+	('/usr/local/etc/quagga', '/var/run/quagga', )
+	('/usr/local/etc/quagga/Quagga.conf', 'quaggaboot.sh', )
+	35
+	('sh quaggaboot.sh zebra', )
+	('killall zebra', )
+
+
+	}
+    }
+    custom-config {
+	custom-config-id service:zebra:/usr/local/etc/quagga/Quagga.conf
+	custom-command /usr/local/etc/quagga/Quagga.conf
+	config {
+	interface eth0
+	  ip address 198.18.2.2/24
+	!
+	interface eth1
+	  ip address 198.18.4.1/24
+	!
+	interface eth2
+	  ip address 198.18.14.1/24
+	!
+	router bgp 64501
+	  bgp router-id 198.18.14.1
+	  redistribute connected
+	  neighbor 198.18.4.2 remote-as 64501
+	  neighbor 198.18.4.2 next-hop-self
+	  neighbor 198.18.2.1 remote-as 64500
+	  neighbor 198.18.2.1 next-hop-self
+	  network 198.18.14.0 mask 255.255.255.0
+	!
+	}
+    }
+}
+
+node n7 {
+    type router
+    model router
+    network-config {
+	hostname router7
+	!
+	interface eth6
+	 ip address 198.18.17.1/24
+	!
+	interface eth5
+	 ip address 198.18.18.1/24
+	!
+	interface eth4
+	 ip address 198.18.19.1/24
+	!
+	interface eth3
+	 ip address 198.18.16.1/24
+	!
+	interface eth2
+	 ip address 198.18.15.1/24
+	!
+	interface eth1
+	 ip address 198.18.5.2/24
+	!
+	interface eth0
+	 ip address 198.18.4.2/24
+	!
+    }
+    canvas c0
+    iconcoords {732.0 348.0}
+    labelcoords {682.0 354.0}
+    interface-peer {eth0 n6}
+    interface-peer {eth1 n8}
+    interface-peer {eth2 n36}
+    interface-peer {eth3 n35}
+    interface-peer {eth4 n31}
+    interface-peer {eth5 n28}
+    interface-peer {eth6 n34}
+    services {zebra BGP vtysh IPForward}
+    custom-config {
+	custom-config-id service:zebra
+	custom-command zebra
+	config {
+	('/usr/local/etc/quagga', '/var/run/quagga', )
+	('/usr/local/etc/quagga/Quagga.conf', 'quaggaboot.sh', )
+	35
+	('sh quaggaboot.sh zebra', )
+	('killall zebra', )
+
+
+	}
+    }
+    custom-config {
+	custom-config-id service:zebra:/usr/local/etc/quagga/Quagga.conf
+	custom-command /usr/local/etc/quagga/Quagga.conf
+	config {
+	interface eth0
+	  ip address 198.18.4.2/24
+	!
+	interface eth1
+	  ip address 198.18.5.2/24
+	!
+	router bgp 64501
+	 bgp router-id 198.18.5.2
+	 redistribute connected
+	 neighbor 198.18.5.1 remote-as 64501
+	 neighbor 198.18.5.1 next-hop-self
+	 neighbor 198.18.4.1 remote-as 64501
+	 neighbor 198.18.4.1 next-hop-self
+	 network 198.18.15.0 mask 255.255.255.0
+	 network 198.18.16.0 mask 255.255.255.0
+	 network 198.18.17.0 mask 255.255.255.0
+	 network 198.18.18.0 mask 255.255.255.0
+	 network 198.18.19.0 mask 255.255.255.0
+	!
+	}
+    }
+}
+
+node n8 {
+    type router
+    model router
+    network-config {
+	hostname router8
+	!
+	interface eth1
+	 ip address 198.18.6.2/24
+	!
+	interface eth0
+	 ip address 198.18.5.1/24
+	!
+    }
+    canvas c0
+    iconcoords {717.0 264.0}
+    labelcoords {718.0 247.0}
+    interface-peer {eth0 n7}
+    interface-peer {eth1 n3}
+    services {zebra BGP vtysh IPForward}
+    custom-config {
+	custom-config-id service:zebra
+	custom-command zebra
+	config {
+	('/usr/local/etc/quagga', '/var/run/quagga', )
+	('/usr/local/etc/quagga/Quagga.conf', 'quaggaboot.sh', )
+	35
+	('sh quaggaboot.sh zebra', )
+	('killall zebra', )
+
+
+	}
+    }
+    custom-config {
+	custom-config-id service:zebra:/usr/local/etc/quagga/Quagga.conf
+	custom-command /usr/local/etc/quagga/Quagga.conf
+	config {
+	interface eth0
+	  ip address 198.18.5.1/24
+	!
+	interface eth1
+	  ip address 198.18.6.2/24
+	!
+	router bgp 64501
+	  bgp router-id 198.18.6.2
+	  redistribute connected
+	  neighbor 198.18.5.2 remote-as 64501
+	  neighbor 198.18.5.2 next-hop-self
+	  neighbor 198.18.6.1 remote-as 64496
+	  neighbor 198.18.6.1 next-hop-self
+	!
+	}
+    }
+}
+
+node n9 {
+    type lanswitch
+    network-config {
+	hostname switch01
+	!
+    }
+    canvas c0
+    iconcoords {500.5 517.5}
+    labelcoords {525.5 502.5}
+    interface-peer {e1 n18}
+    interface-peer {e2 n19}
+    interface-peer {e0 n5}
+    interface-peer {e3 n11}
+}
+
+node n10 {
+    type router
+    model WebServer
+    network-config {
+	hostname WEB02
+	!
+	interface eth0
+	 ip address 198.18.14.10/24
+	!
+    }
+    iconcoords {652.0 498.0}
+    labelcoords {652.0 530.0}
+    canvas c0
+    interface-peer {eth0 n51}
+    services {DefaultRoute SSH}
+}
+
+node n11 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER02
+	!
+	interface eth0
+	 ip address 198.18.11.2/24
+	!
+    }
+    iconcoords {500.5 596.3333333333333}
+    labelcoords {500.5 628.3333333333333}
+    canvas c0
+    interface-peer {eth0 n9}
+    services {DefaultRoute SSH}
+}
+
+node n12 {
+    type router
+    model PC
+    network-config {
+	hostname PC04
+	!
+	interface eth0
+	 ip address 198.18.13.23/24
+	!
+    }
+    iconcoords {193.33333333333326 406.1666666666667}
+    labelcoords {201.33333333333326 392.1666666666667}
+    canvas c0
+    interface-peer {eth0 n17}
+}
+
+node n13 {
+    type router
+    model PC
+    network-config {
+	hostname PC03
+	!
+	interface eth0
+	 ip address 198.18.13.22/24
+	!
+    }
+    iconcoords {224.0 411.6666666666667}
+    labelcoords {254.66666666666666 401.6666666666667}
+    canvas c0
+    interface-peer {eth0 n17}
+}
+
+node n14 {
+    type router
+    model PC
+    network-config {
+	hostname PC02
+	!
+	interface eth0
+	 ip address 198.18.13.21/24
+	!
+    }
+    iconcoords {256.6666666666667 424.6666666666667}
+    labelcoords {297.6666666666667 416.3333333333333}
+    canvas c0
+    interface-peer {eth0 n17}
+}
+
+node n15 {
+    type router
+    model PC
+    network-config {
+	hostname PC01
+	!
+	interface eth0
+	 ip address 198.18.13.20/24
+	!
+    }
+    iconcoords {284.8333333333333 438.0}
+    labelcoords {327.8333333333333 449.3333333333333}
+    canvas c0
+    interface-peer {eth0 n17}
+    custom-config {
+	custom-config-id service:PCPingWEB01
+	custom-command PCPingWEB01
+	config {
+	files=('startpc.sh', )
+	starttime=70
+	}
+    }
+    services {DefaultRoute PingWEB01 L_u1024k}
+}
+
+node n16 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER05
+	!
+	interface eth0
+	 ip address 198.18.20.12/24
+	!
+    }
+    iconcoords {611.0 179.0}
+    labelcoords {661.0 184.0}
+    canvas c0
+    interface-peer {eth0 n48}
+    services {DefaultRoute SSH}
+}
+
+node n17 {
+    type lanswitch
+    network-config {
+	hostname dslam01
+	!
+    }
+    canvas c0
+    iconcoords {168.5 483.5}
+    labelcoords {165.5 512.5}
+    interface-peer {e1 n15}
+    interface-peer {e2 n14}
+    interface-peer {e3 n13}
+    interface-peer {e4 n12}
+    interface-peer {e5 n20}
+    interface-peer {e6 n21}
+    interface-peer {e0 n5}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e7 n23}
+    interface-peer {e8 n24}
+}
+
+node n18 {
+    type router
+    model WebServer
+    network-config {
+	hostname WEB01
+	!
+	interface eth0
+	 ip address 198.18.11.10/24
+	!
+    }
+    canvas c0
+    iconcoords {589.0 518.25}
+    labelcoords {589.0 550.25}
+    interface-peer {eth0 n9}
+    services {DefaultRoute SSH}
+}
+
+node n19 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER01
+	!
+	interface eth0
+	 ip address 198.18.11.11/24
+	!
+    }
+    canvas c0
+    iconcoords {563.5 569.0}
+    labelcoords {559.5 599.0}
+    interface-peer {eth0 n9}
+    services {DefaultRoute SSH}
+}
+
+node n20 {
+    type router
+    model PC
+    network-config {
+	hostname PC05
+	!
+	interface eth0
+	 ip address 198.18.13.24/24
+	!
+    }
+    canvas c0
+    iconcoords {155.5 403.0}
+    labelcoords {124.5 391.3333333333333}
+    interface-peer {eth0 n17}
+}
+
+node n21 {
+    type router
+    model PC
+    network-config {
+	hostname PC06
+	!
+	interface eth0
+	 ip address 198.18.13.25/24
+	!
+    }
+    canvas c0
+    iconcoords {114.0 420.0}
+    labelcoords {84.66666666666667 413.3333333333333}
+    interface-peer {eth0 n17}
+}
+
+node n22 {
+    type lanswitch
+    network-config {
+	hostname dslam02
+	!
+    }
+    canvas c0
+    iconcoords {174.0 554.0}
+    labelcoords {218.0 564.0}
+    interface-peer {e0 n5}
+    interface-peer {e3 n25}
+    interface-peer {e4 n26}
+    interface-peer {e5 n27}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e1 n40}
+    interface-peer {e2 n39}
+    interface-peer {e6 n38}
+    interface-peer {e7 n37}
+    interface-peer {e8 n33}
+}
+
+node n23 {
+    type router
+    model PC
+    network-config {
+	hostname PC07
+	!
+	interface eth0
+	 ip address 198.18.13.26/24
+	!
+    }
+    canvas c0
+    iconcoords {80.5 440.5}
+    labelcoords {49.833333333333336 434.5}
+    interface-peer {eth0 n17}
+}
+
+node n24 {
+    type router
+    model PC
+    network-config {
+	hostname PC08
+	!
+	interface eth0
+	 ip address 198.18.13.27/24
+	!
+    }
+    canvas c0
+    iconcoords {57.18000000000001 458.0}
+    labelcoords {25.180000000000007 452.0}
+    interface-peer {eth0 n17}
+}
+
+node n25 {
+    type router
+    model PC
+    network-config {
+	hostname PC09
+	!
+	interface eth0
+	 ip address 198.18.12.22/24
+	!
+    }
+    canvas c0
+    iconcoords {64.5 498.0}
+    labelcoords {28.833333333333336 493.3333333333333}
+    interface-peer {eth0 n22}
+}
+
+node n26 {
+    type router
+    model PC
+    network-config {
+	hostname PC10
+	!
+	interface eth0
+	 ip address 198.18.12.23/24
+	!
+    }
+    canvas c0
+    iconcoords {65.0 524.5}
+    labelcoords {26.0 525.5}
+    interface-peer {eth0 n22}
+}
+
+node n27 {
+    type router
+    model PC
+    network-config {
+	hostname PC11
+	!
+	interface eth0
+	 ip address 198.18.12.24/24
+	!
+    }
+    canvas c0
+    iconcoords {70.0 552.5}
+    labelcoords {28.0 555.5}
+    interface-peer {eth0 n22}
+}
+
+node n28 {
+    type lanswitch
+    network-config {
+	hostname dslam07
+	!
+    }
+    canvas c0
+    iconcoords {1057.0 358.0}
+    labelcoords {1047.0 342.0}
+    interface-peer {e0 n7}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e1 n76}
+    interface-peer {e2 n77}
+    interface-peer {e3 n78}
+    interface-peer {e4 n79}
+    interface-peer {e5 n80}
+    interface-peer {e6 n81}
+    interface-peer {e7 n82}
+    interface-peer {e8 n83}
+}
+
+node n29 {
+    type router
+    model PC
+    network-config {
+	hostname PC19
+	!
+	interface eth0
+	 ip address 198.18.0.22/24
+	!
+    }
+    canvas c0
+    iconcoords {292.0 644.5}
+    labelcoords {261.0 675.5}
+    interface-peer {eth0 n52}
+}
+
+node n30 {
+    type router
+    model PC
+    network-config {
+	hostname PC18
+	!
+	interface eth0
+	 ip address 198.18.0.21/24
+	!
+    }
+    canvas c0
+    iconcoords {285.5 618.0}
+    labelcoords {256.5 646.0}
+    interface-peer {eth0 n52}
+}
+
+node n31 {
+    type lanswitch
+    network-config {
+	hostname dslam08
+	!
+    }
+    canvas c0
+    iconcoords {913.5 299.0}
+    labelcoords {867.5 301.0}
+    interface-peer {e0 n7}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e1 n84}
+    interface-peer {e2 n85}
+    interface-peer {e3 n86}
+    interface-peer {e4 n87}
+    interface-peer {e5 n88}
+    interface-peer {e6 n89}
+    interface-peer {e7 n90}
+    interface-peer {e8 n91}
+}
+
+node n32 {
+    type router
+    model PC
+    network-config {
+	hostname PC17
+	!
+	interface eth0
+	 ip address 198.18.0.20/24
+	!
+    }
+    canvas c0
+    iconcoords {279.0 584.5}
+    labelcoords {254.0 615.5}
+    interface-peer {eth0 n52}
+}
+
+node n33 {
+    type router
+    model PC
+    network-config {
+	hostname PC16
+	!
+	interface eth0
+	 ip address 198.18.12.27/24
+	!
+    }
+    canvas c0
+    iconcoords {190.0 605.0}
+    labelcoords {208.0 639.0}
+    interface-peer {eth0 n22}
+}
+
+node n34 {
+    type lanswitch
+    network-config {
+	hostname dslam06
+	!
+    }
+    canvas c0
+    iconcoords {1041.5 429.0}
+    labelcoords {1087.5 428.0}
+    interface-peer {e0 n7}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e1 n68}
+    interface-peer {e2 n69}
+    interface-peer {e3 n70}
+    interface-peer {e4 n71}
+    interface-peer {e5 n72}
+    interface-peer {e6 n73}
+    interface-peer {e7 n74}
+    interface-peer {e8 n75}
+}
+
+node n35 {
+    type lanswitch
+    network-config {
+	hostname dslam05
+	!
+    }
+    canvas c0
+    iconcoords {993.5 567.0}
+    labelcoords {949.5 570.0}
+    interface-peer {e0 n7}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e1 n60}
+    interface-peer {e2 n61}
+    interface-peer {e3 n62}
+    interface-peer {e4 n63}
+    interface-peer {e5 n64}
+    interface-peer {e6 n65}
+    interface-peer {e7 n66}
+    interface-peer {e8 n67}
+}
+
+node n36 {
+    type lanswitch
+    network-config {
+	hostname dslam04
+	!
+    }
+    canvas c0
+    iconcoords {820.5 527.0}
+    labelcoords {865.5 533.0}
+    interface-peer {e0 n7}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e1 n47}
+    interface-peer {e2 n53}
+    interface-peer {e3 n54}
+    interface-peer {e4 n55}
+    interface-peer {e5 n56}
+    interface-peer {e6 n57}
+    interface-peer {e7 n58}
+    interface-peer {e8 n59}
+}
+
+node n37 {
+    type router
+    model PC
+    network-config {
+	hostname PC15
+	!
+	interface eth0
+	 ip address 198.18.12.26/24
+	!
+    }
+    canvas c0
+    iconcoords {163.0 616.5}
+    labelcoords {166.0 650.5}
+    interface-peer {eth0 n22}
+}
+
+node n38 {
+    type router
+    model PC
+    network-config {
+	hostname PC14
+	!
+	interface eth0
+	 ip address 198.18.12.25/24
+	!
+    }
+    canvas c0
+    iconcoords {131.5 617.5}
+    labelcoords {95.5 644.5}
+    interface-peer {eth0 n22}
+}
+
+node n39 {
+    type router
+    model PC
+    network-config {
+	hostname PC13
+	!
+	interface eth0
+	 ip address 198.18.12.21/24
+	!
+    }
+    canvas c0
+    iconcoords {106.0 602.0}
+    labelcoords {60.0 613.0}
+    interface-peer {eth0 n22}
+}
+
+node n40 {
+    type router
+    model PC
+    network-config {
+	hostname PC12
+	!
+	interface eth0
+	 ip address 198.18.12.20/24
+	!
+    }
+    canvas c0
+    iconcoords {87.0 581.0}
+    labelcoords {42.0 589.0}
+    interface-peer {eth0 n22}
+}
+
+node n41 {
+    type router
+    model PC
+    network-config {
+	hostname PC20
+	!
+	interface eth0
+	 ip address 198.18.0.23/24
+	!
+    }
+    canvas c0
+    iconcoords {323.0 657.5}
+    labelcoords {301.0 691.5}
+    interface-peer {eth0 n52}
+}
+
+node n42 {
+    type router
+    model PC
+    network-config {
+	hostname PC21
+	!
+	interface eth0
+	 ip address 198.18.0.24/24
+	!
+    }
+    canvas c0
+    iconcoords {355.0 664.5}
+    labelcoords {350.0 699.5}
+    interface-peer {eth0 n52}
+}
+
+node n43 {
+    type lanswitch
+    network-config {
+	hostname dslam10
+	!
+    }
+    canvas c0
+    iconcoords {393.0 150.33333333333331}
+    labelcoords {434.0 166.33333333333331}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e0 n1}
+    interface-peer {e1 n95}
+    interface-peer {e2 n96}
+    interface-peer {e3 n97}
+    interface-peer {e4 n98}
+}
+
+node n44 {
+    type router
+    model PC
+    network-config {
+	hostname PC22
+	!
+	interface eth0
+	 ip address 198.18.0.25/24
+	!
+    }
+    canvas c0
+    iconcoords {389.0 669.0}
+    labelcoords {404.0 702.0}
+    interface-peer {eth0 n52}
+}
+
+node n45 {
+    type router
+    model PC
+    network-config {
+	hostname PC23
+	!
+	interface eth0
+	 ip address 198.18.0.26/24
+	!
+    }
+    canvas c0
+    iconcoords {421.0 663.0}
+    labelcoords {452.0 691.0}
+    interface-peer {eth0 n52}
+}
+
+node n46 {
+    type router
+    model PC
+    network-config {
+	hostname PC24
+	!
+	interface eth0
+	 ip address 198.18.0.27/24
+	!
+    }
+    canvas c0
+    iconcoords {460.0 648.0}
+    labelcoords {483.0 679.0}
+    interface-peer {eth0 n52}
+}
+
+node n48 {
+    type lanswitch
+    network-config {
+	hostname dslam09
+	!
+    }
+    canvas c0
+    iconcoords {512.1666666666667 178.83333333333331}
+    labelcoords {527.1666666666666 204.83333333333331}
+    interface-peer {e0 n1}
+    interface-peer {e2 n16}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e1 n92}
+    interface-peer {e3 n93}
+    interface-peer {e4 n94}
+}
+
+node n49 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER04
+	!
+	interface eth0
+	 ip address 198.18.14.3/24
+	!
+    }
+    canvas c0
+    iconcoords {754.0 496.5}
+    labelcoords {750.0 528.5}
+    services {DefaultRoute SSH}
+    interface-peer {eth0 n51}
+}
+
+node n50 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER03
+	!
+	interface eth0
+	 ip address 198.18.14.2/24
+	!
+    }
+    canvas c0
+    iconcoords {707.0 542.5}
+    labelcoords {701.0 574.5}
+    services {DefaultRoute SSH}
+    interface-peer {eth0 n51}
+}
+
+node n51 {
+    type lanswitch
+    network-config {
+	hostname lanswitch2
+	!
+    }
+    iconcoords {707.0 459.0}
+    labelcoords {658.0 464.0}
+    canvas c0
+    interface-peer {e1 n10}
+    interface-peer {e0 n6}
+    interface-peer {e2 n50}
+    interface-peer {e3 n49}
+}
+
+node n52 {
+    type lanswitch
+    network-config {
+	hostname dslam03
+	!
+    }
+    canvas c0
+    iconcoords {341.0 557.0}
+    labelcoords {387.0 563.0}
+    interface-peer {e0 n5}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e1 n32}
+    interface-peer {e2 n30}
+    interface-peer {e3 n29}
+    interface-peer {e4 n41}
+    interface-peer {e5 n42}
+    interface-peer {e6 n44}
+    interface-peer {e7 n45}
+    interface-peer {e8 n46}
+}
+
+node n47 {
+    type router
+    model PC
+    network-config {
+	hostname PC25
+	!
+	interface eth0
+	 ip address 198.18.15.20/24
+	!
+    }
+    canvas c0
+    iconcoords {731.0 592.0}
+    labelcoords {706.0 623.0}
+    interface-peer {eth0 n36}
+}
+
+node n53 {
+    type router
+    model PC
+    network-config {
+	hostname PC26
+	!
+	interface eth0
+	 ip address 198.18.15.21/24
+	!
+    }
+    canvas c0
+    iconcoords {754.0 610.0}
+    labelcoords {735.0 642.0}
+    interface-peer {eth0 n36}
+}
+
+node n54 {
+    type router
+    model PC
+    network-config {
+	hostname PC27
+	!
+	interface eth0
+	 ip address 198.18.15.22/24
+	!
+    }
+    canvas c0
+    iconcoords {780.0 626.0}
+    labelcoords {761.0 659.0}
+    interface-peer {eth0 n36}
+}
+
+node n55 {
+    type router
+    model PC
+    network-config {
+	hostname PC8
+	!
+	interface eth0
+	 ip address 198.18.15.23/24
+	!
+    }
+    canvas c0
+    iconcoords {810.0 637.0}
+    labelcoords {795.0 669.0}
+    interface-peer {eth0 n36}
+}
+
+node n56 {
+    type router
+    model PC
+    network-config {
+	hostname PC29
+	!
+	interface eth0
+	 ip address 198.18.15.24/24
+	!
+    }
+    canvas c0
+    iconcoords {836.0 632.0}
+    labelcoords {854.0 665.0}
+    interface-peer {eth0 n36}
+}
+
+node n57 {
+    type router
+    model PC
+    network-config {
+	hostname PC30
+	!
+	interface eth0
+	 ip address 198.18.15.25/24
+	!
+    }
+    canvas c0
+    iconcoords {861.0 623.0}
+    labelcoords {891.0 652.0}
+    interface-peer {eth0 n36}
+}
+
+node n58 {
+    type router
+    model PC
+    network-config {
+	hostname PC31
+	!
+	interface eth0
+	 ip address 198.18.15.26/24
+	!
+    }
+    canvas c0
+    iconcoords {882.0 604.0}
+    labelcoords {913.0 632.0}
+    interface-peer {eth0 n36}
+}
+
+node n59 {
+    type router
+    model PC
+    network-config {
+	hostname PC32
+	!
+	interface eth0
+	 ip address 198.18.15.27/24
+	!
+    }
+    canvas c0
+    iconcoords {901.0 584.0}
+    labelcoords {935.0 611.0}
+    interface-peer {eth0 n36}
+}
+
+node n60 {
+    type router
+    model PC
+    network-config {
+	hostname PC33
+	!
+	interface eth0
+	 ip address 198.18.16.20/24
+	!
+    }
+    canvas c0
+    iconcoords {913.0 670.0}
+    labelcoords {886.0 701.0}
+    interface-peer {eth0 n35}
+}
+
+node n61 {
+    type router
+    model PC
+    network-config {
+	hostname PC34
+	!
+	interface eth0
+	 ip address 198.18.16.21/24
+	!
+    }
+    canvas c0
+    iconcoords {948.0 673.0}
+    labelcoords {941.0 705.0}
+    interface-peer {eth0 n35}
+}
+
+node n62 {
+    type router
+    model PC
+    network-config {
+	hostname PC35
+	!
+	interface eth0
+	 ip address 198.18.16.22/24
+	!
+    }
+    canvas c0
+    iconcoords {991.0 672.0}
+    labelcoords {991.0 704.0}
+    interface-peer {eth0 n35}
+}
+
+node n63 {
+    type router
+    model PC
+    network-config {
+	hostname PC36
+	!
+	interface eth0
+	 ip address 198.18.16.23/24
+	!
+    }
+    canvas c0
+    iconcoords {1034.0 664.0}
+    labelcoords {1034.0 696.0}
+    interface-peer {eth0 n35}
+}
+
+node n64 {
+    type router
+    model PC
+    network-config {
+	hostname PC37
+	!
+	interface eth0
+	 ip address 198.18.16.24/24
+	!
+    }
+    canvas c0
+    iconcoords {1070.0 659.0}
+    labelcoords {1082.0 691.0}
+    interface-peer {eth0 n35}
+}
+
+node n65 {
+    type router
+    model PC
+    network-config {
+	hostname PC38
+	!
+	interface eth0
+	 ip address 198.18.16.25/24
+	!
+    }
+    canvas c0
+    iconcoords {1109.0 648.0}
+    labelcoords {1115.0 680.0}
+    interface-peer {eth0 n35}
+}
+
+node n66 {
+    type router
+    model PC
+    network-config {
+	hostname PC39
+	!
+	interface eth0
+	 ip address 198.18.16.26/24
+	!
+    }
+    canvas c0
+    iconcoords {1133.0 626.0}
+    labelcoords {1157.0 658.0}
+    interface-peer {eth0 n35}
+}
+
+node n67 {
+    type router
+    model PC
+    network-config {
+	hostname PC40
+	!
+	interface eth0
+	 ip address 198.18.16.27/24
+	!
+    }
+    canvas c0
+    iconcoords {1153.0 606.0}
+    labelcoords {1178.0 638.0}
+    interface-peer {eth0 n35}
+}
+
+node n68 {
+    type router
+    model PC
+    network-config {
+	hostname PC41
+	!
+	interface eth0
+	 ip address 198.18.17.20/24
+	!
+    }
+    canvas c0
+    iconcoords {960.0 468.0}
+    labelcoords {947.0 502.0}
+    interface-peer {eth0 n34}
+}
+
+node n69 {
+    type router
+    model PC
+    network-config {
+	hostname PC42
+	!
+	interface eth0
+	 ip address 198.18.17.21/24
+	!
+    }
+    canvas c0
+    iconcoords {990.0 481.0}
+    labelcoords {980.0 514.0}
+    interface-peer {eth0 n34}
+}
+
+node n70 {
+    type router
+    model PC
+    network-config {
+	hostname PC43
+	!
+	interface eth0
+	 ip address 198.18.17.22/24
+	!
+    }
+    canvas c0
+    iconcoords {1021.0 493.0}
+    labelcoords {1010.0 526.0}
+    interface-peer {eth0 n34}
+}
+
+node n71 {
+    type router
+    model PC
+    network-config {
+	hostname PC44
+	!
+	interface eth0
+	 ip address 198.18.17.23/24
+	!
+    }
+    canvas c0
+    iconcoords {1055.0 507.0}
+    labelcoords {1044.0 539.0}
+    interface-peer {eth0 n34}
+}
+
+node n72 {
+    type router
+    model PC
+    network-config {
+	hostname PC45
+	!
+	interface eth0
+	 ip address 198.18.17.24/24
+	!
+    }
+    canvas c0
+    iconcoords {1093.0 515.0}
+    labelcoords {1090.0 551.0}
+    interface-peer {eth0 n34}
+}
+
+node n73 {
+    type router
+    model PC
+    network-config {
+	hostname PC46
+	!
+	interface eth0
+	 ip address 198.18.17.25/24
+	!
+    }
+    canvas c0
+    iconcoords {1131.0 515.0}
+    labelcoords {1139.0 550.0}
+    interface-peer {eth0 n34}
+}
+
+node n74 {
+    type router
+    model PC
+    network-config {
+	hostname PC47
+	!
+	interface eth0
+	 ip address 198.18.17.26/24
+	!
+    }
+    canvas c0
+    iconcoords {1168.0 504.0}
+    labelcoords {1172.0 537.0}
+    interface-peer {eth0 n34}
+}
+
+node n75 {
+    type router
+    model PC
+    network-config {
+	hostname PC48
+	!
+	interface eth0
+	 ip address 198.18.17.27/24
+	!
+    }
+    canvas c0
+    iconcoords {1201.0 492.0}
+    labelcoords {1216.0 525.0}
+    interface-peer {eth0 n34}
+}
+
+node n76 {
+    type router
+    model PC
+    network-config {
+	hostname PC49
+	!
+	interface eth0
+	 ip address 198.18.18.20/24
+	!
+    }
+    canvas c0
+    iconcoords {1200.0 450.0}
+    labelcoords {1242.0 469.0}
+    interface-peer {eth0 n28}
+}
+
+node n77 {
+    type router
+    model PC
+    network-config {
+	hostname PC50
+	!
+	interface eth0
+	 ip address 198.18.18.21/24
+	!
+    }
+    canvas c0
+    iconcoords {1217.0 419.0}
+    labelcoords {1252.0 445.0}
+    interface-peer {eth0 n28}
+}
+
+node n78 {
+    type router
+    model PC
+    network-config {
+	hostname PC51
+	!
+	interface eth0
+	 ip address 198.18.18.22/24
+	!
+    }
+    canvas c0
+    iconcoords {1223.0 387.0}
+    labelcoords {1256.0 414.0}
+    interface-peer {eth0 n28}
+}
+
+node n79 {
+    type router
+    model PC
+    network-config {
+	hostname PC52
+	!
+	interface eth0
+	 ip address 198.18.18.23/24
+	!
+    }
+    canvas c0
+    iconcoords {1225.0 365.0}
+    labelcoords {1253.0 354.0}
+    interface-peer {eth0 n28}
+}
+
+node n80 {
+    type router
+    model PC
+    network-config {
+	hostname PC53
+	!
+	interface eth0
+	 ip address 198.18.18.24/24
+	!
+    }
+    canvas c0
+    iconcoords {1214.0 332.0}
+    labelcoords {1247.0 319.0}
+    interface-peer {eth0 n28}
+}
+
+node n81 {
+    type router
+    model PC
+    network-config {
+	hostname PC54
+	!
+	interface eth0
+	 ip address 198.18.18.25/24
+	!
+    }
+    canvas c0
+    iconcoords {1200.0 306.0}
+    labelcoords {1235.0 297.0}
+    interface-peer {eth0 n28}
+}
+
+node n82 {
+    type router
+    model PC
+    network-config {
+	hostname PC55
+	!
+	interface eth0
+	 ip address 198.18.18.26/24
+	!
+    }
+    canvas c0
+    iconcoords {1182.0 284.0}
+    labelcoords {1212.0 274.0}
+    interface-peer {eth0 n28}
+}
+
+node n83 {
+    type router
+    model PC
+    network-config {
+	hostname PC56
+	!
+	interface eth0
+	 ip address 198.18.18.27/24
+	!
+    }
+    canvas c0
+    iconcoords {1164.0 258.0}
+    labelcoords {1212.0 256.0}
+    interface-peer {eth0 n28}
+}
+
+node n84 {
+    type router
+    model PC
+    network-config {
+	hostname PC57
+	!
+	interface eth0
+	 ip address 198.18.19.20/24
+	!
+    }
+    canvas c0
+    iconcoords {1066.0 283.0}
+    labelcoords {1099.0 274.0}
+    interface-peer {eth0 n31}
+}
+
+node n85 {
+    type router
+    model PC
+    network-config {
+	hostname PC58
+	!
+	interface eth0
+	 ip address 198.18.19.21/24
+	!
+    }
+    canvas c0
+    iconcoords {1049.0 259.0}
+    labelcoords {1087.0 251.0}
+    interface-peer {eth0 n31}
+}
+
+node n86 {
+    type router
+    model PC
+    network-config {
+	hostname PC59
+	!
+	interface eth0
+	 ip address 198.18.19.22/24
+	!
+    }
+    canvas c0
+    iconcoords {1019.0 238.0}
+    labelcoords {1055.0 228.0}
+    interface-peer {eth0 n31}
+}
+
+node n87 {
+    type router
+    model PC
+    network-config {
+	hostname PC60
+	!
+	interface eth0
+	 ip address 198.18.19.23/24
+	!
+    }
+    canvas c0
+    iconcoords {986.0 221.0}
+    labelcoords {1019.0 213.0}
+    interface-peer {eth0 n31}
+}
+
+node n88 {
+    type router
+    model PC
+    network-config {
+	hostname PC61
+	!
+	interface eth0
+	 ip address 198.18.19.24/24
+	!
+    }
+    canvas c0
+    iconcoords {952.0 209.0}
+    labelcoords {989.0 199.0}
+    interface-peer {eth0 n31}
+}
+
+node n89 {
+    type router
+    model PC
+    network-config {
+	hostname PC62
+	!
+	interface eth0
+	 ip address 198.18.19.25/24
+	!
+    }
+    canvas c0
+    iconcoords {914.0 211.0}
+    labelcoords {919.0 192.0}
+    interface-peer {eth0 n31}
+}
+
+node n90 {
+    type router
+    model PC
+    network-config {
+	hostname PC63
+	!
+	interface eth0
+	 ip address 198.18.19.26/24
+	!
+    }
+    canvas c0
+    iconcoords {876.0 206.0}
+    labelcoords {868.0 189.0}
+    interface-peer {eth0 n31}
+}
+
+node n91 {
+    type router
+    model PC
+    network-config {
+	hostname PC64
+	!
+	interface eth0
+	 ip address 198.18.19.27/24
+	!
+    }
+    canvas c0
+    iconcoords {836.0 219.0}
+    labelcoords {815.0 199.0}
+    interface-peer {eth0 n31}
+}
+
+node n92 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER06
+	!
+	interface eth0
+	 ip address 198.18.20.2/24
+	!
+    }
+    canvas c0
+    iconcoords {591.0 151.0}
+    labelcoords {644.0 155.0}
+    interface-peer {eth0 n48}
+    services {DefaultRoute SSH}
+}
+
+node n93 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER07
+	!
+	interface eth0
+	 ip address 198.18.20.3/24
+	!
+    }
+    canvas c0
+    iconcoords {568.0 127.0}
+    labelcoords {621.0 130.0}
+    interface-peer {eth0 n48}
+    services {DefaultRoute SSH}
+}
+
+node n94 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER08
+	!
+	interface eth0
+	 ip address 198.18.20.4/24
+	!
+    }
+    canvas c0
+    iconcoords {540.0 105.0}
+    labelcoords {593.0 110.0}
+    interface-peer {eth0 n48}
+    services {DefaultRoute SSH}
+}
+
+node n95 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER09
+	!
+	interface eth0
+	 ip address 198.18.1.2/24
+	!
+    }
+    canvas c0
+    iconcoords {518.0 83.0}
+    labelcoords {571.0 88.0}
+    interface-peer {eth0 n43}
+    services {DefaultRoute SSH}
+}
+
+node n96 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER10
+	!
+	interface eth0
+	 ip address 198.18.1.3/24
+	!
+    }
+    canvas c0
+    iconcoords {481.0 67.0}
+    labelcoords {533.0 65.0}
+    interface-peer {eth0 n43}
+    services {DefaultRoute SSH}
+}
+
+node n97 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER11
+	!
+	interface eth0
+	 ip address 198.18.1.4/24
+	!
+    }
+    canvas c0
+    iconcoords {441.0 56.0}
+    labelcoords {491.0 49.0}
+    interface-peer {eth0 n43}
+    services {DefaultRoute SSH}
+}
+
+node n98 {
+    type router
+    model Server
+    network-config {
+	hostname SERVER12
+	!
+	interface eth0
+	 ip address 198.18.1.5/24
+	!
+    }
+    canvas c0
+    iconcoords {399.0 40.0}
+    labelcoords {448.0 36.0}
+    interface-peer {eth0 n43}
+    services {DefaultRoute SSH}
+}
+
+node n99 {
+    type lanswitch
+    network-config {
+	hostname dslam11
+	!
+    }
+    canvas c0
+    iconcoords {231.0 128.0}
+    labelcoords {281.0 133.0}
+    interface-peer {e0 n1}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e1 n101}
+    interface-peer {e2 n102}
+    interface-peer {e3 n103}
+    interface-peer {e4 n104}
+    interface-peer {e5 n105}
+    interface-peer {e6 n106}
+    interface-peer {e7 n107}
+    interface-peer {e8 n108}
+}
+
+node n100 {
+    type lanswitch
+    network-config {
+	hostname dslam12
+	!
+    }
+    canvas c0
+    iconcoords {261.0 247.0}
+    labelcoords {306.0 260.0}
+    interface-peer {e0 n1}
+    custom-image /usr/share/core/icons/normal/ipdslrouter32.gif
+    interface-peer {e1 n109}
+    interface-peer {e2 n110}
+    interface-peer {e3 n111}
+    interface-peer {e4 n112}
+    interface-peer {e5 n113}
+    interface-peer {e6 n114}
+    interface-peer {e7 n115}
+    interface-peer {e8 n116}
+}
+
+node n101 {
+    type router
+    model PC
+    network-config {
+	hostname PC65
+	!
+	interface eth0
+	 ip address 198.18.21.20/24
+	!
+    }
+    canvas c0
+    iconcoords {275.0 65.0}
+    labelcoords {308.0 91.0}
+    interface-peer {eth0 n99}
+}
+
+node n102 {
+    type router
+    model PC
+    network-config {
+	hostname PC66
+	!
+	interface eth0
+	 ip address 198.18.21.21/24
+	!
+    }
+    canvas c0
+    iconcoords {250.0 44.0}
+    labelcoords {276.0 30.0}
+    interface-peer {eth0 n99}
+}
+
+node n103 {
+    type router
+    model PC
+    network-config {
+	hostname PC67
+	!
+	interface eth0
+	 ip address 198.18.21.22/24
+	!
+    }
+    canvas c0
+    iconcoords {222.0 37.0}
+    labelcoords {194.0 28.0}
+    interface-peer {eth0 n99}
+}
+
+node n104 {
+    type router
+    model PC
+    network-config {
+	hostname PC68
+	!
+	interface eth0
+	 ip address 198.18.21.23/24
+	!
+    }
+    canvas c0
+    iconcoords {190.0 47.0}
+    labelcoords {159.0 40.0}
+    interface-peer {eth0 n99}
+}
+
+node n105 {
+    type router
+    model PC
+    network-config {
+	hostname PC69
+	!
+	interface eth0
+	 ip address 198.18.21.24/24
+	!
+    }
+    canvas c0
+    iconcoords {155.0 60.0}
+    labelcoords {125.0 51.0}
+    interface-peer {eth0 n99}
+}
+
+node n106 {
+    type router
+    model PC
+    network-config {
+	hostname PC70
+	!
+	interface eth0
+	 ip address 198.18.21.25/24
+	!
+    }
+    canvas c0
+    iconcoords {126.0 75.0}
+    labelcoords {97.0 69.0}
+    interface-peer {eth0 n99}
+}
+
+node n107 {
+    type router
+    model PC
+    network-config {
+	hostname PC71
+	!
+	interface eth0
+	 ip address 198.18.21.26/24
+	!
+    }
+    canvas c0
+    iconcoords {98.0 94.0}
+    labelcoords {68.0 91.0}
+    interface-peer {eth0 n99}
+}
+
+node n108 {
+    type router
+    model PC
+    network-config {
+	hostname PC72
+	!
+	interface eth0
+	 ip address 198.18.21.27/24
+	!
+    }
+    canvas c0
+    iconcoords {74.0 113.0}
+    labelcoords {41.0 112.0}
+    interface-peer {eth0 n99}
+}
+
+node n109 {
+    type router
+    model PC
+    network-config {
+	hostname PC73
+	!
+	interface eth0
+	 ip address 198.18.22.20/24
+	!
+    }
+    canvas c0
+    iconcoords {93.0 258.0}
+    labelcoords {51.0 279.0}
+    interface-peer {eth0 n100}
+}
+
+node n110 {
+    type router
+    model PC
+    network-config {
+	hostname PC74
+	!
+	interface eth0
+	 ip address 198.18.22.21/24
+	!
+    }
+    canvas c0
+    iconcoords {122.0 277.0}
+    labelcoords {80.0 296.0}
+    interface-peer {eth0 n100}
+}
+
+node n111 {
+    type router
+    model PC
+    network-config {
+	hostname PC75
+	!
+	interface eth0
+	 ip address 198.18.22.22/24
+	!
+    }
+    canvas c0
+    iconcoords {150.0 292.0}
+    labelcoords {108.0 312.0}
+    interface-peer {eth0 n100}
+}
+
+node n112 {
+    type router
+    model PC
+    network-config {
+	hostname PC76
+	!
+	interface eth0
+	 ip address 198.18.22.23/24
+	!
+    }
+    canvas c0
+    iconcoords {183.0 302.0}
+    labelcoords {145.0 327.0}
+    interface-peer {eth0 n100}
+}
+
+node n113 {
+    type router
+    model PC
+    network-config {
+	hostname PC77
+	!
+	interface eth0
+	 ip address 198.18.22.24/24
+	!
+    }
+    canvas c0
+    iconcoords {224.0 315.0}
+    labelcoords {186.0 340.0}
+    interface-peer {eth0 n100}
+}
+
+node n114 {
+    type router
+    model PC
+    network-config {
+	hostname PC78
+	!
+	interface eth0
+	 ip address 198.18.22.25/24
+	!
+    }
+    canvas c0
+    iconcoords {266.0 322.0}
+    labelcoords {236.0 350.0}
+    interface-peer {eth0 n100}
+}
+
+node n115 {
+    type router
+    model PC
+    network-config {
+	hostname PC79
+	!
+	interface eth0
+	 ip address 198.18.22.26/24
+	!
+    }
+    canvas c0
+    iconcoords {309.0 327.0}
+    labelcoords {288.0 359.0}
+    interface-peer {eth0 n100}
+}
+
+node n116 {
+    type router
+    model PC
+    network-config {
+	hostname PC80
+	!
+	interface eth0
+	 ip address 198.18.22.27/24
+	!
+    }
+    canvas c0
+    iconcoords {351.0 327.0}
+    labelcoords {342.0 361.0}
+    interface-peer {eth0 n100}
+}
+
+link l11 {
+    delay 110
+    nodes {n18 n9}
+    bandwidth 100000000
+}
+
+link l12 {
+    delay 160
+    nodes {n19 n9}
+    bandwidth 10000000
+}
+
+link l15 {
+    nodes {n15 n17}
+    bandwidth 0
+}
+
+link l16 {
+    nodes {n14 n17}
+    bandwidth 0
+}
+
+link l17 {
+    nodes {n13 n17}
+    bandwidth 0
+}
+
+link l18 {
+    nodes {n12 n17}
+    bandwidth 0
+}
+
+link l19 {
+    nodes {n20 n17}
+    bandwidth 0
+}
+
+link l20 {
+    nodes {n21 n17}
+    bandwidth 0
+}
+
+link l27 {
+    delay 110
+    nodes {n10 n51}
+    bandwidth 100000000
+}
+
+link l53 {
+    delay 10000
+    nodes {n16 n48}
+    bandwidth 12000000
+}
+
+link l1 {
+    delay 500
+    nodes {n5 n6}
+    bandwidth 1000000000
+}
+
+link l2 {
+    delay 500
+    nodes {n4 n2}
+    bandwidth 1000000000
+}
+
+link l3 {
+    delay 100
+    nodes {n6 n7}
+    bandwidth 1000000000
+}
+
+link l4 {
+    delay 100
+    nodes {n8 n7}
+    bandwidth 1000000000
+}
+
+link l5 {
+    delay 2500
+    nodes {n3 n8}
+    bandwidth 100000000
+}
+
+link l6 {
+    delay 100
+    nodes {n3 n2}
+    bandwidth 1000000000
+}
+
+link l7 {
+    delay 100
+    nodes {n3 n1}
+    bandwidth 1000000000
+}
+
+link l8 {
+    delay 100
+    nodes {n2 n1}
+    bandwidth 1000000000
+}
+
+link l9 {
+    delay 100
+    nodes {n4 n5}
+    bandwidth 1000000000
+}
+
+link l14 {
+    delay 110
+    nodes {n9 n5}
+    bandwidth 100000000
+}
+
+link l26 {
+    delay 110
+    nodes {n6 n51}
+    bandwidth 100000000
+}
+
+link l10 {
+    delay 2000
+    nodes {n17 n5}
+    bandwidth 155000000
+}
+
+link l13 {
+    delay 2000
+    nodes {n22 n5}
+    bandwidth 155000000
+}
+
+link l23 {
+    nodes {n25 n22}
+    bandwidth 0
+}
+
+link l24 {
+    nodes {n26 n22}
+    bandwidth 0
+}
+
+link l25 {
+    delay 2000
+    nodes {n36 n7}
+    bandwidth 155000000
+}
+
+link l29 {
+    delay 2000
+    nodes {n35 n7}
+    bandwidth 155000000
+}
+
+link l30 {
+    delay 2000
+    nodes {n31 n7}
+    bandwidth 155000000
+}
+
+link l35 {
+    delay 2000
+    nodes {n28 n7}
+    bandwidth 155000000
+}
+
+link l38 {
+    delay 2000
+    nodes {n34 n7}
+    bandwidth 155000000
+}
+
+link l39 {
+    nodes {n27 n22}
+    bandwidth 0
+}
+
+link l48 {
+    delay 2000
+    nodes {n48 n1}
+    bandwidth 155000000
+}
+
+link l21 {
+    nodes {n23 n17}
+    bandwidth 0
+}
+
+link l22 {
+    nodes {n24 n17}
+    bandwidth 0
+}
+
+link l31 {
+    nodes {n40 n22}
+    bandwidth 0
+}
+
+link l32 {
+    nodes {n39 n22}
+    bandwidth 0
+}
+
+link l33 {
+    nodes {n38 n22}
+    bandwidth 0
+}
+
+link l34 {
+    nodes {n37 n22}
+    bandwidth 0
+}
+
+link l43 {
+    nodes {n33 n22}
+    bandwidth 0
+}
+
+link l36 {
+    delay 2000
+    nodes {n52 n5}
+    bandwidth 155000000
+}
+
+link l37 {
+    nodes {n32 n52}
+    bandwidth 0
+}
+
+link l40 {
+    nodes {n30 n52}
+    bandwidth 0
+}
+
+link l41 {
+    nodes {n29 n52}
+    bandwidth 0
+}
+
+link l42 {
+    nodes {n41 n52}
+    bandwidth 0
+}
+
+link l46 {
+    nodes {n42 n52}
+    bandwidth 0
+}
+
+link l49 {
+    nodes {n44 n52}
+    bandwidth 0
+}
+
+link l50 {
+    nodes {n45 n52}
+    bandwidth 0
+}
+
+link l51 {
+    nodes {n46 n52}
+    bandwidth 0
+}
+
+link l28 {
+    delay 160
+    nodes {n11 n9}
+    bandwidth 10000000
+}
+
+link l44 {
+    delay 160
+    nodes {n51 n50}
+    bandwidth 10000000
+}
+
+link l45 {
+    delay 160
+    nodes {n51 n49}
+    bandwidth 10000000
+}
+
+link l47 {
+    nodes {n47 n36}
+    bandwidth 0
+}
+
+link l52 {
+    nodes {n53 n36}
+    bandwidth 0
+}
+
+link l54 {
+    nodes {n54 n36}
+    bandwidth 0
+}
+
+link l55 {
+    nodes {n55 n36}
+    bandwidth 0
+}
+
+link l56 {
+    nodes {n56 n36}
+    bandwidth 0
+}
+
+link l57 {
+    nodes {n57 n36}
+    bandwidth 0
+}
+
+link l58 {
+    nodes {n58 n36}
+    bandwidth 0
+}
+
+link l59 {
+    nodes {n59 n36}
+    bandwidth 0
+}
+
+link l60 {
+    nodes {n60 n35}
+    bandwidth 0
+}
+
+link l61 {
+    nodes {n61 n35}
+    bandwidth 0
+}
+
+link l62 {
+    nodes {n62 n35}
+    bandwidth 0
+}
+
+link l63 {
+    nodes {n63 n35}
+    bandwidth 0
+}
+
+link l64 {
+    nodes {n64 n35}
+    bandwidth 0
+}
+
+link l65 {
+    nodes {n65 n35}
+    bandwidth 0
+}
+
+link l66 {
+    nodes {n66 n35}
+    bandwidth 0
+}
+
+link l67 {
+    nodes {n67 n35}
+    bandwidth 0
+}
+
+link l68 {
+    nodes {n68 n34}
+    bandwidth 0
+}
+
+link l69 {
+    nodes {n69 n34}
+    bandwidth 0
+}
+
+link l70 {
+    nodes {n70 n34}
+    bandwidth 0
+}
+
+link l71 {
+    nodes {n71 n34}
+    bandwidth 0
+}
+
+link l72 {
+    nodes {n72 n34}
+    bandwidth 0
+}
+
+link l73 {
+    nodes {n73 n34}
+    bandwidth 0
+}
+
+link l74 {
+    nodes {n74 n34}
+    bandwidth 0
+}
+
+link l75 {
+    nodes {n75 n34}
+    bandwidth 0
+}
+
+link l76 {
+    nodes {n76 n28}
+    bandwidth 0
+}
+
+link l77 {
+    nodes {n77 n28}
+    bandwidth 0
+}
+
+link l78 {
+    nodes {n78 n28}
+    bandwidth 0
+}
+
+link l79 {
+    nodes {n79 n28}
+    bandwidth 0
+}
+
+link l80 {
+    nodes {n80 n28}
+    bandwidth 0
+}
+
+link l81 {
+    nodes {n81 n28}
+    bandwidth 0
+}
+
+link l82 {
+    nodes {n82 n28}
+    bandwidth 0
+}
+
+link l83 {
+    nodes {n83 n28}
+    bandwidth 0
+}
+
+link l84 {
+    nodes {n84 n31}
+    bandwidth 0
+}
+
+link l85 {
+    nodes {n85 n31}
+    bandwidth 0
+}
+
+link l86 {
+    nodes {n86 n31}
+    bandwidth 0
+}
+
+link l87 {
+    nodes {n87 n31}
+    bandwidth 0
+}
+
+link l88 {
+    nodes {n88 n31}
+    bandwidth 0
+}
+
+link l89 {
+    nodes {n89 n31}
+    bandwidth 0
+}
+
+link l90 {
+    nodes {n90 n31}
+    bandwidth 0
+}
+
+link l91 {
+    nodes {n91 n31}
+    bandwidth 0
+}
+
+link l92 {
+    delay 2000
+    nodes {n43 n1}
+    bandwidth 155000000
+}
+
+link l93 {
+    delay 10000
+    nodes {n48 n92}
+    bandwidth 12000000
+}
+
+link l94 {
+    delay 10000
+    nodes {n48 n93}
+    bandwidth 12000000
+}
+
+link l95 {
+    delay 10000
+    nodes {n48 n94}
+    bandwidth 12000000
+}
+
+link l96 {
+    delay 10000
+    nodes {n95 n43}
+    bandwidth 4000000
+}
+
+link l97 {
+    delay 10000
+    nodes {n96 n43}
+    bandwidth 4000000
+}
+
+link l98 {
+    delay 10000
+    nodes {n97 n43}
+    bandwidth 4000000
+}
+
+link l99 {
+    delay 10000
+    nodes {n98 n43}
+    bandwidth 4000000
+}
+
+link l100 {
+    nodes {n99 n1}
+    bandwidth 0
+}
+
+link l101 {
+    nodes {n100 n1}
+    bandwidth 0
+}
+
+link l102 {
+    nodes {n101 n99}
+    bandwidth 0
+}
+
+link l103 {
+    nodes {n102 n99}
+    bandwidth 0
+}
+
+link l104 {
+    nodes {n103 n99}
+    bandwidth 0
+}
+
+link l105 {
+    nodes {n104 n99}
+    bandwidth 0
+}
+
+link l106 {
+    nodes {n105 n99}
+    bandwidth 0
+}
+
+link l107 {
+    nodes {n106 n99}
+    bandwidth 0
+}
+
+link l108 {
+    nodes {n107 n99}
+    bandwidth 0
+}
+
+link l109 {
+    nodes {n108 n99}
+    bandwidth 0
+}
+
+link l110 {
+    nodes {n109 n100}
+    bandwidth 0
+}
+
+link l111 {
+    nodes {n110 n100}
+    bandwidth 0
+}
+
+link l112 {
+    nodes {n111 n100}
+    bandwidth 0
+}
+
+link l113 {
+    nodes {n112 n100}
+    bandwidth 0
+}
+
+link l114 {
+    nodes {n113 n100}
+    bandwidth 0
+}
+
+link l115 {
+    nodes {n114 n100}
+    bandwidth 0
+}
+
+link l116 {
+    nodes {n115 n100}
+    bandwidth 0
+}
+
+link l117 {
+    nodes {n116 n100}
+    bandwidth 0
+}
+
+annotation a0 {
+    iconcoords {29.0 24.0 626.0 345.0}
+    type oval
+    label {AS 64496}
+    labelcolor #CFCFAC
+    fontfamily {Arial}
+    fontsize {12}
+    color #FFFFCC
+    width 0
+    border black
+    canvas c0
+}
+
+annotation a1 {
+    iconcoords {633.0 142.0 1257.0 690.0}
+    type oval
+    label {AS 64501}
+    labelcolor #C0C0CF
+    fontfamily {Arial}
+    fontsize {12}
+    color #F0F0FF
+    width 0
+    border black
+    canvas c0
+}
+
+annotation a2 {
+    iconcoords {14 364 596 683}
+    type oval
+    label {AS 64500}
+    labelcolor #C0C0CF
+    fontfamily {Arial}
+    fontsize {12}
+    color #F0F0FF
+    width 0
+    border black
+    canvas c0
+}
+
+annotation a10 {
+    iconcoords {685.0 40.0}
+    type text
+    label {WAN BGP 3-AS Scenario}
+    labelcolor black
+    fontfamily {Arial}
+    fontsize {20}
+    canvas c0
+}
+
+annotation a3 {
+    type text
+    iconcoords {301.0 386.0}
+    label {}
+    canvas c0
+}
+
+annotation a4 {
+    type text
+    iconcoords {309.0 383.0}
+    label {}
+    canvas c0
+}
+
+canvas c0 {
+    name {Canvas0}
+    refpt {0 0 47.5791667 -122.132322 2.0}
+    scale {150.0}
+    size {1280 706}
+}
+
+option global {
+    interface_names no
+    ip_addresses no
+    ipv6_addresses yes
+    node_labels yes
+    link_labels yes
+    ipsec_configs no
+    exec_errors yes
+    show_api no
+    background_images no
+    annotations yes
+    grid no
+    traffic_start 0
+}
+
+option session {
+}

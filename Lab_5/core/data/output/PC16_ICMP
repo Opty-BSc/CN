@@ -1,0 +1,15 @@
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.002077048    198.18.12.27          198.18.0.27           ICMP     50     Echo (ping) request  id=0x2500, seq=256/1, ttl=64 (reply in 4)
+
+Frame 3: 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:2f (00:00:00:aa:00:2f), Dst: 00:00:00_aa:00:1f (00:00:00:aa:00:1f)
+Internet Protocol Version 4, Src: 198.18.12.27, Dst: 198.18.0.27
+Internet Control Message Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.006165057    198.18.0.27           198.18.12.27          ICMP     50     Echo (ping) reply    id=0x2500, seq=256/1, ttl=63 (request in 3)
+
+Frame 4: 50 bytes on wire (400 bits), 50 bytes captured (400 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:1f (00:00:00:aa:00:1f), Dst: 00:00:00_aa:00:2f (00:00:00:aa:00:2f)
+Internet Protocol Version 4, Src: 198.18.0.27, Dst: 198.18.12.27
+Internet Control Message Protocol

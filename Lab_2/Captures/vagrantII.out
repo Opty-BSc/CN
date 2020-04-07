@@ -1,0 +1,390 @@
+Bringing machine 'webserver' up with 'virtualbox' provider...
+Bringing machine 'client' up with 'virtualbox' provider...
+==> webserver: Importing base box 'ubuntu/trusty64'...
+[KProgress: 90%[K==> webserver: Matching MAC address for NAT networking...
+==> webserver: Setting the name of the VM: webserver
+==> webserver: Clearing any previously set forwarded ports...
+==> webserver: Clearing any previously set network interfaces...
+==> webserver: Preparing network interfaces based on configuration...
+    webserver: Adapter 1: nat
+    webserver: Adapter 2: hostonly
+==> webserver: Forwarding ports...
+    webserver: 80 (guest) => 8080 (host) (adapter 1)
+    webserver: 22 (guest) => 2222 (host) (adapter 1)
+==> webserver: Running 'pre-boot' VM customizations...
+==> webserver: Booting VM...
+==> webserver: Waiting for machine to boot. This may take a few minutes...
+    webserver: SSH address: 127.0.0.1:2222
+    webserver: SSH username: vagrant
+    webserver: SSH auth method: private key
+==> webserver: Machine booted and ready!
+[webserver] GuestAdditions versions on your host (6.0.12) and guest (4.3.40) do not match.
+ * Stopping VirtualBox Additions
+   ...done.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  acl at-spi2-core colord dconf-gsettings-backend dconf-service dkms fakeroot
+  fontconfig fontconfig-config fonts-dejavu-core gcc gcc-4.8
+  hicolor-icon-theme libasan0 libasound2 libasound2-data libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libavahi-client3
+  libavahi-common-data libavahi-common3 libc-dev-bin libc6-dev
+  libcairo-gobject2 libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module
+  libcanberra0 libcolord1 libcolorhug1 libcups2 libdatrie1 libdconf1
+  libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libexif12 libfakeroot
+  libfontconfig1 libfontenc1 libgcc-4.8-dev libgd3 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-common libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa
+  libgomp1 libgphoto2-6 libgphoto2-l10n libgphoto2-port10 libgraphite2-3
+  libgtk-3-0 libgtk-3-bin libgtk-3-common libgudev-1.0-0 libgusb2
+  libharfbuzz0b libice6 libieee1284-3 libitm1 libjasper1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.4 libltdl7 libnotify-bin
+  libnotify4 libogg0 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpciaccess0 libpixman-1-0 libquadmath0 libsane libsane-common libsm6
+  libtdb1 libthai-data libthai0 libtiff5 libtsan0 libtxc-dxtn-s2tc0 libv4l-0
+  libv4lconvert0 libvorbis0a libvorbisfile3 libvpx1 libwayland-client0
+  libwayland-cursor0 libx11-xcb1 libxaw7 libxcb-dri2-0 libxcb-dri3-0
+  libxcb-glx0 libxcb-present0 libxcb-render0 libxcb-shm0 libxcb-sync1
+  libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxfont1 libxi6
+  libxinerama1 libxkbcommon0 libxkbfile1 libxmu6 libxpm4 libxrandr2
+  libxrender1 libxshmfence1 libxt6 libxtst6 libxxf86vm1 linux-libc-dev
+  manpages-dev notification-daemon sound-theme-freedesktop x11-common
+  x11-xkb-utils xfonts-base xfonts-encodings xfonts-utils xserver-common
+  xserver-xorg-core
+Use 'apt-get autoremove' to remove them.
+The following packages will be REMOVED:
+  virtualbox-guest-dkms* virtualbox-guest-utils* virtualbox-guest-x11*
+0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded.
+After this operation, 12.2 MB disk space will be freed.
+(Reading database ... 63174 files and directories currently installed.)
+Removing virtualbox-guest-dkms (4.3.40-dfsg-0ubuntu14.04.1) ...
+
+-------- Uninstall Beginning --------
+Module:  virtualbox-guest
+Version: 4.3.40
+Kernel:  3.13.0-170-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxguest.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.13.0-170-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxsf.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.13.0-170-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxvideo.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.13.0-170-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod....
+
+DKMS: uninstall completed.
+
+------------------------------
+Deleting module version: 4.3.40
+completely from the DKMS tree.
+------------------------------
+Done.
+Removing virtualbox-guest-x11 (4.3.40-dfsg-0ubuntu14.04.1) ...
+Purging configuration files for virtualbox-guest-x11 (4.3.40-dfsg-0ubuntu14.04.1) ...
+Removing virtualbox-guest-utils (4.3.40-dfsg-0ubuntu14.04.1) ...
+Purging configuration files for virtualbox-guest-utils (4.3.40-dfsg-0ubuntu14.04.1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.15) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+dkms is already the newest version.
+dkms set to manually installed.
+linux-headers-3.13.0-170-generic is already the newest version.
+linux-headers-3.13.0-170-generic set to manually installed.
+The following packages were automatically installed and are no longer required:
+  acl at-spi2-core colord dconf-gsettings-backend dconf-service fontconfig
+  fontconfig-config fonts-dejavu-core hicolor-icon-theme libasound2
+  libasound2-data libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+  libavahi-client3 libavahi-common-data libavahi-common3 libcairo-gobject2
+  libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module libcanberra0 libcolord1
+  libcolorhug1 libcups2 libdatrie1 libdconf1 libdrm-intel1 libdrm-nouveau2
+  libdrm-radeon1 libexif12 libfontconfig1 libfontenc1 libgd3
+  libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgl1-mesa-dri libgl1-mesa-glx
+  libglapi-mesa libgphoto2-6 libgphoto2-l10n libgphoto2-port10 libgraphite2-3
+  libgtk-3-0 libgtk-3-bin libgtk-3-common libgudev-1.0-0 libgusb2
+  libharfbuzz0b libice6 libieee1284-3 libjasper1 libjbig0 libjpeg-turbo8
+  libjpeg8 liblcms2-2 libllvm3.4 libltdl7 libnotify-bin libnotify4 libogg0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
+  libpixman-1-0 libsane libsane-common libsm6 libtdb1 libthai-data libthai0
+  libtiff5 libtxc-dxtn-s2tc0 libv4l-0 libv4lconvert0 libvorbis0a
+  libvorbisfile3 libvpx1 libwayland-client0 libwayland-cursor0 libx11-xcb1
+  libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+  libxcb-render0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxfont1 libxi6 libxinerama1 libxkbcommon0
+  libxkbfile1 libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxt6
+  libxtst6 libxxf86vm1 notification-daemon sound-theme-freedesktop x11-common
+  x11-xkb-utils xfonts-base xfonts-encodings xfonts-utils xserver-common
+  xserver-xorg-core
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Copy iso file /usr/share/virtualbox/VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+Mounting Virtualbox Guest Additions ISO to: /mnt
+mount: block device /tmp/VBoxGuestAdditions.iso is write-protected, mounting read-only
+Installing Virtualbox Guest Additions 6.0.12 - guest version is 4.3.40
+Verifying archive integrity... All good.
+Uncompressing VirtualBox 6.0.12 Guest Additions for Linux........
+VirtualBox Guest Additions installer
+Copying additional installer modules ...
+Installing additional modules ...
+VirtualBox Guest Additions: Starting.
+VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
+modules.  This may take a while.
+VirtualBox Guest Additions: To build modules for other installed kernels, run
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
+VirtualBox Guest Additions: or
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup all
+VirtualBox Guest Additions: Building the modules for kernel 3.13.0-170-generic.
+ Adding system startup for /etc/init.d/vboxadd ...
+   /etc/rc0.d/K90vboxadd -> ../init.d/vboxadd
+   /etc/rc1.d/K90vboxadd -> ../init.d/vboxadd
+   /etc/rc6.d/K90vboxadd -> ../init.d/vboxadd
+   /etc/rc2.d/S10vboxadd -> ../init.d/vboxadd
+   /etc/rc3.d/S10vboxadd -> ../init.d/vboxadd
+   /etc/rc4.d/S10vboxadd -> ../init.d/vboxadd
+   /etc/rc5.d/S10vboxadd -> ../init.d/vboxadd
+ Adding system startup for /etc/init.d/vboxadd-service ...
+   /etc/rc0.d/K65vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc1.d/K65vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc6.d/K65vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc2.d/S35vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc3.d/S35vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc4.d/S35vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc5.d/S35vboxadd-service -> ../init.d/vboxadd-service
+Building the VirtualBox Guest Additions kernel modules.  This may take a while.
+To build modules for other installed kernels, run
+  /sbin/rcvboxadd quicksetup <version>
+or
+  /sbin/rcvboxadd quicksetup all
+Running kernel modules will not be replaced until the system is restarted
+vboxadd-service.sh: Starting VirtualBox Guest Addition service.
+VirtualBox Guest Additions: Starting.
+VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
+modules.  This may take a while.
+VirtualBox Guest Additions: To build modules for other installed kernels, run
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
+VirtualBox Guest Additions: or
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup all
+VirtualBox Guest Additions: Running kernel modules will not be replaced until 
+the system is restarted
+Unmounting Virtualbox Guest Additions ISO from: /mnt
+==> webserver: Checking for guest additions in VM...
+==> webserver: Setting hostname...
+==> webserver: Configuring and enabling network interfaces...
+==> webserver: Mounting shared folders...
+    webserver: /vagrant => /media/asus/DATA/Opty1337/Técnico/CG/Lab02/weblab
+    webserver: /home/vagrant/html => /media/asus/DATA/Opty1337/Técnico/CG/Lab02/weblab/html
+==> client: Importing base box 'ubuntu/trusty64'...
+[KProgress: 90%[K==> client: Matching MAC address for NAT networking...
+==> client: Setting the name of the VM: client
+==> client: Clearing any previously set forwarded ports...
+==> client: Fixed port collision for 22 => 2222. Now on port 2200.
+==> client: Clearing any previously set network interfaces...
+==> client: Preparing network interfaces based on configuration...
+    client: Adapter 1: nat
+    client: Adapter 2: hostonly
+==> client: Forwarding ports...
+    client: 22 (guest) => 2200 (host) (adapter 1)
+==> client: Running 'pre-boot' VM customizations...
+==> client: Booting VM...
+==> client: Waiting for machine to boot. This may take a few minutes...
+    client: SSH address: 127.0.0.1:2200
+    client: SSH username: vagrant
+    client: SSH auth method: private key
+==> client: Machine booted and ready!
+[client] GuestAdditions versions on your host (6.0.12) and guest (4.3.40) do not match.
+ * Stopping VirtualBox Additions
+   ...done.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  acl at-spi2-core colord dconf-gsettings-backend dconf-service dkms fakeroot
+  fontconfig fontconfig-config fonts-dejavu-core gcc gcc-4.8
+  hicolor-icon-theme libasan0 libasound2 libasound2-data libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libavahi-client3
+  libavahi-common-data libavahi-common3 libc-dev-bin libc6-dev
+  libcairo-gobject2 libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module
+  libcanberra0 libcolord1 libcolorhug1 libcups2 libdatrie1 libdconf1
+  libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libexif12 libfakeroot
+  libfontconfig1 libfontenc1 libgcc-4.8-dev libgd3 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-common libgl1-mesa-dri libgl1-mesa-glx libglapi-mesa
+  libgomp1 libgphoto2-6 libgphoto2-l10n libgphoto2-port10 libgraphite2-3
+  libgtk-3-0 libgtk-3-bin libgtk-3-common libgudev-1.0-0 libgusb2
+  libharfbuzz0b libice6 libieee1284-3 libitm1 libjasper1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.4 libltdl7 libnotify-bin
+  libnotify4 libogg0 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpciaccess0 libpixman-1-0 libquadmath0 libsane libsane-common libsm6
+  libtdb1 libthai-data libthai0 libtiff5 libtsan0 libtxc-dxtn-s2tc0 libv4l-0
+  libv4lconvert0 libvorbis0a libvorbisfile3 libvpx1 libwayland-client0
+  libwayland-cursor0 libx11-xcb1 libxaw7 libxcb-dri2-0 libxcb-dri3-0
+  libxcb-glx0 libxcb-present0 libxcb-render0 libxcb-shm0 libxcb-sync1
+  libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxfont1 libxi6
+  libxinerama1 libxkbcommon0 libxkbfile1 libxmu6 libxpm4 libxrandr2
+  libxrender1 libxshmfence1 libxt6 libxtst6 libxxf86vm1 linux-libc-dev
+  manpages-dev notification-daemon sound-theme-freedesktop x11-common
+  x11-xkb-utils xfonts-base xfonts-encodings xfonts-utils xserver-common
+  xserver-xorg-core
+Use 'apt-get autoremove' to remove them.
+The following packages will be REMOVED:
+  virtualbox-guest-dkms* virtualbox-guest-utils* virtualbox-guest-x11*
+0 upgraded, 0 newly installed, 3 to remove and 0 not upgraded.
+After this operation, 12.2 MB disk space will be freed.
+(Reading database ... 63174 files and directories currently installed.)
+Removing virtualbox-guest-dkms (4.3.40-dfsg-0ubuntu14.04.1) ...
+
+-------- Uninstall Beginning --------
+Module:  virtualbox-guest
+Version: 4.3.40
+Kernel:  3.13.0-170-generic (x86_64)
+-------------------------------------
+
+Status: Before uninstall, this module version was ACTIVE on this kernel.
+
+vboxguest.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.13.0-170-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxsf.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.13.0-170-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+
+vboxvideo.ko:
+ - Uninstallation
+   - Deleting from: /lib/modules/3.13.0-170-generic/updates/dkms/
+ - Original module
+   - No original module was found for this module on this kernel.
+   - Use the dkms install command to reinstall any previous module version.
+
+depmod....
+
+DKMS: uninstall completed.
+
+------------------------------
+Deleting module version: 4.3.40
+completely from the DKMS tree.
+------------------------------
+Done.
+Removing virtualbox-guest-x11 (4.3.40-dfsg-0ubuntu14.04.1) ...
+Purging configuration files for virtualbox-guest-x11 (4.3.40-dfsg-0ubuntu14.04.1) ...
+Removing virtualbox-guest-utils (4.3.40-dfsg-0ubuntu14.04.1) ...
+Purging configuration files for virtualbox-guest-utils (4.3.40-dfsg-0ubuntu14.04.1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.15) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+dkms is already the newest version.
+dkms set to manually installed.
+linux-headers-3.13.0-170-generic is already the newest version.
+linux-headers-3.13.0-170-generic set to manually installed.
+The following packages were automatically installed and are no longer required:
+  acl at-spi2-core colord dconf-gsettings-backend dconf-service fontconfig
+  fontconfig-config fonts-dejavu-core hicolor-icon-theme libasound2
+  libasound2-data libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+  libavahi-client3 libavahi-common-data libavahi-common3 libcairo-gobject2
+  libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module libcanberra0 libcolord1
+  libcolorhug1 libcups2 libdatrie1 libdconf1 libdrm-intel1 libdrm-nouveau2
+  libdrm-radeon1 libexif12 libfontconfig1 libfontenc1 libgd3
+  libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgl1-mesa-dri libgl1-mesa-glx
+  libglapi-mesa libgphoto2-6 libgphoto2-l10n libgphoto2-port10 libgraphite2-3
+  libgtk-3-0 libgtk-3-bin libgtk-3-common libgudev-1.0-0 libgusb2
+  libharfbuzz0b libice6 libieee1284-3 libjasper1 libjbig0 libjpeg-turbo8
+  libjpeg8 liblcms2-2 libllvm3.4 libltdl7 libnotify-bin libnotify4 libogg0
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
+  libpixman-1-0 libsane libsane-common libsm6 libtdb1 libthai-data libthai0
+  libtiff5 libtxc-dxtn-s2tc0 libv4l-0 libv4lconvert0 libvorbis0a
+  libvorbisfile3 libvpx1 libwayland-client0 libwayland-cursor0 libx11-xcb1
+  libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+  libxcb-render0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+  libxdamage1 libxfixes3 libxfont1 libxi6 libxinerama1 libxkbcommon0
+  libxkbfile1 libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxt6
+  libxtst6 libxxf86vm1 notification-daemon sound-theme-freedesktop x11-common
+  x11-xkb-utils xfonts-base xfonts-encodings xfonts-utils xserver-common
+  xserver-xorg-core
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Copy iso file /usr/share/virtualbox/VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+Mounting Virtualbox Guest Additions ISO to: /mnt
+mount: block device /tmp/VBoxGuestAdditions.iso is write-protected, mounting read-only
+Installing Virtualbox Guest Additions 6.0.12 - guest version is 4.3.40
+Verifying archive integrity... All good.
+Uncompressing VirtualBox 6.0.12 Guest Additions for Linux........
+VirtualBox Guest Additions installer
+Copying additional installer modules ...
+Installing additional modules ...
+VirtualBox Guest Additions: Starting.
+VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
+modules.  This may take a while.
+VirtualBox Guest Additions: To build modules for other installed kernels, run
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
+VirtualBox Guest Additions: or
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup all
+VirtualBox Guest Additions: Building the modules for kernel 3.13.0-170-generic.
+ Adding system startup for /etc/init.d/vboxadd ...
+   /etc/rc0.d/K90vboxadd -> ../init.d/vboxadd
+   /etc/rc1.d/K90vboxadd -> ../init.d/vboxadd
+   /etc/rc6.d/K90vboxadd -> ../init.d/vboxadd
+   /etc/rc2.d/S10vboxadd -> ../init.d/vboxadd
+   /etc/rc3.d/S10vboxadd -> ../init.d/vboxadd
+   /etc/rc4.d/S10vboxadd -> ../init.d/vboxadd
+   /etc/rc5.d/S10vboxadd -> ../init.d/vboxadd
+ Adding system startup for /etc/init.d/vboxadd-service ...
+   /etc/rc0.d/K65vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc1.d/K65vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc6.d/K65vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc2.d/S35vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc3.d/S35vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc4.d/S35vboxadd-service -> ../init.d/vboxadd-service
+   /etc/rc5.d/S35vboxadd-service -> ../init.d/vboxadd-service
+Building the VirtualBox Guest Additions kernel modules.  This may take a while.
+To build modules for other installed kernels, run
+  /sbin/rcvboxadd quicksetup <version>
+or
+  /sbin/rcvboxadd quicksetup all
+Running kernel modules will not be replaced until the system is restarted
+vboxadd-service.sh: Starting VirtualBox Guest Addition service.
+VirtualBox Guest Additions: Starting.
+VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
+modules.  This may take a while.
+VirtualBox Guest Additions: To build modules for other installed kernels, run
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
+VirtualBox Guest Additions: or
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup all
+VirtualBox Guest Additions: Running kernel modules will not be replaced until 
+the system is restarted
+Unmounting Virtualbox Guest Additions ISO from: /mnt
+==> client: Checking for guest additions in VM...
+==> client: Setting hostname...
+==> client: Configuring and enabling network interfaces...
+==> client: Mounting shared folders...
+    client: /vagrant => /media/asus/DATA/Opty1337/Técnico/CG/Lab02/weblab
+    client: /home/vagrant/html => /media/asus/DATA/Opty1337/Técnico/CG/Lab02/weblab/html

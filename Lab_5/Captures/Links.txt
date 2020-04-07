@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/27094637/icmp-pinger-application-in-python-error-operation-not-permitted
+https://stackoverflow.com/questions/27893804/udp-client-server-socket-in-python

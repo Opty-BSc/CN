@@ -1,0 +1,474 @@
+13
+1- DHCP at 49.583615 seconds.
+2- DEAUTHENTICATION at 49.609617 seconds.
+
+14.
+Yes. DISASSOCIATION Request.
+
+15.
+There are 17 AUTHENTICATION messages.
+
+16.
+The host want the authentication to be open.
+
+17.
+No.
+
+18.
+AUTHENTICATION sent at 63.168087 seconds.
+AUTHENTICATION sent back at 63.169071 seconds.
+
+19.
+ASSOCIATE REQUEST at 63.169910 seconds.
+ASSOCIATE REPLY at 63.192101 seconds.
+
+20.
+Supported Rates 1(B), 2(B), 5.5(B), 11(B), 6(B), 9, 12(B), 18, [Mbit/sec]
+Extended Supported Rates 24(B), 36, 48, 54, [Mbit/sec]
+
+| Packets: |
+
+No.     Time           Source                Destination           Protocol Length Info
+   2156 63.168087      IntelCor_d1:b6:4f     Cisco-Li_f7:1d:51     802.11   58     Authentication, SN=1647, FN=0, Flags=........C
+
+Frame 2156: 58 bytes on wire (464 bits), 58 bytes captured (464 bits)
+    Encapsulation type: IEEE 802.11 plus radiotap radio header (23)
+    Arrival Time: Jun 29, 2007 02:06:10.240544000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1183082770.240544000 seconds
+    [Time delta from previous captured frame: 0.006815000 seconds]
+    [Time delta from previous displayed frame: 0.006815000 seconds]
+    [Time since reference or first frame: 63.168087000 seconds]
+    Frame Number: 2156
+    Frame Length: 58 bytes (464 bits)
+    Capture Length: 58 bytes (464 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: radiotap:wlan_radio:wlan]
+Radiotap Header v0, Length 24
+    Header revision: 0
+    Header pad: 0
+    Header length: 24
+    Present flags
+    Flags: 0x10
+    Data Rate: 54.0 Mb/s
+    Channel frequency: 2437 [BG 6]
+    Channel flags: 0x00c0, Orthogonal Frequency-Division Multiplexing (OFDM), 2 GHz spectrum
+    Antenna signal: -28dBm
+    Antenna noise: -100dBm
+    Signal Quality: 89
+    Antenna: 0
+    dB antenna signal: 72dB
+    RX flags: 0xcbe0
+802.11 radio information
+    PHY type: 802.11g (6)
+    Short preamble: False
+    Proprietary mode: None (0)
+    Data rate: 54.0 Mb/s
+    Channel: 6
+    Frequency: 2437MHz
+    Signal strength (dB): 72dB
+    Signal strength (dBm): -28dBm
+    Noise level (dBm): -100dBm
+    Signal/noise ratio (dB): 72dB
+    [Duration: 28µs]
+IEEE 802.11 Authentication, Flags: ........C
+    Type/Subtype: Authentication (0x000b)
+    Frame Control Field: 0xb000
+    .000 0000 0010 1100 = Duration: 44 microseconds
+    Receiver address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    Destination address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    Transmitter address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    Source address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    BSS Id: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    .... .... .... 0000 = Fragment number: 0
+    0110 0110 1111 .... = Sequence number: 1647
+    Frame check sequence: 0x47e8cbe0 [unverified]
+    [FCS Status: Unverified]
+IEEE 802.11 wireless LAN
+    Fixed parameters (6 bytes)
+        Authentication Algorithm: Open System (0)
+        Authentication SEQ: 0x0001
+        Status code: Successful (0x0000)
+
+No.     Time           Source                Destination           Protocol Length Info
+   2158 63.169071      Cisco-Li_f7:1d:51     IntelCor_d1:b6:4f     802.11   58     Authentication, SN=3726, FN=0, Flags=........C
+
+Frame 2158: 58 bytes on wire (464 bits), 58 bytes captured (464 bits)
+    Encapsulation type: IEEE 802.11 plus radiotap radio header (23)
+    Arrival Time: Jun 29, 2007 02:06:10.241528000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1183082770.241528000 seconds
+    [Time delta from previous captured frame: 0.000849000 seconds]
+    [Time delta from previous displayed frame: 0.000849000 seconds]
+    [Time since reference or first frame: 63.169071000 seconds]
+    Frame Number: 2158
+    Frame Length: 58 bytes (464 bits)
+    Capture Length: 58 bytes (464 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: radiotap:wlan_radio:wlan]
+Radiotap Header v0, Length 24
+    Header revision: 0
+    Header pad: 0
+    Header length: 24
+    Present flags
+    Flags: 0x10
+    Data Rate: 1.0 Mb/s
+    Channel frequency: 2437 [BG 6]
+    Channel flags: 0x00a0, Complementary Code Keying (CCK), 2 GHz spectrum
+    Antenna signal: -30dBm
+    Antenna noise: -100dBm
+    Signal Quality: 100
+    Antenna: 0
+    dB antenna signal: 70dB
+    RX flags: 0xefc9
+802.11 radio information
+    PHY type: 802.11b (4)
+    Short preamble: False
+    Data rate: 1.0 Mb/s
+    Channel: 6
+    Frequency: 2437MHz
+    Signal strength (dB): 70dB
+    Signal strength (dBm): -30dBm
+    Noise level (dBm): -100dBm
+    Signal/noise ratio (dB): 70dB
+    [Duration: 464µs]
+IEEE 802.11 Authentication, Flags: ........C
+    Type/Subtype: Authentication (0x000b)
+    Frame Control Field: 0xb000
+    .000 0001 0011 1010 = Duration: 314 microseconds
+    Receiver address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    Destination address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    Transmitter address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    Source address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    BSS Id: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    .... .... .... 0000 = Fragment number: 0
+    1110 1000 1110 .... = Sequence number: 3726
+    Frame check sequence: 0x93eaefc9 [unverified]
+    [FCS Status: Unverified]
+IEEE 802.11 wireless LAN
+    Fixed parameters (6 bytes)
+        Authentication Algorithm: Open System (0)
+        Authentication SEQ: 0x0002
+        Status code: Successful (0x0000)
+
+No.     Time           Source                Destination           Protocol Length Info
+   2162 63.169910      IntelCor_d1:b6:4f     Cisco-Li_f7:1d:51     802.11   89     Association Request, SN=1648, FN=0, Flags=........C, SSID=30 Munroe St
+
+Frame 2162: 89 bytes on wire (712 bits), 89 bytes captured (712 bits)
+    Encapsulation type: IEEE 802.11 plus radiotap radio header (23)
+    Arrival Time: Jun 29, 2007 02:06:10.242367000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1183082770.242367000 seconds
+    [Time delta from previous captured frame: 0.000096000 seconds]
+    [Time delta from previous displayed frame: 0.000096000 seconds]
+    [Time since reference or first frame: 63.169910000 seconds]
+    Frame Number: 2162
+    Frame Length: 89 bytes (712 bits)
+    Capture Length: 89 bytes (712 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: radiotap:wlan_radio:wlan]
+Radiotap Header v0, Length 24
+    Header revision: 0
+    Header pad: 0
+    Header length: 24
+    Present flags
+    Flags: 0x10
+    Data Rate: 54.0 Mb/s
+    Channel frequency: 2437 [BG 6]
+    Channel flags: 0x00c0, Orthogonal Frequency-Division Multiplexing (OFDM), 2 GHz spectrum
+    Antenna signal: -29dBm
+    Antenna noise: -100dBm
+    Signal Quality: 100
+    Antenna: 0
+    dB antenna signal: 71dB
+    RX flags: 0xadc6, Bad PLCP
+802.11 radio information
+    PHY type: 802.11g (6)
+    Short preamble: False
+    Proprietary mode: None (0)
+    Data rate: 54.0 Mb/s
+    Channel: 6
+    Frequency: 2437MHz
+    Signal strength (dB): 71dB
+    Signal strength (dBm): -29dBm
+    Noise level (dBm): -100dBm
+    Signal/noise ratio (dB): 71dB
+    [Duration: 32µs]
+IEEE 802.11 Association Request, Flags: ........C
+    Type/Subtype: Association Request (0x0000)
+    Frame Control Field: 0x0000
+    .000 0000 0010 1100 = Duration: 44 microseconds
+    Receiver address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    Destination address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    Transmitter address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    Source address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    BSS Id: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    .... .... .... 0000 = Fragment number: 0
+    0110 0111 0000 .... = Sequence number: 1648
+    Frame check sequence: 0xfe3badc6 [unverified]
+    [FCS Status: Unverified]
+IEEE 802.11 wireless LAN
+    Fixed parameters (4 bytes)
+        Capabilities Information: 0xce01
+        Listen Interval: 0x000a
+    Tagged parameters (33 bytes)
+        Tag: SSID parameter set: 30 Munroe St
+            Tag Number: SSID parameter set (0)
+            Tag length: 12
+            SSID: 30 Munroe St
+        Tag: Supported Rates 1(B), 2(B), 5.5(B), 11(B), 6(B), 9, 12(B), 18, [Mbit/sec]
+            Tag Number: Supported Rates (1)
+            Tag length: 8
+            Supported Rates: 1(B) (0x82)
+            Supported Rates: 2(B) (0x84)
+            Supported Rates: 5.5(B) (0x8b)
+            Supported Rates: 11(B) (0x96)
+            Supported Rates: 6(B) (0x8c)
+            Supported Rates: 9 (0x12)
+            Supported Rates: 12(B) (0x98)
+            Supported Rates: 18 (0x24)
+        Tag: QoS Capability
+            Tag Number: QoS Capability (46)
+            Tag length: 1
+            QoS Information (STA): 0x00
+        Tag: Extended Supported Rates 24(B), 36, 48, 54, [Mbit/sec]
+            Tag Number: Extended Supported Rates (50)
+            Tag length: 4
+            Extended Supported Rates: 24(B) (0xb0)
+            Extended Supported Rates: 36 (0x48)
+            Extended Supported Rates: 48 (0x60)
+            Extended Supported Rates: 54 (0x6c)
+
+No.     Time           Source                Destination           Protocol Length Info
+   2166 63.192101      Cisco-Li_f7:1d:51     IntelCor_d1:b6:4f     802.11   94     Association Response, SN=3728, FN=0, Flags=........C
+
+Frame 2166: 94 bytes on wire (752 bits), 94 bytes captured (752 bits)
+    Encapsulation type: IEEE 802.11 plus radiotap radio header (23)
+    Arrival Time: Jun 29, 2007 02:06:10.264558000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1183082770.264558000 seconds
+    [Time delta from previous captured frame: 0.021101000 seconds]
+    [Time delta from previous displayed frame: 0.021101000 seconds]
+    [Time since reference or first frame: 63.192101000 seconds]
+    Frame Number: 2166
+    Frame Length: 94 bytes (752 bits)
+    Capture Length: 94 bytes (752 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: radiotap:wlan_radio:wlan]
+Radiotap Header v0, Length 24
+    Header revision: 0
+    Header pad: 0
+    Header length: 24
+    Present flags
+    Flags: 0x10
+    Data Rate: 1.0 Mb/s
+    Channel frequency: 2437 [BG 6]
+    Channel flags: 0x00a0, Complementary Code Keying (CCK), 2 GHz spectrum
+    Antenna signal: -31dBm
+    Antenna noise: -100dBm
+    Signal Quality: 100
+    Antenna: 0
+    dB antenna signal: 69dB
+    RX flags: 0xab2b, Bad PLCP
+802.11 radio information
+    PHY type: 802.11b (4)
+    Short preamble: False
+    Data rate: 1.0 Mb/s
+    Channel: 6
+    Frequency: 2437MHz
+    Signal strength (dB): 69dB
+    Signal strength (dBm): -31dBm
+    Noise level (dBm): -100dBm
+    Signal/noise ratio (dB): 69dB
+    [Duration: 752µs]
+IEEE 802.11 Association Response, Flags: ........C
+    Type/Subtype: Association Response (0x0001)
+    Frame Control Field: 0x1000
+    .000 0001 0011 1010 = Duration: 314 microseconds
+    Receiver address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    Destination address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    Transmitter address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    Source address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    BSS Id: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    .... .... .... 0000 = Fragment number: 0
+    1110 1001 0000 .... = Sequence number: 3728
+    Frame check sequence: 0x37f2ab2b [unverified]
+    [FCS Status: Unverified]
+IEEE 802.11 wireless LAN
+    Fixed parameters (6 bytes)
+        Capabilities Information: 0x0601
+        Status code: Successful (0x0000)
+        ..00 0000 0000 0101 = Association ID: 0x0005
+    Tagged parameters (36 bytes)
+        Tag: Supported Rates 1(B), 2(B), 5.5(B), 11(B), [Mbit/sec]
+            Tag Number: Supported Rates (1)
+            Tag length: 4
+            Supported Rates: 1(B) (0x82)
+            Supported Rates: 2(B) (0x84)
+            Supported Rates: 5.5(B) (0x8b)
+            Supported Rates: 11(B) (0x96)
+        Tag: Extended Supported Rates 6(B), 9, 12(B), 18, 24(B), 36, 48, 54, [Mbit/sec]
+            Tag Number: Extended Supported Rates (50)
+            Tag length: 8
+            Extended Supported Rates: 6(B) (0x8c)
+            Extended Supported Rates: 9 (0x12)
+            Extended Supported Rates: 12(B) (0x98)
+            Extended Supported Rates: 18 (0x24)
+            Extended Supported Rates: 24(B) (0xb0)
+            Extended Supported Rates: 36 (0x48)
+            Extended Supported Rates: 48 (0x60)
+            Extended Supported Rates: 54 (0x6c)
+        Tag: EDCA Parameter Set
+            Tag Number: EDCA Parameter Set (12)
+            Tag length: 18
+            WME QoS Info: 0x0f
+            Reserved: 00
+            Ac Parameters ACI 0 (Best Effort), ACM no, AIFSN 3, ECWmin/max 4/10 (CWmin/max 15/1023), TXOP 0
+            Ac Parameters ACI 1 (Background), ACM no, AIFSN 7, ECWmin/max 4/10 (CWmin/max 15/1023), TXOP 0
+            Ac Parameters ACI 2 (Video), ACM no, AIFSN 2, ECWmin/max 3/4 (CWmin/max 7/15), TXOP 94
+            Ac Parameters ACI 3 (Voice), ACM no, AIFSN 2, ECWmin/max 2/3 (CWmin/max 3/7), TXOP 47
+
+No.     Time           Source                Destination           Protocol Length Info
+   1733 49.583615      192.168.1.109         192.168.1.1           DHCP     390    DHCP Release  - Transaction ID 0xea5a526
+
+Frame 1733: 390 bytes on wire (3120 bits), 390 bytes captured (3120 bits)
+    Encapsulation type: IEEE 802.11 plus radiotap radio header (23)
+    Arrival Time: Jun 29, 2007 02:05:56.656072000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1183082756.656072000 seconds
+    [Time delta from previous captured frame: 0.041134000 seconds]
+    [Time delta from previous displayed frame: 0.041134000 seconds]
+    [Time since reference or first frame: 49.583615000 seconds]
+    Frame Number: 1733
+    Frame Length: 390 bytes (3120 bits)
+    Capture Length: 390 bytes (3120 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: radiotap:wlan_radio:wlan:llc:ip:udp:dhcp]
+    [Coloring Rule Name: UDP]
+    [Coloring Rule String: udp]
+Radiotap Header v0, Length 24
+    Header revision: 0
+    Header pad: 0
+    Header length: 24
+    Present flags
+    Flags: 0x10
+    Data Rate: 54.0 Mb/s
+    Channel frequency: 2437 [BG 6]
+    Channel flags: 0x00c0, Orthogonal Frequency-Division Multiplexing (OFDM), 2 GHz spectrum
+    Antenna signal: -27dBm
+    Antenna noise: -100dBm
+    Signal Quality: 96
+    Antenna: 0
+    dB antenna signal: 73dB
+    RX flags: 0x1791
+802.11 radio information
+    PHY type: 802.11g (6)
+    Short preamble: False
+    Proprietary mode: None (0)
+    Data rate: 54.0 Mb/s
+    Channel: 6
+    Frequency: 2437MHz
+    Signal strength (dB): 73dB
+    Signal strength (dBm): -27dBm
+    Noise level (dBm): -100dBm
+    Signal/noise ratio (dB): 73dB
+    [Duration: 76µs]
+IEEE 802.11 QoS Data, Flags: .......TC
+    Type/Subtype: QoS Data (0x0028)
+    Frame Control Field: 0x8801
+    .000 0000 0010 1100 = Duration: 44 microseconds
+    Receiver address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    Transmitter address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    Destination address: Cisco-Li_f4:eb:a8 (00:16:b6:f4:eb:a8)
+    Source address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    BSS Id: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    STA address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    .... .... .... 0000 = Fragment number: 0
+    0000 1011 1000 .... = Sequence number: 184
+    Frame check sequence: 0x90381791 [unverified]
+    [FCS Status: Unverified]
+    Qos Control: 0x0000
+Logical-Link Control
+Internet Protocol Version 4, Src: 192.168.1.109, Dst: 192.168.1.1
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 328
+    Identification: 0x141c (5148)
+    Flags: 0x0000
+    ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 128
+    Protocol: UDP (17)
+    Header checksum: 0xa1ca [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 192.168.1.109
+    Destination: 192.168.1.1
+User Datagram Protocol, Src Port: 68, Dst Port: 67
+Dynamic Host Configuration Protocol (Release)
+
+No.     Time           Source                Destination           Protocol Length Info
+   1735 49.609617      IntelCor_d1:b6:4f     Cisco-Li_f7:1d:51     802.11   54     Deauthentication, SN=1605, FN=0, Flags=........C
+
+Frame 1735: 54 bytes on wire (432 bits), 54 bytes captured (432 bits)
+    Encapsulation type: IEEE 802.11 plus radiotap radio header (23)
+    Arrival Time: Jun 29, 2007 02:05:56.682074000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1183082756.682074000 seconds
+    [Time delta from previous captured frame: 0.025846000 seconds]
+    [Time delta from previous displayed frame: 0.025846000 seconds]
+    [Time since reference or first frame: 49.609617000 seconds]
+    Frame Number: 1735
+    Frame Length: 54 bytes (432 bits)
+    Capture Length: 54 bytes (432 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: radiotap:wlan_radio:wlan]
+Radiotap Header v0, Length 24
+    Header revision: 0
+    Header pad: 0
+    Header length: 24
+    Present flags
+    Flags: 0x10
+    Data Rate: 54.0 Mb/s
+    Channel frequency: 2437 [BG 6]
+    Channel flags: 0x00c0, Orthogonal Frequency-Division Multiplexing (OFDM), 2 GHz spectrum
+    Antenna signal: -27dBm
+    Antenna noise: -100dBm
+    Signal Quality: 85
+    Antenna: 0
+    dB antenna signal: 73dB
+    RX flags: 0x8b9c
+802.11 radio information
+    PHY type: 802.11g (6)
+    Short preamble: False
+    Proprietary mode: None (0)
+    Data rate: 54.0 Mb/s
+    Channel: 6
+    Frequency: 2437MHz
+    Signal strength (dB): 73dB
+    Signal strength (dBm): -27dBm
+    Noise level (dBm): -100dBm
+    Signal/noise ratio (dB): 73dB
+    [Duration: 28µs]
+IEEE 802.11 Deauthentication, Flags: ........C
+    Type/Subtype: Deauthentication (0x000c)
+    Frame Control Field: 0xc000
+    .000 0000 0010 1100 = Duration: 44 microseconds
+    Receiver address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    Destination address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    Transmitter address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    Source address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    BSS Id: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    .... .... .... 0000 = Fragment number: 0
+    0110 0100 0101 .... = Sequence number: 1605
+    Frame check sequence: 0x3b4a8b9c [unverified]
+    [FCS Status: Unverified]
+IEEE 802.11 wireless LAN
+    Fixed parameters (2 bytes)
+        Reason code: Unspecified reason (0x0001)
+

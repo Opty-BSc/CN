@@ -1,0 +1,1330 @@
+No.     Time           Source                Destination           Protocol Length Info
+    106 21.805705      128.238.38.162        216.75.194.220        SSLv2    132    Client Hello
+
+Frame 106: 132 bytes on wire (1056 bits), 132 bytes captured (1056 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2271, Dst Port: 443, Seq: 1, Ack: 1, Len: 78
+Transport Layer Security
+    SSLv2 Record Layer: Client Hello
+        [Version: SSL 2.0 (0x0002)]
+        Length: 76
+        Handshake Message Type: Client Hello (1)
+        Version: SSL 3.0 (0x0300)
+        Cipher Spec Length: 51
+        Session ID Length: 0
+        Challenge Length: 16
+        Cipher Specs (17 specs)
+            Cipher Spec: TLS_RSA_WITH_RC4_128_MD5 (0x000004)
+            Cipher Spec: TLS_RSA_WITH_RC4_128_SHA (0x000005)
+            Cipher Spec: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x00000a)
+            Cipher Spec: SSL2_RC4_128_WITH_MD5 (0x010080)
+            Cipher Spec: SSL2_DES_192_EDE3_CBC_WITH_MD5 (0x0700c0)
+            Cipher Spec: SSL2_RC2_128_CBC_WITH_MD5 (0x030080)
+            Cipher Spec: TLS_RSA_WITH_DES_CBC_SHA (0x000009)
+            Cipher Spec: SSL2_DES_64_CBC_WITH_MD5 (0x060040)
+            Cipher Spec: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x000064)
+            Cipher Spec: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x000062)
+            Cipher Spec: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x000003)
+            Cipher Spec: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x000006)
+            Cipher Spec: SSL2_RC4_128_EXPORT40_WITH_MD5 (0x020080)
+            Cipher Spec: SSL2_RC2_128_CBC_EXPORT40_WITH_MD5 (0x040080)
+            Cipher Spec: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x000013)
+            Cipher Spec: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x000012)
+            Cipher Spec: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x000063)
+        Challenge
+
+No.     Time           Source                Destination           Protocol Length Info
+    108 21.830201      216.75.194.220        128.238.38.162        SSLv3    1434   Server Hello
+
+Frame 108: 1434 bytes on wire (11472 bits), 1434 bytes captured (11472 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 1, Ack: 79, Len: 1380
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed248b8831d04cc98c26e5badc4e267c3919…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+
+No.     Time           Source                Destination           Protocol Length Info
+    111 21.853520      216.75.194.220        128.238.38.162        SSLv3    790    Certificate, Server Hello Done
+
+Frame 111: 790 bytes on wire (6320 bits), 790 bytes captured (6320 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 2049, Ack: 79, Len: 736
+[3 Reassembled TCP Segments (2696 bytes): #108(1301), #109(668), #111(727)]
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Certificate
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 2691
+        Handshake Protocol: Certificate
+            Handshake Type: Certificate (11)
+            Length: 2687
+            Certificates Length: 2684
+            Certificates (2684 bytes)
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello Done
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 4
+        Handshake Protocol: Server Hello Done
+            Handshake Type: Server Hello Done (14)
+            Length: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+    112 21.876168      128.238.38.162        216.75.194.220        SSLv3    258    Client Key Exchange, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 112: 258 bytes on wire (2064 bits), 258 bytes captured (2064 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2271, Dst Port: 443, Seq: 79, Ack: 2785, Len: 204
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Key Exchange
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 132
+        Handshake Protocol: Client Key Exchange
+            Handshake Type: Client Key Exchange (16)
+            Length: 128
+            RSA Encrypted PreMaster Secret
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    113 21.945667      216.75.194.220        128.238.38.162        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 113: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 2785, Ack: 283, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    114 21.954189      128.238.38.162        216.75.194.220        SSLv3    806    Application Data
+
+Frame 114: 806 bytes on wire (6448 bits), 806 bytes captured (6448 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2271, Dst Port: 443, Seq: 283, Ack: 2852, Len: 752
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 747
+        Encrypted Application Data: 7e8cdc7fe71d6d59c45ecae7bad064ec705ea592d4b82b35…
+
+No.     Time           Source                Destination           Protocol Length Info
+    122 23.480352      216.75.194.220        128.238.38.162        SSLv3    272    Application Data
+
+Frame 122: 272 bytes on wire (2176 bits), 272 bytes captured (2176 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 2852, Ack: 1035, Len: 218
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 213
+        Encrypted Application Data: e1625e4dcad92ca0a801d0c760fe55e8f334cb996e026aa7…
+
+No.     Time           Source                Destination           Protocol Length Info
+    149 23.559497      216.75.194.220        128.238.38.162        SSLv3    1367   Application Data
+
+Frame 149: 1367 bytes on wire (10936 bits), 1367 bytes captured (10936 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 22217, Ack: 1035, Len: 1313
+[6 Reassembled TCP Segments (8213 bytes): #140(1380), #143(1380), #144(1380), #146(1380), #147(1380), #149(1313)]
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 8208
+        Encrypted Application Data: 0f9ce4c01228bf5fcbdfdcf72820f137d18015a5ac455bc1…
+
+No.     Time           Source                Destination           Protocol Length Info
+    158 23.560866      216.75.194.220        128.238.38.162        SSLv3    1367   Application Data
+
+Frame 158: 1367 bytes on wire (10936 bits), 1367 bytes captured (10936 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 30430, Ack: 1035, Len: 1313
+[6 Reassembled TCP Segments (8213 bytes): #150(1380), #152(1380), #153(1380), #155(1380), #156(1380), #158(1313)]
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 8208
+        Encrypted Application Data: d966dae2fdfc30a8f824eceddec9fb2f0c17331071b1d1f0…
+
+No.     Time           Source                Destination           Protocol Length Info
+    163 23.566451      128.238.38.162        216.75.194.220        SSLv3    156    Client Hello
+
+Frame 163: 156 bytes on wire (1248 bits), 156 bytes captured (1248 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2272, Dst Port: 443, Seq: 1, Ack: 1, Len: 102
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 97
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 93
+            Version: SSL 3.0 (0x0300)
+            Random: 42dbf0c21b781c6c644b84fe4efa7be6ef21efc98e350355…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suites Length: 22
+            Cipher Suites (11 suites)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+                Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                Cipher Suite: TLS_RSA_WITH_DES_CBC_SHA (0x0009)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x0064)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x0062)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x0003)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x0006)
+                Cipher Suite: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x0013)
+                Cipher Suite: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x0012)
+                Cipher Suite: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x0063)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+
+No.     Time           Source                Destination           Protocol Length Info
+    165 23.586650      216.75.194.220        128.238.38.162        SSLv3    1329   Application Data
+
+Frame 165: 1329 bytes on wire (10632 bits), 1329 bytes captured (10632 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 33123, Ack: 1035, Len: 1275
+[2 Reassembled TCP Segments (2655 bytes): #159(1380), #165(1275)]
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 2650
+        Encrypted Application Data: 452cd5d9df4d7e33215c271f21e7fd40a507cc9ccfca2542…
+
+No.     Time           Source                Destination           Protocol Length Info
+    169 23.591590      216.75.194.220        128.238.38.162        SSLv3    200    Server Hello, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 169: 200 bytes on wire (1600 bits), 200 bytes captured (1600 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2272, Seq: 1, Ack: 103, Len: 146
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed263707fc0f473df2dbcc0cd768f9aa9902…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    171 23.599417      128.238.38.162        216.75.194.220        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 171: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2272, Dst Port: 443, Seq: 103, Ack: 147, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    172 23.602696      128.238.38.162        216.75.194.220        SSLv3    470    Application Data
+
+Frame 172: 470 bytes on wire (3760 bits), 470 bytes captured (3760 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2272, Dst Port: 443, Seq: 170, Ack: 147, Len: 416
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 411
+        Encrypted Application Data: 638df1e728f4c2728ec14fc9164ec127f5e32d6b2a909752…
+
+No.     Time           Source                Destination           Protocol Length Info
+    176 23.621694      128.238.38.162        216.75.194.220        SSLv3    156    Client Hello
+
+Frame 176: 156 bytes on wire (1248 bits), 156 bytes captured (1248 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2273, Dst Port: 443, Seq: 1, Ack: 1, Len: 102
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 97
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 93
+            Version: SSL 3.0 (0x0300)
+            Random: 42dbf0c2033de6c8af29184c919a336821965ccec631bf56…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suites Length: 22
+            Cipher Suites (11 suites)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+                Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                Cipher Suite: TLS_RSA_WITH_DES_CBC_SHA (0x0009)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x0064)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x0062)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x0003)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x0006)
+                Cipher Suite: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x0013)
+                Cipher Suite: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x0012)
+                Cipher Suite: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x0063)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+
+No.     Time           Source                Destination           Protocol Length Info
+    178 23.627217      216.75.194.220        128.238.38.162        SSLv3    378    Application Data
+
+Frame 178: 378 bytes on wire (3024 bits), 378 bytes captured (3024 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2272, Seq: 147, Ack: 586, Len: 324
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 319
+        Encrypted Application Data: cdbb95192fd8bc356deeec6188eedd192fa16336af3b146e…
+
+No.     Time           Source                Destination           Protocol Length Info
+    184 23.646644      216.75.194.220        128.238.38.162        SSLv3    200    Server Hello, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 184: 200 bytes on wire (1600 bits), 200 bytes captured (1600 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2273, Seq: 1, Ack: 103, Len: 146
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed26633348364f4f89df12ce551c58e7239b…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    188 23.662642      128.238.38.162        216.75.194.220        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 188: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2273, Dst Port: 443, Seq: 103, Ack: 147, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    189 23.665695      128.238.38.162        216.75.194.220        SSLv3    476    Application Data
+
+Frame 189: 476 bytes on wire (3808 bits), 476 bytes captured (3808 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2273, Dst Port: 443, Seq: 170, Ack: 147, Len: 422
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 417
+        Encrypted Application Data: 3a81cc49a429870f6231bc212e99859eb9eee48042cc490e…
+
+No.     Time           Source                Destination           Protocol Length Info
+    190 23.666238      128.238.38.162        216.75.194.220        SSLv3    156    Client Hello
+
+Frame 190: 156 bytes on wire (1248 bits), 156 bytes captured (1248 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2274, Dst Port: 443, Seq: 1, Ack: 1, Len: 102
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 97
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 93
+            Version: SSL 3.0 (0x0300)
+            Random: 42dbf0c27cbffa921d6842339ac10b3ae8bf6c18832bf161…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suites Length: 22
+            Cipher Suites (11 suites)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+                Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                Cipher Suite: TLS_RSA_WITH_DES_CBC_SHA (0x0009)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x0064)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x0062)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x0003)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x0006)
+                Cipher Suite: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x0013)
+                Cipher Suite: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x0012)
+                Cipher Suite: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x0063)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+
+No.     Time           Source                Destination           Protocol Length Info
+    192 23.691277      216.75.194.220        128.238.38.162        SSLv3    347    Application Data
+
+Frame 192: 347 bytes on wire (2776 bits), 347 bytes captured (2776 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2273, Seq: 147, Ack: 592, Len: 293
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 288
+        Encrypted Application Data: 37c510ea55cac4cc0bd57d4dfa9ad3c59295fa5ac0e514bf…
+
+No.     Time           Source                Destination           Protocol Length Info
+    197 23.693698      216.75.194.220        128.238.38.162        SSLv3    200    Server Hello, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 197: 200 bytes on wire (1600 bits), 200 bytes captured (1600 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2274, Seq: 1, Ack: 103, Len: 146
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed2666582381717a9a96c6e399f12db586fc…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    198 23.699391      128.238.38.162        216.75.194.220        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 198: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2274, Dst Port: 443, Seq: 103, Ack: 147, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    199 23.702683      128.238.38.162        216.75.194.220        SSLv3    472    Application Data
+
+Frame 199: 472 bytes on wire (3776 bits), 472 bytes captured (3776 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2274, Dst Port: 443, Seq: 170, Ack: 147, Len: 418
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 413
+        Encrypted Application Data: 51254f40a43eee5f4ab4aa25f3bed35a1ab528e327ff7d35…
+
+No.     Time           Source                Destination           Protocol Length Info
+    202 23.716422      216.75.194.220        128.238.38.162        SSLv3    791    Application Data
+
+Frame 202: 791 bytes on wire (6328 bits), 791 bytes captured (6328 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2273, Seq: 4580, Ack: 592, Len: 737
+[4 Reassembled TCP Segments (4877 bytes): #193(1380), #196(1380), #200(1380), #202(737)]
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 4872
+        Encrypted Application Data: cebdda0fd76eca441816a8af5449f93a3aa573dc48245fc5…
+
+No.     Time           Source                Destination           Protocol Length Info
+    207 23.727123      216.75.194.220        128.238.38.162        SSLv3    415    Application Data
+
+Frame 207: 415 bytes on wire (3320 bits), 415 bytes captured (3320 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2274, Seq: 147, Ack: 588, Len: 361
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 356
+        Encrypted Application Data: 179e05d0ba156421cae6f8ec27208a5fbd04f0017ae74ed0…
+
+No.     Time           Source                Destination           Protocol Length Info
+    215 23.746307      128.238.38.162        216.75.194.220        SSLv3    156    Client Hello
+
+Frame 215: 156 bytes on wire (1248 bits), 156 bytes captured (1248 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2275, Dst Port: 443, Seq: 1, Ack: 1, Len: 102
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 97
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 93
+            Version: SSL 3.0 (0x0300)
+            Random: 42dbf0c2292392541ea3c1217b6d410f6ae47e798e0d5a0b…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suites Length: 22
+            Cipher Suites (11 suites)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+                Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                Cipher Suite: TLS_RSA_WITH_DES_CBC_SHA (0x0009)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x0064)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x0062)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x0003)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x0006)
+                Cipher Suite: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x0013)
+                Cipher Suite: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x0012)
+                Cipher Suite: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x0063)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+
+No.     Time           Source                Destination           Protocol Length Info
+    219 23.758069      128.238.38.162        216.75.194.220        SSLv3    156    Client Hello
+
+Frame 219: 156 bytes on wire (1248 bits), 156 bytes captured (1248 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2276, Dst Port: 443, Seq: 1, Ack: 1, Len: 102
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 97
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 93
+            Version: SSL 3.0 (0x0300)
+            Random: 42dbf0c297975f1f1d22944534412c48e424e2d069ce8811…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suites Length: 22
+            Cipher Suites (11 suites)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+                Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                Cipher Suite: TLS_RSA_WITH_DES_CBC_SHA (0x0009)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x0064)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x0062)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x0003)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x0006)
+                Cipher Suite: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x0013)
+                Cipher Suite: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x0012)
+                Cipher Suite: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x0063)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+
+No.     Time           Source                Destination           Protocol Length Info
+    221 23.769670      216.75.194.220        128.238.38.162        SSLv3    200    Server Hello, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 221: 200 bytes on wire (1600 bits), 200 bytes captured (1600 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2275, Seq: 1, Ack: 103, Len: 146
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed26161b7e0ee263134e78e98a6a53d11d62…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    222 23.770235      128.238.38.162        216.75.194.220        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 222: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2275, Dst Port: 443, Seq: 103, Ack: 147, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    223 23.773546      128.238.38.162        216.75.194.220        SSLv3    468    Application Data
+
+Frame 223: 468 bytes on wire (3744 bits), 468 bytes captured (3744 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2275, Dst Port: 443, Seq: 170, Ack: 147, Len: 414
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 409
+        Encrypted Application Data: ac110170919f95133ab107502b2ec3733fac9c178e496f85…
+
+No.     Time           Source                Destination           Protocol Length Info
+    225 23.784506      216.75.194.220        128.238.38.162        SSLv3    200    Server Hello, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 225: 200 bytes on wire (1600 bits), 200 bytes captured (1600 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2276, Seq: 1, Ack: 103, Len: 146
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed26fd5aa15fda480a205d60133a27b72a8a…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    226 23.785098      128.238.38.162        216.75.194.220        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 226: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2276, Dst Port: 443, Seq: 103, Ack: 147, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    227 23.788079      128.238.38.162        216.75.194.220        SSLv3    468    Application Data
+
+Frame 227: 468 bytes on wire (3744 bits), 468 bytes captured (3744 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2276, Dst Port: 443, Seq: 170, Ack: 147, Len: 414
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 409
+        Encrypted Application Data: d5c080467476de365fe8384c1f6c86e9f82f2bd7723e9076…
+
+No.     Time           Source                Destination           Protocol Length Info
+    236 23.812804      216.75.194.220        128.238.38.162        SSLv3    392    Application Data
+
+Frame 236: 392 bytes on wire (3136 bits), 392 bytes captured (3136 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2276, Seq: 147, Ack: 584, Len: 338
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 333
+        Encrypted Application Data: 3575ceca91262b763b35a6513757b27245f6f9fb26152dc3…
+
+No.     Time           Source                Destination           Protocol Length Info
+    244 23.833302      128.238.38.162        216.75.194.220        SSLv3    156    Client Hello
+
+Frame 244: 156 bytes on wire (1248 bits), 156 bytes captured (1248 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2277, Dst Port: 443, Seq: 1, Ack: 1, Len: 102
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 97
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 93
+            Version: SSL 3.0 (0x0300)
+            Random: 42dbf0c27c3a144d04878595fd18f80867facceebc377969…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suites Length: 22
+            Cipher Suites (11 suites)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+                Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                Cipher Suite: TLS_RSA_WITH_DES_CBC_SHA (0x0009)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x0064)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x0062)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x0003)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x0006)
+                Cipher Suite: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x0013)
+                Cipher Suite: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x0012)
+                Cipher Suite: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x0063)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+
+No.     Time           Source                Destination           Protocol Length Info
+    248 23.843927      128.238.38.162        216.75.194.220        SSLv3    156    Client Hello
+
+Frame 248: 156 bytes on wire (1248 bits), 156 bytes captured (1248 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2278, Dst Port: 443, Seq: 1, Ack: 1, Len: 102
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 97
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 93
+            Version: SSL 3.0 (0x0300)
+            Random: 42dbf0c27d1cd977509a46317fcc456f1f2725637b7510ef…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suites Length: 22
+            Cipher Suites (11 suites)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+                Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                Cipher Suite: TLS_RSA_WITH_DES_CBC_SHA (0x0009)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x0064)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x0062)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x0003)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x0006)
+                Cipher Suite: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x0013)
+                Cipher Suite: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x0012)
+                Cipher Suite: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x0063)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+
+No.     Time           Source                Destination           Protocol Length Info
+    250 23.857664      216.75.194.220        128.238.38.162        SSLv3    200    Server Hello, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 250: 200 bytes on wire (1600 bits), 200 bytes captured (1600 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2277, Seq: 1, Ack: 103, Len: 146
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed262c131f7f9d462b0020fedd6844b6ca58…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    251 23.858228      128.238.38.162        216.75.194.220        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 251: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2277, Dst Port: 443, Seq: 103, Ack: 147, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    252 23.861223      128.238.38.162        216.75.194.220        SSLv3    457    Application Data
+
+Frame 252: 457 bytes on wire (3656 bits), 457 bytes captured (3656 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2277, Dst Port: 443, Seq: 170, Ack: 147, Len: 403
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 398
+        Encrypted Application Data: 2c465ed100b1782c87779a8bc2d7159951eb01fc671a8c9c…
+
+No.     Time           Source                Destination           Protocol Length Info
+    254 23.870061      216.75.194.220        128.238.38.162        SSLv3    200    Server Hello, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 254: 200 bytes on wire (1600 bits), 200 bytes captured (1600 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2278, Seq: 1, Ack: 103, Len: 146
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed26e3230989d413f9c759a225cf0387780a…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    255 23.870677      128.238.38.162        216.75.194.220        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 255: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2278, Dst Port: 443, Seq: 103, Ack: 147, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    256 23.873688      128.238.38.162        216.75.194.220        SSLv3    474    Application Data
+
+Frame 256: 474 bytes on wire (3792 bits), 474 bytes captured (3792 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2278, Dst Port: 443, Seq: 170, Ack: 147, Len: 420
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 415
+        Encrypted Application Data: fd94cc6508579ca10c861d82a38ad7413a1826bbe797f2d3…
+
+No.     Time           Source                Destination           Protocol Length Info
+    258 23.887422      216.75.194.220        128.238.38.162        SSLv3    631    Application Data
+
+Frame 258: 631 bytes on wire (5048 bits), 631 bytes captured (5048 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2277, Seq: 147, Ack: 573, Len: 577
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 572
+        Encrypted Application Data: f96d409b68eb0584003552f10c90c4ad370caf0c2c8d9579…
+
+No.     Time           Source                Destination           Protocol Length Info
+    264 23.898557      216.75.194.220        128.238.38.162        SSLv3    451    Application Data
+
+Frame 264: 451 bytes on wire (3608 bits), 451 bytes captured (3608 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2278, Seq: 147, Ack: 590, Len: 397
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 392
+        Encrypted Application Data: 437a7cda8d382f94587e432c88d0178ea07d84062dc8f642…
+
+No.     Time           Source                Destination           Protocol Length Info
+    272 23.910648      128.238.38.162        216.75.194.220        SSLv3    156    Client Hello
+
+Frame 272: 156 bytes on wire (1248 bits), 156 bytes captured (1248 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2279, Dst Port: 443, Seq: 1, Ack: 1, Len: 102
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 97
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 93
+            Version: SSL 3.0 (0x0300)
+            Random: 42dbf0c279108c1f1573dd45cbb30cc60a2327c8909db7df…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suites Length: 22
+            Cipher Suites (11 suites)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+                Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                Cipher Suite: TLS_RSA_WITH_DES_CBC_SHA (0x0009)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x0064)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x0062)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x0003)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x0006)
+                Cipher Suite: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x0013)
+                Cipher Suite: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x0012)
+                Cipher Suite: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x0063)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+
+No.     Time           Source                Destination           Protocol Length Info
+    276 23.931342      128.238.38.162        216.75.194.220        SSLv3    156    Client Hello
+
+Frame 276: 156 bytes on wire (1248 bits), 156 bytes captured (1248 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2280, Dst Port: 443, Seq: 1, Ack: 1, Len: 102
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 97
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 93
+            Version: SSL 3.0 (0x0300)
+            Random: 42dbf0c2093e545a4546670640303bf9a51811d10f6ec3fc…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suites Length: 22
+            Cipher Suites (11 suites)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+                Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                Cipher Suite: TLS_RSA_WITH_DES_CBC_SHA (0x0009)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x0064)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x0062)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x0003)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x0006)
+                Cipher Suite: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x0013)
+                Cipher Suite: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x0012)
+                Cipher Suite: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x0063)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+
+No.     Time           Source                Destination           Protocol Length Info
+    278 23.934540      216.75.194.220        128.238.38.162        SSLv3    200    Server Hello, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 278: 200 bytes on wire (1600 bits), 200 bytes captured (1600 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2279, Seq: 1, Ack: 103, Len: 146
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed26aab2f2d0d5fe47ff4479071f10e02526…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    279 23.935136      128.238.38.162        216.75.194.220        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 279: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2279, Dst Port: 443, Seq: 103, Ack: 147, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    280 23.938142      128.238.38.162        216.75.194.220        SSLv3    458    Application Data
+
+Frame 280: 458 bytes on wire (3664 bits), 458 bytes captured (3664 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2279, Dst Port: 443, Seq: 170, Ack: 147, Len: 404
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 399
+        Encrypted Application Data: 92bad25dabc9a2f409b0e874504955b11e55e0d56f5dd209…
+
+No.     Time           Source                Destination           Protocol Length Info
+    282 23.955334      216.75.194.220        128.238.38.162        SSLv3    200    Server Hello, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 282: 200 bytes on wire (1600 bits), 200 bytes captured (1600 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2280, Seq: 1, Ack: 103, Len: 146
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed26dc3fd41c539b2ea27502a49a8be74ef0…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    283 23.955961      128.238.38.162        216.75.194.220        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 283: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2280, Dst Port: 443, Seq: 103, Ack: 147, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    284 23.958934      128.238.38.162        216.75.194.220        SSLv3    474    Application Data
+
+Frame 284: 474 bytes on wire (3792 bits), 474 bytes captured (3792 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2280, Dst Port: 443, Seq: 170, Ack: 147, Len: 420
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 415
+        Encrypted Application Data: 52eeda23e58bcb3dddd9e1691556fdbe94773ca515fbf5c1…
+
+No.     Time           Source                Destination           Protocol Length Info
+    286 23.962258      216.75.194.220        128.238.38.162        SSLv3    524    Application Data
+
+Frame 286: 524 bytes on wire (4192 bits), 524 bytes captured (4192 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2279, Seq: 147, Ack: 574, Len: 470
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 465
+        Encrypted Application Data: 0a11222b8fc8ae077984f591c362377fcbce23aa4c470595…
+
+No.     Time           Source                Destination           Protocol Length Info
+    292 23.983136      216.75.194.220        128.238.38.162        SSLv3    484    Application Data
+
+Frame 292: 484 bytes on wire (3872 bits), 484 bytes captured (3872 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2280, Seq: 147, Ack: 590, Len: 430
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 425
+        Encrypted Application Data: 225374c8ed04a5c7ddbdb66e4010a1a54c3e6e0cb3c0b2bd…
+
+No.     Time           Source                Destination           Protocol Length Info
+    299 23.992334      128.238.38.162        216.75.194.220        SSLv3    156    Client Hello
+
+Frame 299: 156 bytes on wire (1248 bits), 156 bytes captured (1248 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2281, Dst Port: 443, Seq: 1, Ack: 1, Len: 102
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 97
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 93
+            Version: SSL 3.0 (0x0300)
+            Random: 42dbf0c23c0c580b614ca27564377e97052a048eda5a1270…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suites Length: 22
+            Cipher Suites (11 suites)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+                Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                Cipher Suite: TLS_RSA_WITH_DES_CBC_SHA (0x0009)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x0064)
+                Cipher Suite: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x0062)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x0003)
+                Cipher Suite: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x0006)
+                Cipher Suite: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x0013)
+                Cipher Suite: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x0012)
+                Cipher Suite: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x0063)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+
+No.     Time           Source                Destination           Protocol Length Info
+    303 24.015244      216.75.194.220        128.238.38.162        SSLv3    200    Server Hello, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 303: 200 bytes on wire (1600 bits), 200 bytes captured (1600 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2281, Seq: 1, Ack: 103, Len: 146
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 70
+            Version: SSL 3.0 (0x0300)
+            Random: 0000000042dbed26e4beec2317faabc6c3edf5320cb189ec…
+            Session ID Length: 32
+            Session ID: 1bad05faba02ea92c64c54be4547c32f3e3ca63d3a0c86dd…
+            Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Method: null (0)
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    304 24.015915      128.238.38.162        216.75.194.220        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 304: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2281, Dst Port: 443, Seq: 103, Ack: 147, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    305 24.018896      128.238.38.162        216.75.194.220        SSLv3    470    Application Data
+
+Frame 305: 470 bytes on wire (3760 bits), 470 bytes captured (3760 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2281, Dst Port: 443, Seq: 170, Ack: 147, Len: 416
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 411
+        Encrypted Application Data: 90445dc997f4370cc898c83fd250c69103feefd6c0f4642c…

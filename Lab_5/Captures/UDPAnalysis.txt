@@ -1,0 +1,63 @@
+1.
+There are 4 fields in the UDP Header:
+Source Port;
+Destination Port;
+Length;
+Checksum.
+
+2.
+The UDP Header has a lenght of 8 bytes:
+Each of the UDP header fields has a lenght of 2 bytes.
+
+3.
+The length field is the number of bytes of the UDP Segment:
+Header (8 bytes) + Logical-Link Control (4 bytes) + Data (27 bytes).
+
+4.
+Maximum UDP payload is (2^16 – 1) bytes - Header (8 bytes) = 65527 bytes.
+
+5.
+The largest possible source port number is (2^16 - 1) bytes = 65535 bytes.
+
+6.
+The protocol number for UDP is 0x11 = 17
+
+7.
+The first UDP Packet sent by the host has Source Port = Destination Port of the reply packet.
+And the reply packet has Source Port = Destination Port of the UDP Packet sent by the host.
+ _______________________
+|			|
+|	Packets used:	|
+|_______________________|
+
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    198.18.0.27           198.18.20.12          LLC      73     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 1: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.0.27, Dst: 198.18.20.12
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 59
+    Identification: 0xd1cd (53709)
+    Flags: 0x4000, Don't fragment
+    Time to live: 60
+    Protocol: UDP (17)
+    Header checksum: 0xcc98 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.0.27
+    Destination: 198.18.20.12
+User Datagram Protocol, Src Port: 48663, Dst Port: 12000
+    Source Port: 48663
+    Destination Port: 12000
+    Length: 39
+    Checksum: 0xa084 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 31 20 53 75 6e 20 4f 63 74 20 32 30 20 31 36    1 Sun Oct 20 16
+0010  3a 31 37 3a 33 37 20 32 30 31 39                  :17:37 2019
+

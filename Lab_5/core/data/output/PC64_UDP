@@ -1,0 +1,246 @@
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.012162349    198.18.19.27          198.18.20.12          LLC      73     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 3: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.20.12
+User Datagram Protocol, Src Port: 34107, Dst Port: 12000
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 31 20 46 72 69 20 4f 63 74 20 31 38 20 30 38    1 Fri Oct 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.024402758    198.18.20.12          198.18.19.27          LLC      73     I P, N(R)=35, N(S)=39; DSAP 0x50 Individual, SSAP 0x48 Response
+
+Frame 4: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.19.27
+User Datagram Protocol, Src Port: 12000, Dst Port: 34107
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 31 20 46 52 49 20 4f 43 54 20 31 38 20 30 38    1 FRI OCT 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.034201883    198.18.19.27          198.18.20.12          LLC      73     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 5: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.20.12
+User Datagram Protocol, Src Port: 34107, Dst Port: 12000
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 32 20 46 72 69 20 4f 63 74 20 31 38 20 30 38    2 Fri Oct 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.046563473    198.18.20.12          198.18.19.27          LLC      73     I P, N(R)=35, N(S)=39; DSAP 0x50 Individual, SSAP 0x48 Response
+
+Frame 6: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.19.27
+User Datagram Protocol, Src Port: 12000, Dst Port: 34107
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 32 20 46 52 49 20 4f 43 54 20 31 38 20 30 38    2 FRI OCT 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.058378543    198.18.19.27          198.18.20.12          LLC      73     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 7: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.20.12
+User Datagram Protocol, Src Port: 34107, Dst Port: 12000
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 33 20 46 72 69 20 4f 63 74 20 31 38 20 30 38    3 Fri Oct 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.074242509    198.18.20.12          198.18.19.27          LLC      73     I P, N(R)=35, N(S)=39; DSAP 0x50 Individual, SSAP 0x48 Response
+
+Frame 8: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.19.27
+User Datagram Protocol, Src Port: 12000, Dst Port: 34107
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 33 20 46 52 49 20 4f 43 54 20 31 38 20 30 38    3 FRI OCT 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.085459153    198.18.19.27          198.18.20.12          LLC      73     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 9: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.20.12
+User Datagram Protocol, Src Port: 34107, Dst Port: 12000
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 34 20 46 72 69 20 4f 63 74 20 31 38 20 30 38    4 Fri Oct 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.098772967    198.18.20.12          198.18.19.27          LLC      73     I P, N(R)=35, N(S)=39; DSAP 0x50 Individual, SSAP 0x48 Response
+
+Frame 10: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.19.27
+User Datagram Protocol, Src Port: 12000, Dst Port: 34107
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 34 20 46 52 49 20 4f 43 54 20 31 38 20 30 38    4 FRI OCT 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 0.109575213    198.18.19.27          198.18.20.12          LLC      73     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 11: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.20.12
+User Datagram Protocol, Src Port: 34107, Dst Port: 12000
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 35 20 46 72 69 20 4f 63 74 20 31 38 20 30 38    5 Fri Oct 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 0.121983946    198.18.20.12          198.18.19.27          LLC      73     I P, N(R)=35, N(S)=39; DSAP 0x50 Individual, SSAP 0x48 Response
+
+Frame 12: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.19.27
+User Datagram Protocol, Src Port: 12000, Dst Port: 34107
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 35 20 46 52 49 20 4f 43 54 20 31 38 20 30 38    5 FRI OCT 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 0.131822757    198.18.19.27          198.18.20.12          LLC      73     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 13: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.20.12
+User Datagram Protocol, Src Port: 34107, Dst Port: 12000
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 36 20 46 72 69 20 4f 63 74 20 31 38 20 30 38    6 Fri Oct 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 0.144215729    198.18.20.12          198.18.19.27          LLC      73     I P, N(R)=35, N(S)=39; DSAP 0x50 Individual, SSAP 0x48 Response
+
+Frame 14: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.19.27
+User Datagram Protocol, Src Port: 12000, Dst Port: 34107
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 36 20 46 52 49 20 4f 43 54 20 31 38 20 30 38    6 FRI OCT 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 0.153313050    198.18.19.27          198.18.20.12          LLC      73     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 15: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.20.12
+User Datagram Protocol, Src Port: 34107, Dst Port: 12000
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 37 20 46 72 69 20 4f 63 74 20 31 38 20 30 38    7 Fri Oct 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 0.165757195    198.18.20.12          198.18.19.27          LLC      73     I P, N(R)=35, N(S)=39; DSAP 0x50 Individual, SSAP 0x48 Response
+
+Frame 16: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.19.27
+User Datagram Protocol, Src Port: 12000, Dst Port: 34107
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 37 20 46 52 49 20 4f 43 54 20 31 38 20 30 38    7 FRI OCT 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 0.178948029    198.18.19.27          198.18.20.12          LLC      73     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 17: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.20.12
+User Datagram Protocol, Src Port: 34107, Dst Port: 12000
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 38 20 46 72 69 20 4f 63 74 20 31 38 20 30 38    8 Fri Oct 18 08
+0010  3a 35 36 3a 32 36 20 32 30 31 39                  :56:26 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 1.176084825    198.18.19.27          198.18.20.12          LLC      73     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 18: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.20.12
+User Datagram Protocol, Src Port: 34107, Dst Port: 12000
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 39 20 46 72 69 20 4f 63 74 20 31 38 20 30 38    9 Fri Oct 18 08
+0010  3a 35 36 3a 32 37 20 32 30 31 39                  :56:27 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 1.189190180    198.18.20.12          198.18.19.27          LLC      73     I P, N(R)=35, N(S)=39; DSAP 0x50 Individual, SSAP 0x48 Response
+
+Frame 19: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.19.27
+User Datagram Protocol, Src Port: 12000, Dst Port: 34107
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 39 20 46 52 49 20 4f 43 54 20 31 38 20 30 38    9 FRI OCT 18 08
+0010  3a 35 36 3a 32 37 20 32 30 31 39                  :56:27 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 1.197367420    198.18.19.27          198.18.20.12          LLC      74     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 20: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.19.27, Dst: 198.18.20.12
+User Datagram Protocol, Src Port: 34107, Dst Port: 12000
+Logical-Link Control
+Data (28 bytes)
+
+0000  20 31 30 20 46 72 69 20 4f 63 74 20 31 38 20 30    10 Fri Oct 18 0
+0010  38 3a 35 36 3a 32 37 20 32 30 31 39               8:56:27 2019
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 1.209798352    198.18.20.12          198.18.19.27          LLC      74     I P, N(R)=35, N(S)=39; DSAP 0x50 Individual, SSAP 0x48 Response
+
+Frame 21: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:09 (00:00:00:aa:00:09), Dst: 00:00:00_aa:00:28 (00:00:00:aa:00:28)
+Internet Protocol Version 4, Src: 198.18.20.12, Dst: 198.18.19.27
+User Datagram Protocol, Src Port: 12000, Dst Port: 34107
+Logical-Link Control
+Data (28 bytes)
+
+0000  20 31 30 20 46 52 49 20 4f 43 54 20 31 38 20 30    10 FRI OCT 18 0
+0010  38 3a 35 36 3a 32 37 20 32 30 31 39               8:56:27 2019

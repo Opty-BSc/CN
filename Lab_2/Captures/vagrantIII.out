@@ -1,0 +1,200 @@
+Bringing machine 'webserver' up with 'virtualbox' provider...
+==> webserver: Clearing any previously set forwarded ports...
+==> webserver: Clearing any previously set network interfaces...
+==> webserver: Preparing network interfaces based on configuration...
+    webserver: Adapter 1: nat
+    webserver: Adapter 2: hostonly
+==> webserver: Forwarding ports...
+    webserver: 80 (guest) => 8080 (host) (adapter 1)
+    webserver: 22 (guest) => 2222 (host) (adapter 1)
+==> webserver: Running 'pre-boot' VM customizations...
+==> webserver: Booting VM...
+==> webserver: Waiting for machine to boot. This may take a few minutes...
+    webserver: SSH address: 127.0.0.1:2222
+    webserver: SSH username: vagrant
+    webserver: SSH auth method: private key
+    webserver: Warning: Connection reset. Retrying...
+    webserver: Warning: Remote connection disconnect. Retrying...
+==> webserver: Machine booted and ready!
+[webserver] GuestAdditions 6.0.12 running --- OK.
+==> webserver: Checking for guest additions in VM...
+==> webserver: Setting hostname...
+==> webserver: Configuring and enabling network interfaces...
+==> webserver: Mounting shared folders...
+    webserver: /vagrant => /media/asus/DATA/Opty1337/Técnico/RC/Lab02/weblab
+    webserver: /home/vagrant/html => /media/asus/DATA/Opty1337/Técnico/RC/Lab02/weblab/html
+==> webserver: Running provisioner: shell...
+    webserver: Running: /tmp/vagrant-shell20190926-25270-1ptcywn.sh
+    webserver: Get:1 http://security.ubuntu.com trusty-security InRelease [65.9 kB]
+    webserver: Ign http://archive.ubuntu.com trusty InRelease
+    webserver: Get:2 http://archive.ubuntu.com trusty-updates InRelease [65.9 kB]
+    webserver: Hit http://archive.ubuntu.com trusty-backports InRelease
+    webserver: Get:3 http://security.ubuntu.com trusty-security/main Sources [172 kB]
+    webserver: Hit http://archive.ubuntu.com trusty Release.gpg
+    webserver: Get:4 http://archive.ubuntu.com trusty-updates/main Sources [431 kB]
+    webserver: Get:5 http://security.ubuntu.com trusty-security/universe Sources [102 kB]
+    webserver: Get:6 http://archive.ubuntu.com trusty-updates/restricted Sources [6,313 B]
+    webserver: Get:7 http://archive.ubuntu.com trusty-updates/universe Sources [231 kB]
+    webserver: Get:8 http://security.ubuntu.com trusty-security/main amd64 Packages [835 kB]
+    webserver: Get:9 http://archive.ubuntu.com trusty-updates/multiverse Sources [7,535 B]
+    webserver: Get:10 http://archive.ubuntu.com trusty-updates/main amd64 Packages [1,178 kB]
+    webserver: Get:11 http://security.ubuntu.com trusty-security/universe amd64 Packages [294 kB]
+    webserver: Get:12 http://security.ubuntu.com trusty-security/main Translation-en [448 kB]
+    webserver: Get:13 http://archive.ubuntu.com trusty-updates/restricted amd64 Packages [17.2 kB]
+    webserver: Get:14 http://security.ubuntu.com trusty-security/universe Translation-en [162 kB]
+    webserver: Get:15 http://archive.ubuntu.com trusty-updates/universe amd64 Packages [526 kB]
+    webserver: Get:16 http://archive.ubuntu.com trusty-updates/multiverse amd64 Packages [14.6 kB]
+    webserver: Get:17 http://archive.ubuntu.com trusty-updates/main Translation-en [582 kB]
+    webserver: Get:18 http://archive.ubuntu.com trusty-updates/multiverse Translation-en [7,616 B]
+    webserver: Get:19 http://archive.ubuntu.com trusty-updates/restricted Translation-en [4,028 B]
+    webserver: Get:20 http://archive.ubuntu.com trusty-updates/universe Translation-en [281 kB]
+    webserver: Get:21 http://archive.ubuntu.com trusty-backports/main Sources [9,709 B]
+    webserver: Get:22 http://archive.ubuntu.com trusty-backports/restricted Sources [28 B]
+    webserver: Get:23 http://archive.ubuntu.com trusty-backports/universe Sources [35.4 kB]
+    webserver: Get:24 http://archive.ubuntu.com trusty-backports/multiverse Sources [1,896 B]
+    webserver: Hit http://archive.ubuntu.com trusty-backports/main amd64 Packages
+    webserver: Hit http://archive.ubuntu.com trusty-backports/restricted amd64 Packages
+    webserver: Hit http://archive.ubuntu.com trusty-backports/universe amd64 Packages
+    webserver: Hit http://archive.ubuntu.com trusty-backports/multiverse amd64 Packages
+    webserver: Hit http://archive.ubuntu.com trusty-backports/main Translation-en
+    webserver: Hit http://archive.ubuntu.com trusty-backports/multiverse Translation-en
+    webserver: Hit http://archive.ubuntu.com trusty-backports/restricted Translation-en
+    webserver: Hit http://archive.ubuntu.com trusty-backports/universe Translation-en
+    webserver: Hit http://archive.ubuntu.com trusty Release
+    webserver: Get:25 http://archive.ubuntu.com trusty/main Sources [1,064 kB]
+    webserver: Get:26 http://archive.ubuntu.com trusty/restricted Sources [5,433 B]
+    webserver: Get:27 http://archive.ubuntu.com trusty/universe Sources [6,399 kB]
+    webserver: Get:28 http://archive.ubuntu.com trusty/multiverse Sources [174 kB]
+    webserver: Hit http://archive.ubuntu.com trusty/main amd64 Packages
+    webserver: Hit http://archive.ubuntu.com trusty/restricted amd64 Packages
+    webserver: Hit http://archive.ubuntu.com trusty/universe amd64 Packages
+    webserver: Hit http://archive.ubuntu.com trusty/multiverse amd64 Packages
+    webserver: Hit http://archive.ubuntu.com trusty/main Translation-en
+    webserver: Hit http://archive.ubuntu.com trusty/multiverse Translation-en
+    webserver: Hit http://archive.ubuntu.com trusty/restricted Translation-en
+    webserver: Hit http://archive.ubuntu.com trusty/universe Translation-en
+    webserver: Ign http://archive.ubuntu.com trusty/main Translation-en_US
+    webserver: Ign http://archive.ubuntu.com trusty/multiverse Translation-en_US
+    webserver: Ign http://archive.ubuntu.com trusty/restricted Translation-en_US
+    webserver: Ign http://archive.ubuntu.com trusty/universe Translation-en_US
+    webserver: Fetched 13.1 MB in 1min 3s (207 kB/s)
+    webserver: Reading package lists...
+    webserver: Reading package lists...
+    webserver: Building dependency tree...
+    webserver: Reading state information...
+    webserver: The following packages were automatically installed and are no longer required:
+    webserver:   acl at-spi2-core colord dconf-gsettings-backend dconf-service fontconfig
+    webserver:   fontconfig-config fonts-dejavu-core hicolor-icon-theme libasound2
+    webserver:   libasound2-data libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+    webserver:   libavahi-client3 libavahi-common-data libavahi-common3 libcairo-gobject2
+    webserver:   libcairo2 libcanberra-gtk3-0 libcanberra-gtk3-module libcanberra0 libcolord1
+    webserver:   libcolorhug1 libcups2 libdatrie1 libdconf1 libdrm-intel1 libdrm-nouveau2
+    webserver:   libdrm-radeon1 libexif12 libfontconfig1 libfontenc1 libgd3
+    webserver:   libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgl1-mesa-dri libgl1-mesa-glx
+    webserver:   libglapi-mesa libgphoto2-6 libgphoto2-l10n libgphoto2-port10 libgraphite2-3
+    webserver:   libgtk-3-0 libgtk-3-bin libgtk-3-common libgudev-1.0-0 libgusb2
+    webserver:   libharfbuzz0b libice6 libieee1284-3 libjasper1 libjbig0 libjpeg-turbo8
+    webserver:   libjpeg8 liblcms2-2 libllvm3.4 libltdl7 libnotify-bin libnotify4 libogg0
+    webserver:   libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
+    webserver:   libpixman-1-0 libsane libsane-common libsm6 libtdb1 libthai-data libthai0
+    webserver:   libtiff5 libtxc-dxtn-s2tc0 libv4l-0 libv4lconvert0 libvorbis0a
+    webserver:   libvorbisfile3 libvpx1 libwayland-client0 libwayland-cursor0 libx11-xcb1
+    webserver:   libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0
+    webserver:   libxcb-render0 libxcb-shm0 libxcb-sync1 libxcomposite1 libxcursor1
+    webserver:   libxdamage1 libxfixes3 libxfont1 libxi6 libxinerama1 libxkbcommon0
+    webserver:   libxkbfile1 libxmu6 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxt6
+    webserver:   libxtst6 libxxf86vm1 notification-daemon sound-theme-freedesktop x11-common
+    webserver:   x11-xkb-utils xfonts-base xfonts-encodings xfonts-utils xserver-common
+    webserver:   xserver-xorg-core
+    webserver: Use 'apt-get autoremove' to remove them.
+    webserver: The following extra packages will be installed:
+    webserver:   apache2-bin apache2-data libapr1 libaprutil1 libaprutil1-dbd-sqlite3
+    webserver:   libaprutil1-ldap ssl-cert
+    webserver: Suggested packages:
+    webserver:   apache2-doc apache2-suexec-pristine apache2-suexec-custom apache2-utils
+    webserver:   openssl-blacklist
+    webserver: The following NEW packages will be installed:
+    webserver:   apache2 apache2-bin apache2-data libapr1 libaprutil1 libaprutil1-dbd-sqlite3
+    webserver:   libaprutil1-ldap ssl-cert
+    webserver: 0 upgraded, 8 newly installed, 0 to remove and 1 not upgraded.
+    webserver: Need to get 1,289 kB of archives.
+    webserver: After this operation, 5,369 kB of additional disk space will be used.
+    webserver: Get:1 http://archive.ubuntu.com/ubuntu/ trusty/main libapr1 amd64 1.5.0-1 [85.1 kB]
+    webserver: Get:2 http://archive.ubuntu.com/ubuntu/ trusty/main libaprutil1 amd64 1.5.3-1 [76.4 kB]
+    webserver: Get:3 http://archive.ubuntu.com/ubuntu/ trusty/main libaprutil1-dbd-sqlite3 amd64 1.5.3-1 [10.5 kB]
+    webserver: Get:4 http://archive.ubuntu.com/ubuntu/ trusty/main libaprutil1-ldap amd64 1.5.3-1 [8,634 B]
+    webserver: Get:5 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apache2-bin amd64 2.4.7-1ubuntu4.22 [845 kB]
+    webserver: Get:6 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apache2-data all 2.4.7-1ubuntu4.22 [160 kB]
+    webserver: Get:7 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apache2 amd64 2.4.7-1ubuntu4.22 [87.4 kB]
+    webserver: Get:8 http://archive.ubuntu.com/ubuntu/ trusty/main ssl-cert all 1.0.33 [16.6 kB]
+    webserver: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+    webserver: Fetched 1,289 kB in 6s (187 kB/s)
+    webserver: Selecting previously unselected package libapr1:amd64.
+    webserver: (Reading database ... 62899 files and directories currently installed.)
+    webserver: Preparing to unpack .../libapr1_1.5.0-1_amd64.deb ...
+    webserver: Unpacking libapr1:amd64 (1.5.0-1) ...
+    webserver: Selecting previously unselected package libaprutil1:amd64.
+    webserver: Preparing to unpack .../libaprutil1_1.5.3-1_amd64.deb ...
+    webserver: Unpacking libaprutil1:amd64 (1.5.3-1) ...
+    webserver: Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+    webserver: Preparing to unpack .../libaprutil1-dbd-sqlite3_1.5.3-1_amd64.deb ...
+    webserver: Unpacking libaprutil1-dbd-sqlite3:amd64 (1.5.3-1) ...
+    webserver: Selecting previously unselected package libaprutil1-ldap:amd64.
+    webserver: Preparing to unpack .../libaprutil1-ldap_1.5.3-1_amd64.deb ...
+    webserver: Unpacking libaprutil1-ldap:amd64 (1.5.3-1) ...
+    webserver: Selecting previously unselected package apache2-bin.
+    webserver: Preparing to unpack .../apache2-bin_2.4.7-1ubuntu4.22_amd64.deb ...
+    webserver: Unpacking apache2-bin (2.4.7-1ubuntu4.22) ...
+    webserver: Selecting previously unselected package apache2-data.
+    webserver: Preparing to unpack .../apache2-data_2.4.7-1ubuntu4.22_all.deb ...
+    webserver: Unpacking apache2-data (2.4.7-1ubuntu4.22) ...
+    webserver: Selecting previously unselected package apache2.
+    webserver: Preparing to unpack .../apache2_2.4.7-1ubuntu4.22_amd64.deb ...
+    webserver: Unpacking apache2 (2.4.7-1ubuntu4.22) ...
+    webserver: Selecting previously unselected package ssl-cert.
+    webserver: Preparing to unpack .../ssl-cert_1.0.33_all.deb ...
+    webserver: Unpacking ssl-cert (1.0.33) ...
+    webserver: Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+    webserver: Processing triggers for ufw (0.34~rc-0ubuntu2) ...
+    webserver: Processing triggers for ureadahead (0.100.0-16) ...
+    webserver: Setting up libapr1:amd64 (1.5.0-1) ...
+    webserver: Setting up libaprutil1:amd64 (1.5.3-1) ...
+    webserver: Setting up libaprutil1-dbd-sqlite3:amd64 (1.5.3-1) ...
+    webserver: Setting up libaprutil1-ldap:amd64 (1.5.3-1) ...
+    webserver: Setting up apache2-bin (2.4.7-1ubuntu4.22) ...
+    webserver: Setting up apache2-data (2.4.7-1ubuntu4.22) ...
+    webserver: Setting up apache2 (2.4.7-1ubuntu4.22) ...
+    webserver: Enabling module mpm_event.
+    webserver: Enabling module authz_core.
+    webserver: Enabling module authz_host.
+    webserver: Enabling module authn_core.
+    webserver: Enabling module auth_basic.
+    webserver: Enabling module access_compat.
+    webserver: Enabling module authn_file.
+    webserver: Enabling module authz_user.
+    webserver: Enabling module alias.
+    webserver: Enabling module dir.
+    webserver: Enabling module autoindex.
+    webserver: Enabling module env.
+    webserver: Enabling module mime.
+    webserver: Enabling module negotiation.
+    webserver: Enabling module setenvif.
+    webserver: Enabling module filter.
+    webserver: Enabling module deflate.
+    webserver: Enabling module status.
+    webserver: Enabling conf charset.
+    webserver: Enabling conf localized-error-pages.
+    webserver: Enabling conf other-vhosts-access-log.
+    webserver: Enabling conf security.
+    webserver: Enabling conf serve-cgi-bin.
+    webserver: Enabling site 000-default.
+    webserver:  * Starting web server apache2
+    webserver: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+    webserver:  * 
+    webserver: Setting up ssl-cert (1.0.33) ...
+    webserver: Processing triggers for libc-bin (2.19-0ubuntu6.15) ...
+    webserver: Processing triggers for ufw (0.34~rc-0ubuntu2) ...
+    webserver: Processing triggers for ureadahead (0.100.0-16) ...
+    webserver:  * Restarting web server apache2
+    webserver: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+    webserver:    ...done.

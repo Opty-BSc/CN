@@ -1,0 +1,51 @@
+No.     Time           Source                Destination           Protocol Length Info
+     83 6.067775       64.233.169.104        71.192.34.104         TCP      66     80 → 4335 [SYN, ACK] Seq=0 Ack=1 Win=5720 Len=0 MSS=1430 SACK_PERM=1 WS=64
+
+Frame 83: 66 bytes on wire (528 bits), 66 bytes captured (528 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep 20, 2009 20:43:07.798839000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1253479387.798839000 seconds
+    [Time delta from previous captured frame: 0.032300000 seconds]
+    [Time delta from previous displayed frame: 0.032300000 seconds]
+    [Time since reference or first frame: 6.067775000 seconds]
+    Frame Number: 83
+    Frame Length: 66 bytes (528 bits)
+    Capture Length: 66 bytes (528 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: Cisco_bf:6c:01 (00:0e:d6:bf:6c:01), Dst: Dell_4f:36:23 (00:08:74:4f:36:23)
+Internet Protocol Version 4, Src: 64.233.169.104, Dst: 71.192.34.104
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+    Total Length: 52
+    Identification: 0xf61a (63002)
+    Flags: 0x0000
+    Time to live: 51
+    Protocol: TCP (6)
+    Header checksum: 0x3d10 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 64.233.169.104
+    Destination: 71.192.34.104
+Transmission Control Protocol, Src Port: 80, Dst Port: 4335, Seq: 0, Ack: 1, Len: 0
+    Source Port: 80
+    Destination Port: 4335
+    [Stream index: 2]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    [Next sequence number: 0    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x012 (SYN, ACK)
+    Window size value: 5720
+    [Calculated window size: 5720]
+    Checksum: 0xa213 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), No-Operation (NOP), SACK permitted, No-Operation (NOP), Window scale
+    [SEQ/ACK analysis]
+    [Timestamps]

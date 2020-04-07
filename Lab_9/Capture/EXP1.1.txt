@@ -1,0 +1,272 @@
+1.
+Ethernet frame: 1
+Source: Ibm_10:60:99 (00:09:6b:10:60:99) [Client]
+Number of SSL records: 1
+SSL record types:
+- Client Hello
+
+Ethernet frame: 2
+Source: Cisco_83:e4:54 (00:b0:8e:83:e4:54) [Server]
+Number of SSL records: 1
+SSL record types:
+- Handshake Protocol: Server Hello
+
+Ethernet frame: 3
+Source: Cisco_83:e4:54 (00:b0:8e:83:e4:54) [Server]
+Number of SSL records: 2
+SSL record types:
+- Handshake Protocol: Certificate
+- Handshake Protocol: Server Hello Done
+
+Ethernet frame: 4
+Source: Ibm_10:60:99 (00:09:6b:10:60:99) [Client]
+Number of SSL records: 3
+SSL record types:
+- Handshake Protocol: Client Key Exchange
+- Change Cipher Spec Protocol: Change Cipher Spec
+- Handshake Protocol: Encrypted Handshake Message
+
+Ethernet frame: 5
+Source: Cisco_83:e4:54 (00:b0:8e:83:e4:54) [Server]
+Number of SSL records: 2
+SSL record types:
+- Change Cipher Spec Protocol: Change Cipher Spec
+- Handshake Protocol: Encrypted Handshake Message
+
+Ethernet frame: 6
+Source: Ibm_10:60:99 (00:09:6b:10:60:99) [Client]
+Number of SSL records: 1
+SSL record types:
+- Application Data Protocol: http-over-tls
+
+Ethernet frame: 7
+Source: Cisco_83:e4:54 (00:b0:8e:83:e4:54) [Server]
+Number of SSL records: 1
+SSL record types:
+- Application Data Protocol: http-over-tls
+
+Ethernet frame: 8
+Source: Cisco_83:e4:54 (00:b0:8e:83:e4:54) [Server]
+Number of SSL records: 1
+SSL record types:
+- Application Data Protocol: http-over-tls
+
+2.
+Content Type: 1 Byte
+Version: 2 Bytes
+Length: 2 Bytes
+
+| Packets: |
+
+No.     Time           Source                Destination           Protocol Length Info
+    106 21.805705      128.238.38.162        216.75.194.220        SSLv2    132    Client Hello
+
+Frame 106: 132 bytes on wire (1056 bits), 132 bytes captured (1056 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+    Destination: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+        Address: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Ibm_10:60:99 (00:09:6b:10:60:99)
+        Address: Ibm_10:60:99 (00:09:6b:10:60:99)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2271, Dst Port: 443, Seq: 1, Ack: 1, Len: 78
+Transport Layer Security
+    SSLv2 Record Layer: Client Hello
+        [Version: SSL 2.0 (0x0002)]
+        Length: 76
+        Handshake Message Type: Client Hello (1)
+        Version: SSL 3.0 (0x0300)
+        Cipher Spec Length: 51
+        Session ID Length: 0
+        Challenge Length: 16
+        Cipher Specs (17 specs)
+        Challenge
+
+No.     Time           Source                Destination           Protocol Length Info
+    108 21.830201      216.75.194.220        128.238.38.162        SSLv3    1434   Server Hello
+
+Frame 108: 1434 bytes on wire (11472 bits), 1434 bytes captured (11472 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+    Destination: Ibm_10:60:99 (00:09:6b:10:60:99)
+        Address: Ibm_10:60:99 (00:09:6b:10:60:99)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Cisco_83:e4:54 (00:b0:8e:83:e4:54)
+        Address: Cisco_83:e4:54 (00:b0:8e:83:e4:54)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 1, Ack: 79, Len: 1380
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 74
+        Handshake Protocol: Server Hello
+
+No.     Time           Source                Destination           Protocol Length Info
+    111 21.853520      216.75.194.220        128.238.38.162        SSLv3    790    Certificate, Server Hello Done
+
+Frame 111: 790 bytes on wire (6320 bits), 790 bytes captured (6320 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+    Destination: Ibm_10:60:99 (00:09:6b:10:60:99)
+        Address: Ibm_10:60:99 (00:09:6b:10:60:99)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Cisco_83:e4:54 (00:b0:8e:83:e4:54)
+        Address: Cisco_83:e4:54 (00:b0:8e:83:e4:54)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 2049, Ack: 79, Len: 736
+[3 Reassembled TCP Segments (2696 bytes): #108(1301), #109(668), #111(727)]
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Certificate
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 2691
+        Handshake Protocol: Certificate
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Server Hello Done
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 4
+        Handshake Protocol: Server Hello Done
+
+No.     Time           Source                Destination           Protocol Length Info
+    112 21.876168      128.238.38.162        216.75.194.220        SSLv3    258    Client Key Exchange, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 112: 258 bytes on wire (2064 bits), 258 bytes captured (2064 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+    Destination: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+        Address: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Ibm_10:60:99 (00:09:6b:10:60:99)
+        Address: Ibm_10:60:99 (00:09:6b:10:60:99)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2271, Dst Port: 443, Seq: 79, Ack: 2785, Len: 204
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Key Exchange
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 132
+        Handshake Protocol: Client Key Exchange
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    113 21.945667      216.75.194.220        128.238.38.162        SSLv3    121    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 113: 121 bytes on wire (968 bits), 121 bytes captured (968 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+    Destination: Ibm_10:60:99 (00:09:6b:10:60:99)
+        Address: Ibm_10:60:99 (00:09:6b:10:60:99)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Cisco_83:e4:54 (00:b0:8e:83:e4:54)
+        Address: Cisco_83:e4:54 (00:b0:8e:83:e4:54)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 2785, Ack: 283, Len: 67
+Transport Layer Security
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+    114 21.954189      128.238.38.162        216.75.194.220        SSLv3    806    Application Data
+
+Frame 114: 806 bytes on wire (6448 bits), 806 bytes captured (6448 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+    Destination: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+        Address: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Ibm_10:60:99 (00:09:6b:10:60:99)
+        Address: Ibm_10:60:99 (00:09:6b:10:60:99)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2271, Dst Port: 443, Seq: 283, Ack: 2852, Len: 752
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 747
+        Encrypted Application Data: 7e8cdc7fe71d6d59c45ecae7bad064ec705ea592d4b82b35…
+
+No.     Time           Source                Destination           Protocol Length Info
+    122 23.480352      216.75.194.220        128.238.38.162        SSLv3    272    Application Data
+
+Frame 122: 272 bytes on wire (2176 bits), 272 bytes captured (2176 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+    Destination: Ibm_10:60:99 (00:09:6b:10:60:99)
+        Address: Ibm_10:60:99 (00:09:6b:10:60:99)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Cisco_83:e4:54 (00:b0:8e:83:e4:54)
+        Address: Cisco_83:e4:54 (00:b0:8e:83:e4:54)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 2852, Ack: 1035, Len: 218
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 213
+        Encrypted Application Data: e1625e4dcad92ca0a801d0c760fe55e8f334cb996e026aa7…
+
+No.     Time           Source                Destination           Protocol Length Info
+    149 23.559497      216.75.194.220        128.238.38.162        SSLv3    1367   Application Data
+
+Frame 149: 1367 bytes on wire (10936 bits), 1367 bytes captured (10936 bits)
+Ethernet II, Src: Cisco_83:e4:54 (00:b0:8e:83:e4:54), Dst: Ibm_10:60:99 (00:09:6b:10:60:99)
+    Destination: Ibm_10:60:99 (00:09:6b:10:60:99)
+        Address: Ibm_10:60:99 (00:09:6b:10:60:99)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Cisco_83:e4:54 (00:b0:8e:83:e4:54)
+        Address: Cisco_83:e4:54 (00:b0:8e:83:e4:54)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 216.75.194.220, Dst: 128.238.38.162
+Transmission Control Protocol, Src Port: 443, Dst Port: 2271, Seq: 22217, Ack: 1035, Len: 1313
+[6 Reassembled TCP Segments (8213 bytes): #140(1380), #143(1380), #144(1380), #146(1380), #147(1380), #149(1313)]
+Transport Layer Security
+    SSLv3 Record Layer: Application Data Protocol: http-over-tls
+        Content Type: Application Data (23)
+        Version: SSL 3.0 (0x0300)
+        Length: 8208
+        Encrypted Application Data: 0f9ce4c01228bf5fcbdfdcf72820f137d18015a5ac455bc1…
+

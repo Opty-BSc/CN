@@ -1,0 +1,23 @@
+traceroute to www.wustl.edu (128.252.160.5), 30 hops max, 60 byte packets
+ 1  10.0.2.2 (10.0.2.2)  0.308 ms  0.367 ms  0.117 ms
+ 2  194.210.223.250 (194.210.223.250)  1.245 ms  2.172 ms  2.050 ms
+ 3  irb-166.gwcore1.tecnico.ulisboa.pt (193.136.134.196)  17.414 ms  17.266 ms  17.089 ms
+ 4  e0.gatekeeper2.tecnico.ulisboa.pt (193.136.134.158)  2.115 ms  3.585 ms  3.261 ms
+ 5  194.117.12.129 (194.117.12.129)  31.901 ms  32.057 ms  31.875 ms
+ 6  194.117.12.249 (194.117.12.249)  31.653 ms  25.608 ms  25.517 ms
+ 7  Router13.Lisboa.fccn.pt (193.136.1.93)  3.854 ms  3.823 ms  3.778 ms
+ 8  ROUTER1.10GE.CR2.Lisboa.fccn.pt (193.137.0.17)  7.704 ms  7.675 ms ROUTER1.10GE.CR1.Lisboa.fccn.pt (193.137.0.1)  7.596 ms
+ 9  fccn.mx2.lis.pt.geant.net (62.40.124.97)  7.516 ms  3.934 ms  4.165 ms
+10  ae0.mx1.lis.pt.geant.net (62.40.98.104)  5.564 ms  4.367 ms  3.959 ms
+11  ae5.mx1.lon.uk.geant.net (62.40.98.103)  30.608 ms  31.191 ms  31.733 ms
+12  internet2-gw.mx1.lon.uk.geant.net (62.40.124.45)  105.927 ms  105.842 ms  105.831 ms
+13  ae-0.4079.rtsw2.ashb.net.internet2.edu (162.252.70.137)  107.398 ms  107.357 ms  107.226 ms
+14  ae-6.4079.rtsw.chic.net.internet2.edu (162.252.70.61)  123.405 ms  125.883 ms  124.334 ms
+15  ae-1.4079.rtsw.indi.net.internet2.edu (162.252.70.153)  129.537 ms  129.464 ms  129.380 ms
+16  et-3-1-0.2002.rtr.ll.indiana.gigapop.net (149.165.254.2)  129.128 ms  127.280 ms  128.329 ms
+17  xe-1-2-0.944-900w-mmr-wu-rt-0.net.wustl.edu (149.165.254.142)  139.638 ms  138.508 ms  138.903 ms
+18  xe-0-0-5-bih-1017-wu-rt-0.nts.wustl.edu (128.252.1.253)  138.717 ms  138.326 ms xe-0-0-6-eps-l29-wu-rt-0.net.wustl.edu (128.252.100.125)  137.642 ms
+19  eth4-17-sgl-core.nts.wustl.edu (128.252.1.45)  138.026 ms eth6-13-bih-core.nts.wustl.edu (128.252.182.56)  140.016 ms  138.625 ms
+20  po12-gdce57-wcdc125-wu-vml-0.nts.wustl.edu (128.252.1.124)  137.945 ms  137.613 ms eth4-18-med-core.nts.wustl.edu (128.252.182.70)  137.381 ms
+21  po9-gdce57-wcdc125-wu-vml-0.nts.wustl.edu (128.252.1.126)  136.775 ms psychiatry.wustl.edu (128.252.160.5)  137.462 ms *
+

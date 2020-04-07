@@ -1,0 +1,30 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    198.18.0.27           198.18.20.12          LLC      73     I P, N(R)=51, N(S)=55; DSAP 0x50 Individual, SSAP 0x68 Response
+
+Frame 1: 73 bytes on wire (584 bits), 73 bytes captured (584 bits) on interface 0
+Ethernet II, Src: 00:00:00_aa:00:28 (00:00:00:aa:00:28), Dst: 00:00:00_aa:00:09 (00:00:00:aa:00:09)
+Internet Protocol Version 4, Src: 198.18.0.27, Dst: 198.18.20.12
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 59
+    Identification: 0xd1cd (53709)
+    Flags: 0x4000, Don't fragment
+    Time to live: 60
+    Protocol: UDP (17)
+    Header checksum: 0xcc98 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 198.18.0.27
+    Destination: 198.18.20.12
+User Datagram Protocol, Src Port: 48663, Dst Port: 12000
+    Source Port: 48663
+    Destination Port: 12000
+    Length: 39
+    Checksum: 0xa084 [unverified]
+    [Checksum Status: Unverified]
+    [Stream index: 0]
+Logical-Link Control
+Data (27 bytes)
+
+0000  20 31 20 53 75 6e 20 4f 63 74 20 32 30 20 31 36    1 Sun Oct 20 16
+0010  3a 31 37 3a 33 37 20 32 30 31 39                  :17:37 2019

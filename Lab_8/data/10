@@ -1,0 +1,58 @@
+No.     Time           Source                Destination           Protocol Length Info
+     10 17.466468      AmbitMic_a9:3d:68     LinksysG_da:af:73     0x0800   686    IPv4
+
+Frame 10: 686 bytes on wire (5488 bits), 686 bytes captured (5488 bits)
+Ethernet II, Src: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68), Dst: LinksysG_da:af:73 (00:06:25:da:af:73)
+    Destination: LinksysG_da:af:73 (00:06:25:da:af:73)
+        Address: LinksysG_da:af:73 (00:06:25:da:af:73)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+        Address: AmbitMic_a9:3d:68 (00:d0:59:a9:3d:68)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Data (672 bytes)
+
+0000  45 00 02 a0 00 fa 40 00 80 06 bf c8 c0 a8 01 69   E.....@........i
+0010  80 77 f5 0c 04 22 00 50 65 14 99 a7 ac a5 3f b4   .w...".Pe.....?.
+0020  50 18 fa f0 7e 4f 00 00 47 45 54 20 2f 65 74 68   P...~O..GET /eth
+0030  65 72 65 61 6c 2d 6c 61 62 73 2f 48 54 54 50 2d   ereal-labs/HTTP-
+0040  65 74 68 65 72 65 61 6c 2d 6c 61 62 2d 66 69 6c   ethereal-lab-fil
+0050  65 33 2e 68 74 6d 6c 20 48 54 54 50 2f 31 2e 31   e3.html HTTP/1.1
+0060  0d 0a 48 6f 73 74 3a 20 67 61 69 61 2e 63 73 2e   ..Host: gaia.cs.
+0070  75 6d 61 73 73 2e 65 64 75 0d 0a 55 73 65 72 2d   umass.edu..User-
+0080  41 67 65 6e 74 3a 20 4d 6f 7a 69 6c 6c 61 2f 35   Agent: Mozilla/5
+0090  2e 30 20 28 57 69 6e 64 6f 77 73 3b 20 55 3b 20   .0 (Windows; U; 
+00a0  57 69 6e 64 6f 77 73 20 4e 54 20 35 2e 31 3b 20   Windows NT 5.1; 
+00b0  65 6e 2d 55 53 3b 20 72 76 3a 31 2e 30 2e 32 29   en-US; rv:1.0.2)
+00c0  20 47 65 63 6b 6f 2f 32 30 30 33 30 32 30 38 20    Gecko/20030208 
+00d0  4e 65 74 73 63 61 70 65 2f 37 2e 30 32 0d 0a 41   Netscape/7.02..A
+00e0  63 63 65 70 74 3a 20 74 65 78 74 2f 78 6d 6c 2c   ccept: text/xml,
+00f0  61 70 70 6c 69 63 61 74 69 6f 6e 2f 78 6d 6c 2c   application/xml,
+0100  61 70 70 6c 69 63 61 74 69 6f 6e 2f 78 68 74 6d   application/xhtm
+0110  6c 2b 78 6d 6c 2c 74 65 78 74 2f 68 74 6d 6c 3b   l+xml,text/html;
+0120  71 3d 30 2e 39 2c 74 65 78 74 2f 70 6c 61 69 6e   q=0.9,text/plain
+0130  3b 71 3d 30 2e 38 2c 76 69 64 65 6f 2f 78 2d 6d   ;q=0.8,video/x-m
+0140  6e 67 2c 69 6d 61 67 65 2f 70 6e 67 2c 69 6d 61   ng,image/png,ima
+0150  67 65 2f 6a 70 65 67 2c 69 6d 61 67 65 2f 67 69   ge/jpeg,image/gi
+0160  66 3b 71 3d 30 2e 32 2c 74 65 78 74 2f 63 73 73   f;q=0.2,text/css
+0170  2c 2a 2f 2a 3b 71 3d 30 2e 31 0d 0a 41 63 63 65   ,*/*;q=0.1..Acce
+0180  70 74 2d 4c 61 6e 67 75 61 67 65 3a 20 65 6e 2d   pt-Language: en-
+0190  75 73 2c 20 65 6e 3b 71 3d 30 2e 35 30 0d 0a 41   us, en;q=0.50..A
+01a0  63 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 3a 20   ccept-Encoding: 
+01b0  67 7a 69 70 2c 20 64 65 66 6c 61 74 65 2c 20 63   gzip, deflate, c
+01c0  6f 6d 70 72 65 73 73 3b 71 3d 30 2e 39 0d 0a 41   ompress;q=0.9..A
+01d0  63 63 65 70 74 2d 43 68 61 72 73 65 74 3a 20 49   ccept-Charset: I
+01e0  53 4f 2d 38 38 35 39 2d 31 2c 20 75 74 66 2d 38   SO-8859-1, utf-8
+01f0  3b 71 3d 30 2e 36 36 2c 20 2a 3b 71 3d 30 2e 36   ;q=0.66, *;q=0.6
+0200  36 0d 0a 4b 65 65 70 2d 41 6c 69 76 65 3a 20 33   6..Keep-Alive: 3
+0210  30 30 0d 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20   00..Connection: 
+0220  6b 65 65 70 2d 61 6c 69 76 65 0d 0a 49 66 2d 4d   keep-alive..If-M
+0230  6f 64 69 66 69 65 64 2d 53 69 6e 63 65 3a 20 53   odified-Since: S
+0240  61 74 2c 20 32 38 20 41 75 67 20 32 30 30 34 20   at, 28 Aug 2004 
+0250  31 37 3a 30 30 3a 34 30 20 47 4d 54 0d 0a 49 66   17:00:40 GMT..If
+0260  2d 4e 6f 6e 65 2d 4d 61 74 63 68 3a 20 22 31 62   -None-Match: "1b
+0270  38 63 33 2d 31 31 39 34 2d 63 35 37 38 66 65 30   8c3-1194-c578fe0
+0280  30 22 0d 0a 43 61 63 68 65 2d 43 6f 6e 74 72 6f   0"..Cache-Contro
+0290  6c 3a 20 6d 61 78 2d 61 67 65 3d 30 0d 0a 0d 0a   l: max-age=0....

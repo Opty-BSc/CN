@@ -1,0 +1,248 @@
+28.
+Client's IP Adress: 192.168.1.100
+
+29.
+<<Filter applied>>
+
+30.
+Source: 192.168.1.100
+Destination: 64.233.169.104
+Source Port: 4335
+Destination Port: 80
+
+31.
+2.329239000 seconds.
+
+32.
+[SYN]
+SYN Sent: 7.075657000 seconds
+Source: 192.168.1.100
+Destination: 64.233.169.104
+Source Port: 4335
+Destination Port: 80
+[ACK]
+Source: 64.233.169.104
+Destination: 192.168.1.100
+Source Port: 80
+Destination Port: 4335
+ACK Received: 7.108986000 seconds
+
+ ___________
+|
+| Packets:
+|___________
+
+
+No.     Time           Source                Destination           Protocol Length Info
+     53 7.075657       192.168.1.100         64.233.169.104        TCP      66     4335 → 80 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=4 SACK_PERM=1
+
+Frame 53: 66 bytes on wire (528 bits), 66 bytes captured (528 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep 20, 2009 20:43:07.344792000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1253479387.344792000 seconds
+    [Time delta from previous captured frame: 0.001760000 seconds]
+    [Time delta from previous displayed frame: 0.001760000 seconds]
+    [Time since reference or first frame: 7.075657000 seconds]
+    Frame Number: 53
+    Frame Length: 66 bytes (528 bits)
+    Capture Length: 66 bytes (528 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: HonHaiPr_0d:ca:8f (00:22:68:0d:ca:8f), Dst: Cisco-Li_45:1f:1b (00:22:6b:45:1f:1b)
+Internet Protocol Version 4, Src: 192.168.1.100, Dst: 64.233.169.104
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 52
+    Identification: 0xa2aa (41642)
+    Flags: 0x4000, Don't fragment
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0xabbb [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 192.168.1.100
+    Destination: 64.233.169.104
+Transmission Control Protocol, Src Port: 4335, Dst Port: 80, Seq: 0, Len: 0
+    Source Port: 4335
+    Destination Port: 80
+    [Stream index: 2]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    [Next sequence number: 0    (relative sequence number)]
+    Acknowledgment number: 0
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x002 (SYN)
+    Window size value: 65535
+    [Calculated window size: 65535]
+    Checksum: 0x8262 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), Window scale, No-Operation (NOP), No-Operation (NOP), SACK permitted
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     54 7.108986       64.233.169.104        192.168.1.100         TCP      66     80 → 4335 [SYN, ACK] Seq=0 Ack=1 Win=5720 Len=0 MSS=1430 SACK_PERM=1 WS=64
+
+Frame 54: 66 bytes on wire (528 bits), 66 bytes captured (528 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep 20, 2009 20:43:07.378121000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1253479387.378121000 seconds
+    [Time delta from previous captured frame: 0.033329000 seconds]
+    [Time delta from previous displayed frame: 0.033329000 seconds]
+    [Time since reference or first frame: 7.108986000 seconds]
+    Frame Number: 54
+    Frame Length: 66 bytes (528 bits)
+    Capture Length: 66 bytes (528 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: Cisco-Li_45:1f:1b (00:22:6b:45:1f:1b), Dst: HonHaiPr_0d:ca:8f (00:22:68:0d:ca:8f)
+Internet Protocol Version 4, Src: 64.233.169.104, Dst: 192.168.1.100
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+    Total Length: 52
+    Identification: 0xf61a (63002)
+    Flags: 0x0000
+    Time to live: 50
+    Protocol: TCP (6)
+    Header checksum: 0xe62b [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 64.233.169.104
+    Destination: 192.168.1.100
+Transmission Control Protocol, Src Port: 80, Dst Port: 4335, Seq: 0, Ack: 1, Len: 0
+    Source Port: 80
+    Destination Port: 4335
+    [Stream index: 2]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    [Next sequence number: 0    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x012 (SYN, ACK)
+    Window size value: 5720
+    [Calculated window size: 5720]
+    Checksum: 0x4a2f [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), No-Operation (NOP), SACK permitted, No-Operation (NOP), Window scale
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     56 7.109267       192.168.1.100         64.233.169.104        HTTP     689    GET / HTTP/1.1 
+
+Frame 56: 689 bytes on wire (5512 bits), 689 bytes captured (5512 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep 20, 2009 20:43:07.378402000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1253479387.378402000 seconds
+    [Time delta from previous captured frame: 0.000214000 seconds]
+    [Time delta from previous displayed frame: 0.000214000 seconds]
+    [Time since reference or first frame: 7.109267000 seconds]
+    Frame Number: 56
+    Frame Length: 689 bytes (5512 bits)
+    Capture Length: 689 bytes (5512 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:http]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: HonHaiPr_0d:ca:8f (00:22:68:0d:ca:8f), Dst: Cisco-Li_45:1f:1b (00:22:6b:45:1f:1b)
+Internet Protocol Version 4, Src: 192.168.1.100, Dst: 64.233.169.104
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 675
+    Identification: 0xa2ac (41644)
+    Flags: 0x4000, Don't fragment
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0xa94a [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 192.168.1.100
+    Destination: 64.233.169.104
+Transmission Control Protocol, Src Port: 4335, Dst Port: 80, Seq: 1, Ack: 1, Len: 635
+    Source Port: 4335
+    Destination Port: 80
+    [Stream index: 2]
+    [TCP Segment Len: 635]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 636    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 65044
+    [Calculated window size: 260176]
+    [Window size scaling factor: 4]
+    Checksum: 0xaef3 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (635 bytes)
+Hypertext Transfer Protocol
+
+
+No.     Time           Source                Destination           Protocol Length Info
+     58 7.158432       64.233.169.104        192.168.1.100         TCP      1484   80 → 4335 [ACK] Seq=1 Ack=636 Win=7040 Len=1430 [TCP segment of a reassembled PDU]
+
+Frame 58: 1484 bytes on wire (11872 bits), 1484 bytes captured (11872 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep 20, 2009 20:43:07.427567000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1253479387.427567000 seconds
+    [Time delta from previous captured frame: 0.017704000 seconds]
+    [Time delta from previous displayed frame: 0.017704000 seconds]
+    [Time since reference or first frame: 7.158432000 seconds]
+    Frame Number: 58
+    Frame Length: 1484 bytes (11872 bits)
+    Capture Length: 1484 bytes (11872 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: Cisco-Li_45:1f:1b (00:22:6b:45:1f:1b), Dst: HonHaiPr_0d:ca:8f (00:22:68:0d:ca:8f)
+Internet Protocol Version 4, Src: 64.233.169.104, Dst: 192.168.1.100
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x20 (DSCP: CS1, ECN: Not-ECT)
+    Total Length: 1470
+    Identification: 0xf61c (63004)
+    Flags: 0x0000
+    Time to live: 50
+    Protocol: TCP (6)
+    Header checksum: 0xe09f [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 64.233.169.104
+    Destination: 192.168.1.100
+Transmission Control Protocol, Src Port: 80, Dst Port: 4335, Seq: 1, Ack: 636, Len: 1430
+    Source Port: 80
+    Destination Port: 4335
+    [Stream index: 2]
+    [TCP Segment Len: 1430]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1431    (relative sequence number)]
+    Acknowledgment number: 636    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 110
+    [Calculated window size: 7040]
+    [Window size scaling factor: 64]
+    Checksum: 0xd4fd [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (1430 bytes)
+    [Reassembled PDU in frame: 60]
+    TCP segment data (1430 bytes)
+

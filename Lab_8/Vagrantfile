@@ -1,0 +1,47 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+# Always use Vagrant's default insecure key
+  config.ssh.insert_key = false
+# Always use X11 Forwarding with r+this machine
+  config.ssh.forward_agent = true
+  config.ssh.forward_x11 = true
+# To avoid/allow install and uninstall of VBoxGuessAdditions.
+  config.vbguest.auto_update = true
+# Disable/enable automatic box update checking.
+  config.vm.box_check_update = false
+
+
+  # Create an instance
+  # Assign a friendly name for vagrant STATUS
+  config.vm.define "nethack" do |nethack_config|
+  # Every Vagrant development environment requires a box.
+    nethack_config.vm.box = "ubuntu/bionic64"
+  # Assign a friendly name to this host VM
+    nethack_config.vm.hostname = "nethack"
+  # Create a private network, which allows host-only access to the machine
+    nethack_config.vm.network "private_network", ip: "192.168.56.31"
+  # Configure shared folders
+    if Vagrant::Util::Platform.windows? then
+      nethack_config.vm.synced_folder "data", "/home/vagrant/data",
+        id: "mydata", owner: "vagrant", group: "vagrant",
+        mount_options: ["dmode=775,fmode=664"]
+    else
+      nethack_config.vm.synced_folder "data", "/home/vagrant/data"
+    end
+  # Provider-specific configuration so you can fine-tune various
+    nethack_config.vm.provider "virtualbox" do |vb|
+    # Change the VM name/ID in the Hypervisor
+      vb.name = "nethack"
+      opts = ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      vb.customize opts
+      vb.memory = "512"
+    end # of vb
+  # provision from the VM shell
+    nethack_config.vm.provision "shell", path: "bootstrap_nethack.sh"
+  end # of  client_config
+
+
+end # of  config

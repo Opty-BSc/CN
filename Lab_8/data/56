@@ -1,0 +1,53 @@
+No.     Time           Source                Destination           Protocol Length Info
+     56 7.109267       192.168.1.100         64.233.169.104        HTTP     689    GET / HTTP/1.1 
+
+Frame 56: 689 bytes on wire (5512 bits), 689 bytes captured (5512 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Sep 20, 2009 20:43:07.378402000 UTC
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1253479387.378402000 seconds
+    [Time delta from previous captured frame: 0.000214000 seconds]
+    [Time delta from previous displayed frame: 0.000214000 seconds]
+    [Time since reference or first frame: 7.109267000 seconds]
+    Frame Number: 56
+    Frame Length: 689 bytes (5512 bits)
+    Capture Length: 689 bytes (5512 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:http]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: HonHaiPr_0d:ca:8f (00:22:68:0d:ca:8f), Dst: Cisco-Li_45:1f:1b (00:22:6b:45:1f:1b)
+Internet Protocol Version 4, Src: 192.168.1.100, Dst: 64.233.169.104
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 675
+    Identification: 0xa2ac (41644)
+    Flags: 0x4000, Don't fragment
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0xa94a [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 192.168.1.100
+    Destination: 64.233.169.104
+Transmission Control Protocol, Src Port: 4335, Dst Port: 80, Seq: 1, Ack: 1, Len: 635
+    Source Port: 4335
+    Destination Port: 80
+    [Stream index: 2]
+    [TCP Segment Len: 635]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 636    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 65044
+    [Calculated window size: 260176]
+    [Window size scaling factor: 4]
+    Checksum: 0xaef3 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (635 bytes)
+Hypertext Transfer Protocol

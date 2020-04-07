@@ -1,0 +1,37 @@
+11.
+Yes.
+Encrypted PreMaster: bc49494729aa2590477fd059056ae78956c77b12af08b47c…
+This secret is used to create session key.
+Yes. The secret is encrypted by public key.
+The encrypted secret has 128 Bytes.
+
+| Packets: |
+
+No.     Time           Source                Destination           Protocol Length Info
+    112 21.876168      128.238.38.162        216.75.194.220        SSLv3    258    Client Key Exchange, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 112: 258 bytes on wire (2064 bits), 258 bytes captured (2064 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2271, Dst Port: 443, Seq: 79, Ack: 2785, Len: 204
+Transport Layer Security
+    SSLv3 Record Layer: Handshake Protocol: Client Key Exchange
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 132
+        Handshake Protocol: Client Key Exchange
+            Handshake Type: Client Key Exchange (16)
+            Length: 128
+            RSA Encrypted PreMaster Secret
+                Encrypted PreMaster: bc49494729aa2590477fd059056ae78956c77b12af08b47c…
+    SSLv3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: SSL 3.0 (0x0300)
+        Length: 1
+        Change Cipher Spec Message
+    SSLv3 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: SSL 3.0 (0x0300)
+        Length: 56
+        Handshake Protocol: Encrypted Handshake Message
+

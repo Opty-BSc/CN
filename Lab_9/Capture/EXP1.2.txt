@@ -1,0 +1,61 @@
+4.
+For a Handshake Message Type: Client Hello (1) the Content Type is Handshake (22).
+
+5.
+Yes.
+Challenge: 66 df 78 4c 04 8c d6 04 35 dc 44 89 89 46 99 09
+
+6.
+Yes.
+Cipher Spec: TLS_RSA_WITH_RC4_128_MD5 (0x000004)
+Public-key algorithm: RSA
+Symmetric-key algorithm: RC4
+Hash algorithm: MD5
+
+| Packets: |
+
+No.     Time           Source                Destination           Protocol Length Info
+    106 21.805705      128.238.38.162        216.75.194.220        SSLv2    132    Client Hello
+
+Frame 106: 132 bytes on wire (1056 bits), 132 bytes captured (1056 bits)
+Ethernet II, Src: Ibm_10:60:99 (00:09:6b:10:60:99), Dst: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+    Destination: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+        Address: All-HSRP-routers_00 (00:00:0c:07:ac:00)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Ibm_10:60:99 (00:09:6b:10:60:99)
+        Address: Ibm_10:60:99 (00:09:6b:10:60:99)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 128.238.38.162, Dst: 216.75.194.220
+Transmission Control Protocol, Src Port: 2271, Dst Port: 443, Seq: 1, Ack: 1, Len: 78
+Transport Layer Security
+    SSLv2 Record Layer: Client Hello
+        [Version: SSL 2.0 (0x0002)]
+        Length: 76
+        Handshake Message Type: Client Hello (1)
+        Version: SSL 3.0 (0x0300)
+        Cipher Spec Length: 51
+        Session ID Length: 0
+        Challenge Length: 16
+        Cipher Specs (17 specs)
+            Cipher Spec: TLS_RSA_WITH_RC4_128_MD5 (0x000004)
+            Cipher Spec: TLS_RSA_WITH_RC4_128_SHA (0x000005)
+            Cipher Spec: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x00000a)
+            Cipher Spec: SSL2_RC4_128_WITH_MD5 (0x010080)
+            Cipher Spec: SSL2_DES_192_EDE3_CBC_WITH_MD5 (0x0700c0)
+            Cipher Spec: SSL2_RC2_128_CBC_WITH_MD5 (0x030080)
+            Cipher Spec: TLS_RSA_WITH_DES_CBC_SHA (0x000009)
+            Cipher Spec: SSL2_DES_64_CBC_WITH_MD5 (0x060040)
+            Cipher Spec: TLS_RSA_EXPORT1024_WITH_RC4_56_SHA (0x000064)
+            Cipher Spec: TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA (0x000062)
+            Cipher Spec: TLS_RSA_EXPORT_WITH_RC4_40_MD5 (0x000003)
+            Cipher Spec: TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5 (0x000006)
+            Cipher Spec: SSL2_RC4_128_EXPORT40_WITH_MD5 (0x020080)
+            Cipher Spec: SSL2_RC2_128_CBC_EXPORT40_WITH_MD5 (0x040080)
+            Cipher Spec: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x000013)
+            Cipher Spec: TLS_DHE_DSS_WITH_DES_CBC_SHA (0x000012)
+            Cipher Spec: TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA (0x000063)
+        Challenge
+

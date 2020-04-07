@@ -1,0 +1,58 @@
+21.
+PROBE REQUEST:
+Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+Source address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+BSS Id: Broadcast (ff:ff:ff:ff:ff:ff)
+
+PROBE RESPONSE:
+Destination address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+Source address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+BSS Id: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+
+The PROBE REQUEST is a broadcast to scan for an AP from the Host.
+The PROBE RESPONSE is used to reply the Host from the AP.
+
+| Packets: |
+
+No.     Time           Source                Destination           Protocol Length Info
+   1594 46.586825      IntelCor_d1:b6:4f     Broadcast             802.11   94     Probe Request, SN=1575, FN=0, Flags=........C, SSID=30 Munroe St
+
+Frame 1594: 94 bytes on wire (752 bits), 94 bytes captured (752 bits)
+Radiotap Header v0, Length 24
+802.11 radio information
+IEEE 802.11 Probe Request, Flags: ........C
+    Type/Subtype: Probe Request (0x0004)
+    Frame Control Field: 0x4000
+    .000 0000 0000 0000 = Duration: 0 microseconds
+    Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination address: Broadcast (ff:ff:ff:ff:ff:ff)
+    Transmitter address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    Source address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    BSS Id: Broadcast (ff:ff:ff:ff:ff:ff)
+    .... .... .... 0000 = Fragment number: 0
+    0110 0010 0111 .... = Sequence number: 1575
+    Frame check sequence: 0xe5498848 [unverified]
+    [FCS Status: Unverified]
+IEEE 802.11 wireless LAN
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 1.212185       Cisco-Li_f7:1d:51     IntelCor_d1:b6:4f     802.11   177    Probe Response, SN=2867, FN=0, Flags=........C, BI=100, SSID=30 Munroe St
+
+Frame 27: 177 bytes on wire (1416 bits), 177 bytes captured (1416 bits)
+Radiotap Header v0, Length 24
+802.11 radio information
+IEEE 802.11 Probe Response, Flags: ........C
+    Type/Subtype: Probe Response (0x0005)
+    Frame Control Field: 0x5000
+    .000 0000 0010 1000 = Duration: 40 microseconds
+    Receiver address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    Destination address: IntelCor_d1:b6:4f (00:13:02:d1:b6:4f)
+    Transmitter address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    Source address: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    BSS Id: Cisco-Li_f7:1d:51 (00:16:b6:f7:1d:51)
+    .... .... .... 0000 = Fragment number: 0
+    1011 0011 0011 .... = Sequence number: 2867
+    Frame check sequence: 0xcb4eda28 [unverified]
+    [FCS Status: Unverified]
+IEEE 802.11 wireless LAN
+
